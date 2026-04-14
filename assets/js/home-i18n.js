@@ -190,7 +190,7 @@ const HOME_TRANSLATIONS = {
     "hero.appStore": "App Store",
     "hero.googlePlay": "Google Play",
     "hero.status": "Informe de contención // Anexo sellado",
-    "hero.heading": "Sobrevive al brote. Arma con los muertos. Sal con vida.",
+    "hero.heading": "Sobrevive al brote. Inventa nuevas armas. Sal con vida.",
     "hero.body":
       "Mortigen es un shooter de supervivencia cenital en el que encarnas al Dr. Luisen, un bioquímico atrapado dentro del anexo de Mortigen Biopharma después de que una beta precipitada de un tónico antiedad convirtiera la instalación en una zona de brote. Tú te mueves, las armas disparan y cada partida la definen las mejoras, el control de multitudes y cuánto tiempo logras seguir con vida.",
     "hero.exploreCta": "Explorar sistema de mejoras",
