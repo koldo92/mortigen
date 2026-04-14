@@ -3,30 +3,54 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mortigen | Terms and Conditions</title>
+    <title data-i18n="termsPage.meta.title">Mortigen | Terms and Conditions</title>
     <meta
       name="description"
+      data-i18n-content="termsPage.meta.description"
       content="Terms and Conditions for Mortigen, including optional purchases, rewarded ads, and governing law."
     >
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Mortigen | Terms and Conditions">
-    <meta property="og:description" content="Terms and Conditions for Mortigen, including optional purchases, rewarded ads, and governing law.">
+    <meta
+      property="og:title"
+      data-i18n-content="termsPage.meta.title"
+      content="Mortigen | Terms and Conditions"
+    >
+    <meta
+      property="og:description"
+      data-i18n-content="termsPage.meta.description"
+      content="Terms and Conditions for Mortigen, including optional purchases, rewarded ads, and governing law."
+    >
     <meta property="og:url" content="https://koldo92.github.io/mortigen/terms.html">
     <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/night.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mortigen | Terms and Conditions">
-    <meta name="twitter:description" content="Terms and Conditions for Mortigen, including optional purchases, rewarded ads, and governing law.">
+    <meta
+      name="twitter:title"
+      data-i18n-content="termsPage.meta.title"
+      content="Mortigen | Terms and Conditions"
+    >
+    <meta
+      name="twitter:description"
+      data-i18n-content="termsPage.meta.description"
+      content="Terms and Conditions for Mortigen, including optional purchases, rewarded ads, and governing law."
+    >
     <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/night.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/home-i18n.js" defer></script>
   </head>
   <body>
     <header class="topbar">
       <div class="container topbar-inner">
-        <a class="brand" href="index.html" aria-label="Mortigen home">
+        <a
+          class="brand"
+          href="index.html"
+          data-i18n-href="links.home"
+          data-i18n-aria-label="brand.homeAria"
+          aria-label="Mortigen home"
+        >
           <span class="brand-mark">
             <img
               class="pixel-art"
@@ -37,35 +61,89 @@
           </span>
           <span class="brand-copy">
             <strong>Mortigen</strong>
-            <small>Terms and Conditions</small>
+            <small data-i18n="termsPage.brandTagline">Terms and Conditions</small>
           </span>
         </a>
 
-        <nav class="nav" aria-label="Primary">
-          <a href="index.html">Home</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="#full-terms">Full terms</a>
-          <a href="#espanol">Español</a>
-        </nav>
+        <div class="topbar-tools">
+          <nav
+            class="nav"
+            data-i18n-aria-label="nav.primaryAria"
+            aria-label="Primary navigation"
+          >
+            <a
+              href="index.html"
+              data-i18n="nav.home"
+              data-i18n-href="links.home"
+            >
+              Home
+            </a>
+            <a
+              href="privacy.html"
+              data-i18n="nav.privacyPolicy"
+              data-i18n-href="links.privacy"
+            >
+              Privacy Policy
+            </a>
+          </nav>
+
+          <div
+            class="lang-switch"
+            role="group"
+            data-i18n-aria-label="lang.aria"
+            aria-label="Language selector"
+          >
+            <button
+              class="lang-switch__button"
+              type="button"
+              data-lang-toggle="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              class="lang-switch__button"
+              type="button"
+              data-lang-toggle="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="section legal-hero">
         <div class="container">
-          <a class="back-link" href="index.html">Back to landing page</a>
-          <span class="pill">Legal dossier</span>
-          <h1>Terms and Conditions</h1>
-          <p class="section-copy legal-intro">
-            This page turns the repo's legal draft into a static terms page for
-            the landing site while preserving explicit placeholders for the
-            business details that still need to be filled in.
+          <a
+            class="back-link"
+            href="index.html"
+            data-i18n="termsPage.backLink"
+            data-i18n-href="links.home"
+          >
+            Back to landing page
+          </a>
+          <span class="pill" data-i18n="termsPage.hero.pill">Legal dossier</span>
+          <h1 data-i18n="termsPage.hero.heading">Terms and Conditions</h1>
+          <p
+            class="section-copy legal-intro"
+            data-i18n="termsPage.hero.intro"
+          >
+            These terms explain the rules for using Mortigen, including optional
+            purchases, rewarded ads, and governing law.
           </p>
           <div class="quick-links">
-            <a href="#overview">Overview</a>
-            <a href="#full-terms">Full terms</a>
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="#espanol">Spanish version</a>
+            <a href="#overview" data-i18n="termsPage.quick.overview">Overview</a>
+            <a href="#full-terms" data-i18n="termsPage.quick.fullTerms">Full terms</a>
+            <a
+              href="privacy.html"
+              data-i18n="nav.privacyPolicy"
+              data-i18n-href="links.privacy"
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
       </section>
@@ -74,257 +152,178 @@
         <div class="container legal-shell">
           <aside class="legal-sidebar">
             <article class="legal-card panel" id="overview">
-              <span class="section-kicker">At a glance</span>
+              <span class="section-kicker" data-i18n="termsPage.overview.kicker">
+                At a glance
+              </span>
               <ul>
-                <li>Single-player mobile survival shooter for Android and iOS.</li>
-                <li>Optional purchases: No-Ads Revive and Crimson Protocol outfit.</li>
-                <li>Rewarded ads are optional and tied to revive flow only.</li>
-                <li>Spanish law governs these terms.</li>
+                <li data-i18n="termsPage.overview.item1">
+                  Single-player mobile survival shooter for Android and iOS.
+                </li>
+                <li data-i18n="termsPage.overview.item2">
+                  Optional purchases: No-Ads Revive and Crimson Protocol outfit.
+                </li>
+                <li data-i18n="termsPage.overview.item3">
+                  Rewarded ads are optional and tied to revive flow only.
+                </li>
+                <li data-i18n="termsPage.overview.item4">
+                  Spanish law governs these terms.
+                </li>
               </ul>
             </article>
 
-            <article class="legal-card panel">
-              <span class="section-kicker">Replace before publish</span>
-              <ul>
-                <li><span class="placeholder-token">[DEVELOPER_NAME]</span></li>
-                <li><span class="placeholder-token">[CONTACT_EMAIL]</span></li>
-                <li><span class="placeholder-token">[DEVELOPER_ADDRESS]</span></li>
-                <li><span class="placeholder-token">[CITY]</span></li>
-              </ul>
-            </article>
           </aside>
 
           <article class="legal-article panel" id="full-terms">
-            <p class="legal-alert">
-              Replace
-              <span class="placeholder-token">[DEVELOPER_NAME]</span>,
-              <span class="placeholder-token">[CONTACT_EMAIL]</span>,
-              <span class="placeholder-token">[DEVELOPER_ADDRESS]</span>, and
-              <span class="placeholder-token">[CITY]</span> with your final
-              legal details before publication.
+            <p data-i18n-html="termsPage.lastUpdated">
+              <strong>Last updated:</strong> April 14, 2026
             </p>
 
-            <p><strong>Last updated:</strong> April 14, 2026</p>
+            <p data-i18n="termsPage.readCarefully">
+              Please read these Terms and Conditions carefully before using
+              Mortigen.
+            </p>
 
-            <p>Please read these Terms and Conditions carefully before using Mortigen.</p>
-
-            <h2>1. Acceptance of Terms</h2>
-            <p>
+            <h2 data-i18n="termsPage.section1.heading">1. Acceptance of Terms</h2>
+            <p data-i18n="termsPage.section1.body">
               By downloading, installing, or using Mortigen, you agree to be
               bound by these Terms and Conditions. If you do not agree, do not
               use the app.
             </p>
 
-            <h2>2. Description of Service</h2>
-            <p>
+            <h2 data-i18n="termsPage.section2.heading">2. Description of Service</h2>
+            <p data-i18n="termsPage.section2.body">
               Mortigen is a single-player top-down survival shooter game
               available on Android and iOS. The game includes optional in-app
               purchases and rewarded advertisements.
             </p>
 
-            <h2>3. In-App Purchases</h2>
-            <p>Mortigen offers the following optional in-app purchases:</p>
+            <h2 data-i18n="termsPage.section3.heading">3. In-App Purchases</h2>
+            <p data-i18n="termsPage.section3.intro">
+              Mortigen offers the following optional in-app purchases:
+            </p>
             <ul>
-              <li><strong>No-Ads Revive</strong> (EUR 1.99) for instant revive once per run</li>
-              <li><strong>Crimson Protocol Outfit</strong> (EUR 0.99) as a permanent cosmetic outfit</li>
+              <li data-i18n-html="termsPage.section3.item1">
+                <strong>No-Ads Revive</strong> (EUR 1.99) for instant revive once
+                per run
+              </li>
+              <li data-i18n-html="termsPage.section3.item2">
+                <strong>Crimson Protocol Outfit</strong> (EUR 0.99) as a
+                permanent cosmetic outfit
+              </li>
             </ul>
-            <p>
+            <p data-i18n="termsPage.section3.body">
               All purchases are processed through Google Play or the Apple App
               Store. Prices may vary by region and are subject to change.
               Purchases are final and non-refundable except as required by
               applicable law or the refund policies of Google Play or Apple.
             </p>
 
-            <h2>4. Rewarded Advertisements</h2>
-            <p>
+            <h2 data-i18n="termsPage.section4.heading">4. Rewarded Advertisements</h2>
+            <p data-i18n="termsPage.section4.body">
               Mortigen displays rewarded video advertisements through Google
               AdMob. These ads are optional and only shown when you choose to
               watch one in exchange for an in-game revive. No ads are shown
               during normal gameplay.
             </p>
 
-            <h2>5. Intellectual Property</h2>
-            <p>
+            <h2 data-i18n="termsPage.section5.heading">5. Intellectual Property</h2>
+            <p data-i18n-html="termsPage.section5.body1">
               All content in Mortigen, including artwork, music, sound effects,
               code, game design, lore text, character designs, and the Mortigen
-              name, is the property of
-              <span class="placeholder-token">[DEVELOPER_NAME]</span> and is
-              protected by applicable intellectual property laws.
+              name, is the property of Luis Enrique Ruiz and is protected by
+              applicable intellectual property laws.
             </p>
-            <p>
+            <p data-i18n="termsPage.section5.body2">
               You may not reproduce, distribute, modify, create derivative
               works from, or commercially exploit any part of the app without
               prior written permission.
             </p>
 
-            <h2>6. User Conduct</h2>
-            <p>You agree not to:</p>
+            <h2 data-i18n="termsPage.section6.heading">6. User Conduct</h2>
+            <p data-i18n="termsPage.section6.intro">You agree not to:</p>
             <ul>
-              <li>Reverse engineer, decompile, or disassemble the app</li>
-              <li>Modify or create derivative works based on the app</li>
-              <li>Use the app for any unlawful purpose</li>
-              <li>Attempt to gain unauthorized access to the app or related systems</li>
-              <li>Distribute the app over a network for simultaneous multi-device use unless authorized</li>
+              <li data-i18n="termsPage.section6.item1">
+                Reverse engineer, decompile, or disassemble the app
+              </li>
+              <li data-i18n="termsPage.section6.item2">
+                Modify or create derivative works based on the app
+              </li>
+              <li data-i18n="termsPage.section6.item3">
+                Use the app for any unlawful purpose
+              </li>
+              <li data-i18n="termsPage.section6.item4">
+                Attempt to gain unauthorized access to the app or related systems
+              </li>
+              <li data-i18n="termsPage.section6.item5">
+                Distribute the app over a network for simultaneous multi-device
+                use unless authorized
+              </li>
             </ul>
 
-            <h2>7. Disclaimer of Warranties</h2>
-            <p>
+            <h2 data-i18n="termsPage.section7.heading">7. Disclaimer of Warranties</h2>
+            <p data-i18n="termsPage.section7.body">
               Mortigen is provided "as is" and "as available" without
               warranties of any kind, whether express or implied. We do not
               warrant that the app will be uninterrupted, error-free, or free
               of harmful components.
             </p>
 
-            <h2>8. Limitation of Liability</h2>
-            <p>
-              To the maximum extent permitted by applicable law,
-              <span class="placeholder-token">[DEVELOPER_NAME]</span> shall not
-              be liable for any indirect, incidental, special, consequential, or
-              punitive damages arising from your use of or inability to use the
-              app.
+            <h2 data-i18n="termsPage.section8.heading">8. Limitation of Liability</h2>
+            <p data-i18n-html="termsPage.section8.body">
+              To the maximum extent permitted by applicable law, Luis Enrique
+              Ruiz shall not be liable for any indirect, incidental, special,
+              consequential, or punitive damages arising from your use of or
+              inability to use the app.
             </p>
 
-            <h2>9. Third-Party Services</h2>
-            <p>
+            <h2 data-i18n="termsPage.section9.heading">9. Third-Party Services</h2>
+            <p data-i18n="termsPage.section9.body">
               The app integrates third-party services including Google AdMob,
               Google Play Billing, and Apple In-App Purchase. Your use of these
               services is subject to their respective terms and privacy policies.
               We are not responsible for the practices of these third parties.
             </p>
 
-            <h2>10. Termination</h2>
-            <p>
+            <h2 data-i18n="termsPage.section10.heading">10. Termination</h2>
+            <p data-i18n="termsPage.section10.body">
               We reserve the right to modify or discontinue the app at any time
               without notice. We are not liable to you or any third party for
               any modification, suspension, or discontinuation of the app.
             </p>
 
-            <h2>11. Governing Law</h2>
-            <p>
+            <h2 data-i18n="termsPage.section11.heading">11. Governing Law</h2>
+            <p data-i18n-html="termsPage.section11.body">
               These Terms shall be governed by and construed in accordance with
               the laws of Spain. Any disputes arising from these Terms or the
               use of the app shall be subject to the jurisdiction of the courts
-              of <span class="placeholder-token">[CITY]</span>, Spain, without
-              prejudice to any mandatory consumer protection rules that may
-              apply in your country of residence.
+              of Bilbao, Spain, without prejudice to any mandatory consumer
+              protection rules that may apply in your country of residence.
             </p>
 
-            <h2>12. Changes to These Terms</h2>
-            <p>
+            <h2 data-i18n="termsPage.section12.heading">
+              12. Changes to These Terms
+            </h2>
+            <p data-i18n="termsPage.section12.body">
               We may revise these Terms at any time. Changes take effect when
               posted. Continued use of the app after changes constitutes
               acceptance of the revised Terms.
             </p>
 
-            <h2>13. Contact</h2>
-            <p>If you have questions about these Terms, contact us at:</p>
+            <h2 data-i18n="termsPage.section13.heading">13. Contact</h2>
+            <p data-i18n="termsPage.section13.intro">
+              If you have questions about these Terms, contact us at:
+            </p>
             <ul>
-              <li>Email: <span class="placeholder-token">[CONTACT_EMAIL]</span></li>
-              <li>Developer: <span class="placeholder-token">[DEVELOPER_NAME]</span></li>
-              <li>Address: <span class="placeholder-token">[DEVELOPER_ADDRESS]</span></li>
+              <li data-i18n-html="termsPage.section13.item1">
+                Email: koldoru92@gmail.com
+              </li>
+              <li data-i18n-html="termsPage.section13.item2">
+                Developer: Luis Enrique Ruiz
+              </li>
+              <li data-i18n-html="termsPage.section13.item3">
+                Address: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia
+              </li>
             </ul>
-
-            <details class="translation" id="espanol">
-              <summary>Spanish version</summary>
-
-              <p><strong>Última actualización:</strong> 14 de abril de 2026</p>
-              <p>Lee atentamente estos Términos y Condiciones antes de usar Mortigen.</p>
-
-              <h2>1. Aceptación de los términos</h2>
-              <p>
-                Al descargar, instalar o usar Mortigen, aceptas quedar
-                vinculado por estos Términos y Condiciones. Si no estás de
-                acuerdo, no uses la aplicación.
-              </p>
-
-              <h2>2. Descripción del servicio</h2>
-              <p>
-                Mortigen es un juego de supervivencia cenital para un jugador
-                disponible en Android e iOS. El juego incluye compras opcionales
-                dentro de la aplicación y anuncios recompensados.
-              </p>
-
-              <h2>3. Compras dentro de la aplicación</h2>
-              <ul>
-                <li><strong>Reanimación sin anuncios</strong> (EUR 1.99)</li>
-                <li><strong>Traje Protocolo Carmesí</strong> (EUR 0.99)</li>
-              </ul>
-              <p>
-                Todas las compras se procesan a través de Google Play o la App
-                Store de Apple. Los precios pueden variar según la región y
-                están sujetos a cambios.
-              </p>
-
-              <h2>4. Anuncios recompensados</h2>
-              <p>
-                Mortigen muestra anuncios de vídeo recompensados a través de
-                Google AdMob. Estos anuncios son opcionales y solo se muestran
-                cuando eliges ver uno a cambio de una reanimación.
-              </p>
-
-              <h2>5. Propiedad intelectual</h2>
-              <p>
-                Todo el contenido de Mortigen es propiedad de
-                <span class="placeholder-token">[DEVELOPER_NAME]</span> y está
-                protegido por la legislación aplicable.
-              </p>
-
-              <h2>6. Conducta del usuario</h2>
-              <ul>
-                <li>No realizar ingeniería inversa, descompilar ni desensamblar la aplicación</li>
-                <li>No modificar ni crear obras derivadas basadas en la aplicación</li>
-                <li>No usar la aplicación con fines ilegales</li>
-                <li>No intentar obtener acceso no autorizado a la aplicación o sistemas relacionados</li>
-                <li>No distribuir la aplicación para uso simultáneo en múltiples dispositivos sin autorización</li>
-              </ul>
-
-              <h2>7. Exención de garantías</h2>
-              <p>
-                Mortigen se proporciona "tal cual" y "según disponibilidad"
-                sin garantías de ningún tipo.
-              </p>
-
-              <h2>8. Limitación de responsabilidad</h2>
-              <p>
-                En la máxima medida permitida por la legislación aplicable,
-                <span class="placeholder-token">[DEVELOPER_NAME]</span> no será
-                responsable de daños indirectos, incidentales, especiales o
-                consecuentes.
-              </p>
-
-              <h2>9. Servicios de terceros</h2>
-              <p>
-                La aplicación integra Google AdMob, Google Play Billing y
-                Compras In-App de Apple. Su uso está sujeto a sus propios
-                términos y políticas.
-              </p>
-
-              <h2>10. Terminación</h2>
-              <p>
-                Nos reservamos el derecho de modificar o descontinuar la
-                aplicación en cualquier momento sin previo aviso.
-              </p>
-
-              <h2>11. Legislación aplicable</h2>
-              <p>
-                Estos Términos se regirán por las leyes de España. Cualquier
-                disputa se someterá a la jurisdicción de los tribunales de
-                <span class="placeholder-token">[CIUDAD]</span>, España.
-              </p>
-
-              <h2>12. Cambios en estos términos</h2>
-              <p>
-                Podemos revisar estos Términos en cualquier momento. El uso
-                continuado implica aceptación de la versión revisada.
-              </p>
-
-              <h2>13. Contacto</h2>
-              <ul>
-                <li>Email: <span class="placeholder-token">[CONTACT_EMAIL]</span></li>
-                <li>Desarrollador: <span class="placeholder-token">[DEVELOPER_NAME]</span></li>
-                <li>Dirección: <span class="placeholder-token">[DEVELOPER_ADDRESS]</span></li>
-              </ul>
-            </details>
           </article>
         </div>
       </section>
@@ -333,13 +332,27 @@
     <footer class="footer">
       <div class="container footer-inner">
         <div>
-          <strong>Mortigen legal pages</strong>
-          <p>Static legal copy aligned with the current repository guidance.</p>
+          <strong data-i18n="legal.footer.title">Legal Information</strong>
+          <p data-i18n="legal.footer.body">
+            Terms, privacy details, and contact information for Mortigen.
+          </p>
         </div>
 
         <div class="footer-links">
-          <a href="index.html">Home</a>
-          <a href="privacy.html">Privacy Policy</a>
+          <a
+            href="index.html"
+            data-i18n="nav.home"
+            data-i18n-href="links.home"
+          >
+            Home
+          </a>
+          <a
+            href="privacy.html"
+            data-i18n="nav.privacyPolicy"
+            data-i18n-href="links.privacy"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>

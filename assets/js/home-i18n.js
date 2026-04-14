@@ -6,13 +6,15 @@ const HOME_TRANSLATIONS = {
     "brand.homeAria": "Mortigen home",
     "brand.tagline": "Biopharma outbreak survival shooter",
     "nav.primaryAria": "Primary navigation",
+    "nav.home": "Home",
     "nav.story": "Story",
     "nav.features": "Builds",
     "nav.privacy": "Privacy",
-    "nav.terms": "Terms",
+    "nav.terms": "Terms and Conditions",
     "nav.privacyPolicy": "Privacy Policy",
     "lang.aria": "Language selector",
     "ui.placeholderBadge": "placeholder",
+    "links.home": "index.html",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
     "hero.appStore": "App Store",
@@ -161,13 +163,9 @@ const HOME_TRANSLATIONS = {
     "privacy.card3Title": "Optional platform monetization",
     "privacy.card3Body":
       "Rewarded revive ads use Google AdMob on mobile, and purchases are processed through Google Play Billing or Apple In-App Purchase.",
-    "cta.kicker": "Release surface",
-    "cta.heading": "Publish the landing page now, swap the store URLs later.",
-    "cta.body":
-      "The site is static, self-contained, and already linked to terms and privacy pages. Replace the App Store and Google Play placeholders when your listings go live.",
-    "footer.title": "Mortigen landing site",
+    "footer.title": "Mortigen",
     "footer.body":
-      "Static promotional page based on the current game design, store copy, and legal guidance in this repository.",
+      "A survival shooter about a biopharma outbreak, coming to mobile.",
     "footer.terms": "Terms and Conditions",
     "footer.privacy": "Privacy Policy"
   },
@@ -178,15 +176,17 @@ const HOME_TRANSLATIONS = {
     "brand.homeAria": "Inicio de Mortigen",
     "brand.tagline": "Shooter de supervivencia biotecnológico",
     "nav.primaryAria": "Navegación principal",
+    "nav.home": "Inicio",
     "nav.story": "Historia",
     "nav.features": "Mejoras",
     "nav.privacy": "Privacidad",
-    "nav.terms": "Términos",
+    "nav.terms": "Términos y Condiciones",
     "nav.privacyPolicy": "Política de Privacidad",
     "lang.aria": "Selector de idioma",
     "ui.placeholderBadge": "pendiente",
-    "links.terms": "terms.html#espanol",
-    "links.privacy": "privacy.html#espanol",
+    "links.home": "index.html?lang=es",
+    "links.terms": "terms.html?lang=es",
+    "links.privacy": "privacy.html?lang=es",
     "hero.appStore": "App Store",
     "hero.googlePlay": "Google Play",
     "hero.status": "Informe de contención // Anexo sellado",
@@ -270,7 +270,7 @@ const HOME_TRANSLATIONS = {
     "features.card3Eyebrow": "Halo Pútrido",
     "features.card3Title": "Lleva un aura de daño que derrite todo lo que se acerque",
     "features.card3Body":
-      "Halo Pútrido envuelve al jugador en un aura persistente, convierte el contacto cercano en daño gratis y hace mucho más indulgente el kiteo de pánico cuando la horda te rodea.",
+      "Halo Pútrido envuelve al jugador en un aura persistente, convierte el contacto cercano en daño gratis y te permite reposicionarte con mucha más facilidad cuando la horda te rodea.",
     "features.card3Meta1": "Radio persistente",
     "features.card3Meta2": "DPS a corta distancia",
     "features.card3Meta3": "Válvula legendaria de presión",
@@ -333,15 +333,377 @@ const HOME_TRANSLATIONS = {
     "privacy.card3Title": "Monetización opcional de plataforma",
     "privacy.card3Body":
       "Los anuncios de reanimación usan Google AdMob en móvil y las compras se procesan mediante Google Play Billing o Apple In-App Purchase.",
-    "cta.kicker": "Lista para publicar",
-    "cta.heading": "Publica la landing ahora y cambia las URLs de las tiendas después.",
-    "cta.body":
-      "La web es estática, autónoma y ya enlaza las páginas de términos y privacidad. Sustituye los placeholders de App Store y Google Play cuando tus fichas estén en directo.",
-    "footer.title": "Landing page de Mortigen",
+    "footer.title": "Mortigen",
     "footer.body":
-      "Página promocional estática basada en el diseño actual del juego, el copy de tiendas y la guía legal de este repositorio.",
+      "Un shooter de supervivencia sobre un brote biotecnológico, próximamente en móvil.",
     "footer.terms": "Términos y Condiciones",
     "footer.privacy": "Política de Privacidad"
+  }
+};
+
+const LEGAL_TRANSLATIONS = {
+  en: {
+    "legal.footer.title": "Legal Information",
+    "legal.footer.body":
+      "Terms, privacy details, and contact information for Mortigen.",
+
+    "termsPage.meta.title": "Mortigen | Terms and Conditions",
+    "termsPage.meta.description":
+      "Terms and Conditions for Mortigen, including optional purchases, rewarded ads, and governing law.",
+    "termsPage.brandTagline": "Terms and Conditions",
+    "termsPage.nav.fullTerms": "Full terms",
+    "termsPage.backLink": "Back to landing page",
+    "termsPage.hero.pill": "Legal dossier",
+    "termsPage.hero.heading": "Terms and Conditions",
+    "termsPage.hero.intro":
+      "These terms explain the rules for using Mortigen, including optional purchases, rewarded ads, and governing law.",
+    "termsPage.quick.overview": "Overview",
+    "termsPage.quick.fullTerms": "Full terms",
+    "termsPage.overview.kicker": "At a glance",
+    "termsPage.overview.item1":
+      "Single-player mobile survival shooter for Android and iOS.",
+    "termsPage.overview.item2":
+      "Optional purchases: No-Ads Revive and Crimson Protocol outfit.",
+    "termsPage.overview.item3":
+      "Rewarded ads are optional and tied to revive flow only.",
+    "termsPage.overview.item4": "Spanish law governs these terms.",
+    "termsPage.lastUpdated": "<strong>Last updated:</strong> April 14, 2026",
+    "termsPage.readCarefully":
+      "Please read these Terms and Conditions carefully before using Mortigen.",
+    "termsPage.section1.heading": "1. Acceptance of Terms",
+    "termsPage.section1.body":
+      "By downloading, installing, or using Mortigen, you agree to be bound by these Terms and Conditions. If you do not agree, do not use the app.",
+    "termsPage.section2.heading": "2. Description of Service",
+    "termsPage.section2.body":
+      "Mortigen is a single-player top-down survival shooter game available on Android and iOS. The game includes optional in-app purchases and rewarded advertisements.",
+    "termsPage.section3.heading": "3. In-App Purchases",
+    "termsPage.section3.intro":
+      "Mortigen offers the following optional in-app purchases:",
+    "termsPage.section3.item1":
+      "<strong>No-Ads Revive</strong> (EUR 1.99) for instant revive once per run",
+    "termsPage.section3.item2":
+      "<strong>Crimson Protocol Outfit</strong> (EUR 0.99) as a permanent cosmetic outfit",
+    "termsPage.section3.body":
+      "All purchases are processed through Google Play or the Apple App Store. Prices may vary by region and are subject to change. Purchases are final and non-refundable except as required by applicable law or the refund policies of Google Play or Apple.",
+    "termsPage.section4.heading": "4. Rewarded Advertisements",
+    "termsPage.section4.body":
+      "Mortigen displays rewarded video advertisements through Google AdMob. These ads are optional and only shown when you choose to watch one in exchange for an in-game revive. No ads are shown during normal gameplay.",
+    "termsPage.section5.heading": "5. Intellectual Property",
+    "termsPage.section5.body1":
+      "All content in Mortigen, including artwork, music, sound effects, code, game design, lore text, character designs, and the Mortigen name, is the property of Luis Enrique Ruiz and is protected by applicable intellectual property laws.",
+    "termsPage.section5.body2":
+      "You may not reproduce, distribute, modify, create derivative works from, or commercially exploit any part of the app without prior written permission.",
+    "termsPage.section6.heading": "6. User Conduct",
+    "termsPage.section6.intro": "You agree not to:",
+    "termsPage.section6.item1":
+      "Reverse engineer, decompile, or disassemble the app",
+    "termsPage.section6.item2":
+      "Modify or create derivative works based on the app",
+    "termsPage.section6.item3": "Use the app for any unlawful purpose",
+    "termsPage.section6.item4":
+      "Attempt to gain unauthorized access to the app or related systems",
+    "termsPage.section6.item5":
+      "Distribute the app over a network for simultaneous multi-device use unless authorized",
+    "termsPage.section7.heading": "7. Disclaimer of Warranties",
+    "termsPage.section7.body":
+      'Mortigen is provided "as is" and "as available" without warranties of any kind, whether express or implied. We do not warrant that the app will be uninterrupted, error-free, or free of harmful components.',
+    "termsPage.section8.heading": "8. Limitation of Liability",
+    "termsPage.section8.body":
+      "To the maximum extent permitted by applicable law, Luis Enrique Ruiz shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the app.",
+    "termsPage.section9.heading": "9. Third-Party Services",
+    "termsPage.section9.body":
+      "The app integrates third-party services including Google AdMob, Google Play Billing, and Apple In-App Purchase. Your use of these services is subject to their respective terms and privacy policies. We are not responsible for the practices of these third parties.",
+    "termsPage.section10.heading": "10. Termination",
+    "termsPage.section10.body":
+      "We reserve the right to modify or discontinue the app at any time without notice. We are not liable to you or any third party for any modification, suspension, or discontinuation of the app.",
+    "termsPage.section11.heading": "11. Governing Law",
+    "termsPage.section11.body":
+      "These Terms shall be governed by and construed in accordance with the laws of Spain. Any disputes arising from these Terms or the use of the app shall be subject to the jurisdiction of the courts of Bilbao, Spain, without prejudice to any mandatory consumer protection rules that may apply in your country of residence.",
+    "termsPage.section12.heading": "12. Changes to These Terms",
+    "termsPage.section12.body":
+      "We may revise these Terms at any time. Changes take effect when posted. Continued use of the app after changes constitutes acceptance of the revised Terms.",
+    "termsPage.section13.heading": "13. Contact",
+    "termsPage.section13.intro":
+      "If you have questions about these Terms, contact us at:",
+    "termsPage.section13.item1": "Email: koldoru92@gmail.com",
+    "termsPage.section13.item2": "Developer: Luis Enrique Ruiz",
+    "termsPage.section13.item3":
+      "Address: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
+
+    "privacyPage.meta.title": "Mortigen | Privacy Policy",
+    "privacyPage.meta.description":
+      "Privacy Policy for Mortigen, covering local storage, optional platform services, and user rights.",
+    "privacyPage.brandTagline": "Privacy Policy",
+    "privacyPage.nav.fullPolicy": "Full policy",
+    "privacyPage.backLink": "Back to landing page",
+    "privacyPage.hero.pill": "Legal dossier",
+    "privacyPage.hero.heading": "Privacy Policy",
+    "privacyPage.hero.intro":
+      "This policy explains how Mortigen handles data, which platform services may process it, and how to contact the developer.",
+    "privacyPage.quick.overview": "Overview",
+    "privacyPage.quick.fullPolicy": "Full policy",
+    "privacyPage.overview.kicker": "At a glance",
+    "privacyPage.overview.item1": "Mortigen stores progression locally on-device.",
+    "privacyPage.overview.item2":
+      "No account creation or backend is described.",
+    "privacyPage.overview.item3":
+      "No analytics SDK is part of the current setup.",
+    "privacyPage.overview.item4":
+      "Rewarded ads and payments are delegated to platform services.",
+    "privacyPage.lastUpdated": "<strong>Last updated:</strong> April 14, 2026",
+    "privacyPage.intro":
+      'Luis Enrique Ruiz ("we", "us", or "our") built Mortigen as a free-to-play mobile application. This Privacy Policy explains what information the app collects, how it is used, and your choices regarding that information.',
+    "privacyPage.collect.heading": "Information We Collect",
+    "privacyPage.local.heading": "Locally Stored Data",
+    "privacyPage.local.body1":
+      "Mortigen stores gameplay progress on your device using local storage (SharedPreferences). This data never leaves your device and includes:",
+    "privacyPage.local.item1":
+      "High score, best survival time, and highest level reached",
+    "privacyPage.local.item2":
+      "Total enemies killed, frozen, and electrified across sessions",
+    "privacyPage.local.item3": "Trophy unlock states",
+    "privacyPage.local.item4":
+      "Audio settings such as music and SFX state or volume",
+    "privacyPage.local.item5":
+      "Store purchase ownership and selected cosmetic outfit",
+    "privacyPage.local.item6": "First-launch flag",
+    "privacyPage.local.body2":
+      "This data is not transmitted to any server and cannot be accessed by us.",
+    "privacyPage.thirdParty.heading": "Third-Party Services",
+    "privacyPage.thirdParty.intro":
+      "Mortigen integrates third-party platform services that may collect data independently:",
+    "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> for rewarded video ads on Android and iOS. AdMob may collect device identifiers, IP address, and ad interaction data. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.`,
+    "privacyPage.thirdParty.item2":
+      "<strong>Google Play Billing / Apple In-App Purchase</strong> for optional in-app purchases. Purchase transactions are handled by Google or Apple. We do not collect or store payment information.",
+    "privacyPage.thirdParty.item3":
+      "<strong>Google Play Services / Apple Game Services</strong> as part of normal platform operation on Android and iOS.",
+    "privacyPage.noCollect.heading": "Data We Do Not Collect",
+    "privacyPage.noCollect.item1":
+      "We do not collect personal information such as name or email.",
+    "privacyPage.noCollect.item2": "We do not collect location data.",
+    "privacyPage.noCollect.item3":
+      "We do not require account creation or login.",
+    "privacyPage.noCollect.item4":
+      "We do not use analytics SDKs in the current documented setup.",
+    "privacyPage.noCollect.item5":
+      "We do not maintain a server or backend for gameplay data.",
+    "privacyPage.gdpr.heading": "Your Rights Under the GDPR",
+    "privacyPage.gdpr.intro":
+      "As a user in the European Economic Area, you have rights under the General Data Protection Regulation (EU) 2016/679:",
+    "privacyPage.gdpr.item1":
+      "<strong>Right of access.</strong> Because Mortigen stores data locally and has no server-side profile system, there is no remote gameplay dataset for us to retrieve.",
+    "privacyPage.gdpr.item2":
+      "<strong>Right to erasure.</strong> You can delete game data by clearing app data in your device settings or uninstalling the app.",
+    "privacyPage.gdpr.item3":
+      "<strong>Right to restriction and objection.</strong> You can opt out of personalized advertising through your device's ad personalization settings.",
+    "privacyPage.gdpr.item4": `<strong>Right to lodge a complaint.</strong> You may file a complaint with the Spanish Data Protection Agency at <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> or with another EU supervisory authority.`,
+    "privacyPage.gdpr.body":
+      "Where third-party services such as Google AdMob process personal data, the legal basis is consent, which you can withdraw through your device settings.",
+    "privacyPage.children.heading": "Children's Privacy",
+    "privacyPage.children.body":
+      "Mortigen is not directed at children under 13, or 16 in certain EU member states. We do not knowingly collect personal information from children. If you believe a child has provided personal information through an integrated third-party service, contact us so we can take appropriate action.",
+    "privacyPage.retention.heading": "Data Retention and Deletion",
+    "privacyPage.retention.intro":
+      "All game data is stored locally on your device. You can delete it at any time by:",
+    "privacyPage.retention.item1":
+      "Clearing the app's data through your device settings",
+    "privacyPage.retention.item2": "Uninstalling the app",
+    "privacyPage.retention.body":
+      "We have no server-side gameplay data to delete because we do not collect or store it remotely.",
+    "privacyPage.changes.heading": "Changes to This Policy",
+    "privacyPage.changes.body":
+      'We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the revised policy.',
+    "privacyPage.contact.heading": "Contact",
+    "privacyPage.contact.intro":
+      "If you have questions about this Privacy Policy, contact us at:",
+    "privacyPage.contact.item1": "Email: koldoru92@gmail.com",
+    "privacyPage.contact.item2": "Developer: Luis Enrique Ruiz",
+    "privacyPage.contact.item3":
+      "Address: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia"
+  },
+  es: {
+    "legal.footer.title": "Información legal",
+    "legal.footer.body":
+      "Términos, privacidad y datos de contacto de Mortigen.",
+
+    "termsPage.meta.title": "Mortigen | Términos y Condiciones",
+    "termsPage.meta.description":
+      "Términos y Condiciones de Mortigen, incluidas compras opcionales, anuncios recompensados y legislación aplicable.",
+    "termsPage.brandTagline": "Términos y Condiciones",
+    "termsPage.nav.fullTerms": "Términos completos",
+    "termsPage.backLink": "Volver a la landing",
+    "termsPage.hero.pill": "Dossier legal",
+    "termsPage.hero.heading": "Términos y Condiciones",
+    "termsPage.hero.intro":
+      "Estos términos explican las reglas de uso de Mortigen, incluidas las compras opcionales, los anuncios recompensados y la legislación aplicable.",
+    "termsPage.quick.overview": "Resumen",
+    "termsPage.quick.fullTerms": "Términos completos",
+    "termsPage.overview.kicker": "De un vistazo",
+    "termsPage.overview.item1":
+      "Juego de supervivencia cenital para móvil, para un jugador, en Android e iOS.",
+    "termsPage.overview.item2":
+      "Compras opcionales: Reanimación sin anuncios y traje Protocolo Carmesí.",
+    "termsPage.overview.item3":
+      "Los anuncios recompensados son opcionales y solo intervienen en la reanimación.",
+    "termsPage.overview.item4":
+      "Estos términos se rigen por la legislación española.",
+    "termsPage.lastUpdated":
+      "<strong>Última actualización:</strong> 14 de abril de 2026",
+    "termsPage.readCarefully":
+      "Lee atentamente estos Términos y Condiciones antes de usar Mortigen.",
+    "termsPage.section1.heading": "1. Aceptación de los términos",
+    "termsPage.section1.body":
+      "Al descargar, instalar o usar Mortigen, aceptas quedar vinculado por estos Términos y Condiciones. Si no estás de acuerdo, no uses la aplicación.",
+    "termsPage.section2.heading": "2. Descripción del servicio",
+    "termsPage.section2.body":
+      "Mortigen es un juego de supervivencia cenital para un jugador disponible en Android e iOS. El juego incluye compras opcionales dentro de la aplicación y anuncios recompensados.",
+    "termsPage.section3.heading": "3. Compras dentro de la aplicación",
+    "termsPage.section3.intro":
+      "Mortigen ofrece las siguientes compras opcionales dentro de la aplicación:",
+    "termsPage.section3.item1":
+      "<strong>Reanimación sin anuncios</strong> (EUR 1.99) para una reanimación instantánea una vez por partida",
+    "termsPage.section3.item2":
+      "<strong>Traje Protocolo Carmesí</strong> (EUR 0.99) como aspecto cosmético permanente",
+    "termsPage.section3.body":
+      "Todas las compras se procesan a través de Google Play o la App Store de Apple. Los precios pueden variar según la región y están sujetos a cambios. Las compras son finales y no reembolsables salvo que la legislación aplicable o las políticas de reembolso de Google Play o Apple dispongan lo contrario.",
+    "termsPage.section4.heading": "4. Anuncios recompensados",
+    "termsPage.section4.body":
+      "Mortigen muestra anuncios de vídeo recompensados a través de Google AdMob. Estos anuncios son opcionales y solo se muestran cuando eliges ver uno a cambio de una reanimación dentro del juego. No se muestran anuncios durante la jugabilidad normal.",
+    "termsPage.section5.heading": "5. Propiedad intelectual",
+    "termsPage.section5.body1":
+      "Todo el contenido de Mortigen, incluidos el arte, la música, los efectos de sonido, el código, el diseño del juego, los textos de trasfondo, los diseños de personajes y el nombre Mortigen, es propiedad de Luis Enrique Ruiz y está protegido por la legislación aplicable en materia de propiedad intelectual.",
+    "termsPage.section5.body2":
+      "No puedes reproducir, distribuir, modificar, crear obras derivadas ni explotar comercialmente ninguna parte de la aplicación sin autorización previa por escrito.",
+    "termsPage.section6.heading": "6. Conducta del usuario",
+    "termsPage.section6.intro": "Aceptas no:",
+    "termsPage.section6.item1":
+      "Realizar ingeniería inversa, descompilar ni desensamblar la aplicación",
+    "termsPage.section6.item2":
+      "Modificar ni crear obras derivadas basadas en la aplicación",
+    "termsPage.section6.item3":
+      "Usar la aplicación con fines ilegales",
+    "termsPage.section6.item4":
+      "Intentar obtener acceso no autorizado a la aplicación o a sistemas relacionados",
+    "termsPage.section6.item5":
+      "Distribuir la aplicación por una red para su uso simultáneo en múltiples dispositivos sin autorización",
+    "termsPage.section7.heading": "7. Exención de garantías",
+    "termsPage.section7.body":
+      'Mortigen se proporciona "tal cual" y "según disponibilidad", sin garantías de ningún tipo, ya sean expresas o implícitas. No garantizamos que la aplicación esté libre de interrupciones, errores o componentes dañinos.',
+    "termsPage.section8.heading": "8. Limitación de responsabilidad",
+    "termsPage.section8.body":
+      "En la máxima medida permitida por la legislación aplicable, Luis Enrique Ruiz no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos derivados del uso de la aplicación o de la imposibilidad de usarla.",
+    "termsPage.section9.heading": "9. Servicios de terceros",
+    "termsPage.section9.body":
+      "La aplicación integra servicios de terceros, incluidos Google AdMob, Google Play Billing y Compras In-App de Apple. Tu uso de estos servicios está sujeto a sus respectivos términos y políticas de privacidad. No somos responsables de las prácticas de estos terceros.",
+    "termsPage.section10.heading": "10. Terminación",
+    "termsPage.section10.body":
+      "Nos reservamos el derecho de modificar o descontinuar la aplicación en cualquier momento y sin previo aviso. No seremos responsables ante ti ni ante terceros por ninguna modificación, suspensión o interrupción de la aplicación.",
+    "termsPage.section11.heading": "11. Legislación aplicable",
+    "termsPage.section11.body":
+      "Estos Términos se regirán e interpretarán conforme a las leyes de España. Cualquier disputa derivada de estos Términos o del uso de la aplicación quedará sometida a la jurisdicción de los tribunales de Bilbao, España, sin perjuicio de las normas imperativas de protección al consumidor que puedan aplicarse en tu país de residencia.",
+    "termsPage.section12.heading": "12. Cambios en estos términos",
+    "termsPage.section12.body":
+      "Podemos revisar estos Términos en cualquier momento. Los cambios entrarán en vigor cuando se publiquen. El uso continuado de la aplicación tras dichos cambios implica la aceptación de la versión revisada.",
+    "termsPage.section13.heading": "13. Contacto",
+    "termsPage.section13.intro":
+      "Si tienes preguntas sobre estos Términos, puedes contactarnos en:",
+    "termsPage.section13.item1": "Email: koldoru92@gmail.com",
+    "termsPage.section13.item2": "Desarrollador: Luis Enrique Ruiz",
+    "termsPage.section13.item3":
+      "Dirección: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
+
+    "privacyPage.meta.title": "Mortigen | Política de Privacidad",
+    "privacyPage.meta.description":
+      "Política de Privacidad de Mortigen, que cubre almacenamiento local, servicios opcionales de plataforma y derechos del usuario.",
+    "privacyPage.brandTagline": "Política de Privacidad",
+    "privacyPage.nav.fullPolicy": "Política completa",
+    "privacyPage.backLink": "Volver a la landing",
+    "privacyPage.hero.pill": "Dossier legal",
+    "privacyPage.hero.heading": "Política de Privacidad",
+    "privacyPage.hero.intro":
+      "Esta política explica cómo Mortigen trata los datos, qué servicios de plataforma pueden procesarlos y cómo contactar con el desarrollador.",
+    "privacyPage.quick.overview": "Resumen",
+    "privacyPage.quick.fullPolicy": "Política completa",
+    "privacyPage.overview.kicker": "De un vistazo",
+    "privacyPage.overview.item1":
+      "Mortigen guarda la progresión localmente en el dispositivo.",
+    "privacyPage.overview.item2":
+      "No se describe creación de cuenta ni backend.",
+    "privacyPage.overview.item3":
+      "Ningún SDK de analítica forma parte de la configuración actual.",
+    "privacyPage.overview.item4":
+      "Los anuncios recompensados y los pagos se delegan en servicios de plataforma.",
+    "privacyPage.lastUpdated":
+      "<strong>Última actualización:</strong> 14 de abril de 2026",
+    "privacyPage.intro":
+      'Luis Enrique Ruiz ("nosotros" o "nuestro") desarrolló Mortigen como una aplicación móvil gratuita. Esta Política de Privacidad explica qué información recoge la aplicación, cómo se utiliza y qué opciones tienes al respecto.',
+    "privacyPage.collect.heading": "Información que recogemos",
+    "privacyPage.local.heading": "Datos almacenados localmente",
+    "privacyPage.local.body1":
+      "Mortigen guarda el progreso de la partida en tu dispositivo mediante almacenamiento local (SharedPreferences). Estos datos nunca salen de tu dispositivo e incluyen:",
+    "privacyPage.local.item1":
+      "Puntuación máxima, mejor tiempo de supervivencia y nivel más alto alcanzado",
+    "privacyPage.local.item2":
+      "Total de enemigos eliminados, congelados y electrocutados entre sesiones",
+    "privacyPage.local.item3": "Estados de desbloqueo de trofeos",
+    "privacyPage.local.item4":
+      "Ajustes de audio como música y efectos o su volumen",
+    "privacyPage.local.item5":
+      "Propiedad de compras de la tienda y traje cosmético seleccionado",
+    "privacyPage.local.item6": "Indicador de primer inicio",
+    "privacyPage.local.body2":
+      "Estos datos no se transmiten a ningún servidor y nosotros no podemos acceder a ellos.",
+    "privacyPage.thirdParty.heading": "Servicios de terceros",
+    "privacyPage.thirdParty.intro":
+      "Mortigen integra servicios de plataforma de terceros que pueden recoger datos de forma independiente:",
+    "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> para anuncios de vídeo recompensados en Android e iOS. AdMob puede recoger identificadores de dispositivo, dirección IP y datos de interacción con anuncios. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.`,
+    "privacyPage.thirdParty.item2":
+      "<strong>Google Play Billing / Compras In-App de Apple</strong> para compras opcionales dentro de la aplicación. Las transacciones las gestionan Google o Apple. No recogemos ni almacenamos información de pago.",
+    "privacyPage.thirdParty.item3":
+      "<strong>Google Play Services / Apple Game Services</strong> como parte del funcionamiento habitual de Android e iOS.",
+    "privacyPage.noCollect.heading": "Datos que no recogemos",
+    "privacyPage.noCollect.item1":
+      "No recogemos información personal como nombre o email.",
+    "privacyPage.noCollect.item2": "No recogemos datos de ubicación.",
+    "privacyPage.noCollect.item3":
+      "No requerimos creación de cuenta ni inicio de sesión.",
+    "privacyPage.noCollect.item4":
+      "No usamos SDKs de analítica en la configuración documentada actual.",
+    "privacyPage.noCollect.item5":
+      "No mantenemos un servidor ni backend para los datos de juego.",
+    "privacyPage.gdpr.heading": "Tus derechos según el RGPD",
+    "privacyPage.gdpr.intro":
+      "Como usuario en el Espacio Económico Europeo, tienes derechos conforme al Reglamento General de Protección de Datos (UE) 2016/679:",
+    "privacyPage.gdpr.item1":
+      "<strong>Derecho de acceso.</strong> Como Mortigen almacena los datos localmente y no tiene un sistema de perfiles del lado del servidor, no existe un conjunto remoto de datos de juego que podamos recuperar.",
+    "privacyPage.gdpr.item2":
+      "<strong>Derecho de supresión.</strong> Puedes borrar los datos del juego limpiando los datos de la aplicación en los ajustes de tu dispositivo o desinstalando la app.",
+    "privacyPage.gdpr.item3":
+      "<strong>Derecho de limitación y oposición.</strong> Puedes desactivar la publicidad personalizada desde los ajustes de personalización de anuncios de tu dispositivo.",
+    "privacyPage.gdpr.item4": `<strong>Derecho a presentar una reclamación.</strong> Puedes presentar una reclamación ante la Agencia Española de Protección de Datos en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> o ante otra autoridad de control de la UE.`,
+    "privacyPage.gdpr.body":
+      "Cuando servicios de terceros como Google AdMob tratan datos personales, la base jurídica es el consentimiento, que puedes retirar desde los ajustes de tu dispositivo.",
+    "privacyPage.children.heading": "Privacidad de menores",
+    "privacyPage.children.body":
+      "Mortigen no está dirigido a menores de 13 años, o 16 en determinados estados miembros de la UE. No recopilamos conscientemente información personal de menores. Si crees que un menor ha proporcionado información personal a través de un servicio integrado de terceros, contáctanos para que podamos actuar en consecuencia.",
+    "privacyPage.retention.heading": "Conservación y eliminación de datos",
+    "privacyPage.retention.intro":
+      "Todos los datos del juego se almacenan localmente en tu dispositivo. Puedes eliminarlos en cualquier momento de estas formas:",
+    "privacyPage.retention.item1":
+      "Borrando los datos de la aplicación desde los ajustes de tu dispositivo",
+    "privacyPage.retention.item2": "Desinstalando la aplicación",
+    "privacyPage.retention.body":
+      "No tenemos datos de juego en el servidor que borrar porque no los recogemos ni almacenamos de forma remota.",
+    "privacyPage.changes.heading": "Cambios en esta política",
+    "privacyPage.changes.body":
+      'Podemos actualizar esta Política de Privacidad periódicamente. Los cambios se reflejarán actualizando la fecha de "Última actualización" indicada arriba. El uso continuado de la aplicación tras esos cambios implica la aceptación de la política revisada.',
+    "privacyPage.contact.heading": "Contacto",
+    "privacyPage.contact.intro":
+      "Si tienes preguntas sobre esta Política de Privacidad, puedes contactarnos en:",
+    "privacyPage.contact.item1": "Email: koldoru92@gmail.com",
+    "privacyPage.contact.item2": "Desarrollador: Luis Enrique Ruiz",
+    "privacyPage.contact.item3":
+      "Dirección: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia"
   }
 };
 
@@ -349,47 +711,67 @@ const STORAGE_KEY = "mortigenLandingLang";
 const SUPPORTED_LANGS = ["en", "es"];
 
 function translatePage(lang) {
-  const copy = HOME_TRANSLATIONS[lang] || HOME_TRANSLATIONS.en;
+  const copy = {
+    ...(HOME_TRANSLATIONS.en || {}),
+    ...(LEGAL_TRANSLATIONS.en || {}),
+    ...(HOME_TRANSLATIONS[lang] || {}),
+    ...(LEGAL_TRANSLATIONS[lang] || {})
+  };
+
+  const hasCopy = (key) => Object.prototype.hasOwnProperty.call(copy, key);
 
   document.documentElement.lang = lang;
-  document.title = copy["meta.title"];
-
-  const description = document.getElementById("page-description");
-  if (description) {
-    description.setAttribute("content", copy["meta.description"]);
-  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
-    if (copy[key]) {
+    if (hasCopy(key)) {
       element.textContent = copy[key];
+    }
+  });
+
+  const titleElement = document.querySelector("title[data-i18n]");
+  if (titleElement) {
+    document.title = titleElement.textContent;
+  }
+
+  document.querySelectorAll("[data-i18n-html]").forEach((element) => {
+    const key = element.dataset.i18nHtml;
+    if (hasCopy(key)) {
+      element.innerHTML = copy[key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-content]").forEach((element) => {
+    const key = element.dataset.i18nContent;
+    if (hasCopy(key)) {
+      element.setAttribute("content", copy[key]);
     }
   });
 
   document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
     const key = element.dataset.i18nAlt;
-    if (copy[key]) {
+    if (hasCopy(key)) {
       element.setAttribute("alt", copy[key]);
     }
   });
 
   document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
     const key = element.dataset.i18nAriaLabel;
-    if (copy[key]) {
+    if (hasCopy(key)) {
       element.setAttribute("aria-label", copy[key]);
     }
   });
 
   document.querySelectorAll("[data-i18n-href]").forEach((element) => {
     const key = element.dataset.i18nHref;
-    if (copy[key]) {
+    if (hasCopy(key)) {
       element.setAttribute("href", copy[key]);
     }
   });
 
   document.querySelectorAll("[data-i18n-placeholder-label]").forEach((element) => {
     const key = element.dataset.i18nPlaceholderLabel;
-    if (copy[key]) {
+    if (hasCopy(key)) {
       element.setAttribute("data-placeholder-label", copy[key]);
     }
   });

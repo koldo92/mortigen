@@ -323,7 +323,6 @@ h3 {
 }
 
 .hero-actions,
-.legal-links,
 .footer-links,
 .quick-links,
 .feature-meta {
@@ -626,7 +625,7 @@ h3 {
 
 .gallery-main img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
@@ -646,14 +645,6 @@ h3 {
 figcaption {
   color: var(--muted);
   line-height: 1.5;
-}
-
-.cta-panel {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1.5rem;
-  align-items: center;
-  padding: 1.8rem;
 }
 
 .footer {
@@ -742,46 +733,6 @@ figcaption {
   padding-left: 1.2rem;
 }
 
-.legal-alert {
-  margin-top: 0;
-  padding: 1rem 1.05rem;
-  border: 1px solid rgba(255, 214, 106, 0.22);
-  border-radius: var(--radius-sm);
-  background: rgba(255, 214, 106, 0.07);
-  color: #ffe8a6;
-}
-
-.placeholder-token {
-  display: inline-block;
-  padding: 0.12rem 0.38rem;
-  border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--amber);
-  font-family: var(--font-mono);
-  font-size: 0.92em;
-}
-
-.translation {
-  margin-top: 2.25rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 1.4rem;
-}
-
-.translation summary {
-  cursor: pointer;
-  color: var(--toxic);
-  font-family: var(--font-display);
-  list-style: none;
-}
-
-.translation summary::-webkit-details-marker {
-  display: none;
-}
-
-.translation[open] summary {
-  margin-bottom: 1rem;
-}
-
 .quick-links a {
   padding: 0.5rem 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -837,7 +788,6 @@ figcaption {
 @media (max-width: 1100px) {
   .hero-grid,
   .legal-shell,
-  .cta-panel,
   .gallery-layout {
     grid-template-columns: 1fr;
   }
@@ -944,7 +894,6 @@ figcaption {
   }
 
   .hero-actions,
-  .legal-links,
   .topbar-tools {
     flex-direction: column;
     align-items: stretch;
