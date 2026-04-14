@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mortigen | Survive the outbreak</title>
+    <meta
+      id="page-description"
+      name="description"
+      content="Mortigen is a top-down survival shooter about surviving a biopharma outbreak with weapons built from the infected."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mortigen | Survive the outbreak">
+    <meta property="og:description" content="Mortigen is a top-down survival shooter about surviving a biopharma outbreak with weapons built from the infected.">
+    <meta property="og:url" content="https://koldo92.github.io/mortigen/">
+    <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/night.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mortigen | Survive the outbreak">
+    <meta name="twitter:description" content="Mortigen is a top-down survival shooter about surviving a biopharma outbreak with weapons built from the infected.">
+    <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/night.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script src="assets/js/home-i18n.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a
+          class="brand"
+          href="index.html"
+          data-i18n-aria-label="brand.homeAria"
+          aria-label="Mortigen home"
+        >
+          <span class="brand-mark">
+            <img
+              class="pixel-art"
+              src="assets/images/app_icon.png"
+              alt=""
+              aria-hidden="true"
+            >
+          </span>
+          <span class="brand-copy">
+            <strong>Mortigen</strong>
+            <small data-i18n="brand.tagline">Biopharma outbreak survival shooter</small>
+          </span>
+        </a>
+
+        <div class="topbar-tools">
+          <nav
+            class="nav"
+            data-i18n-aria-label="nav.primaryAria"
+            aria-label="Primary"
+          >
+            <a href="#story" data-i18n="nav.story">Story</a>
+            <a href="#features" data-i18n="nav.features">Builds</a>
+            <a href="#privacy-summary" data-i18n="nav.privacy">Privacy</a>
+            <a
+              href="terms.html"
+              data-i18n="nav.terms"
+              data-i18n-href="links.terms"
+            >
+              Terms
+            </a>
+            <a
+              href="privacy.html"
+              data-i18n="nav.privacyPolicy"
+              data-i18n-href="links.privacy"
+            >
+              Privacy Policy
+            </a>
+          </nav>
+
+          <div
+            class="lang-switch"
+            role="group"
+            data-i18n-aria-label="lang.aria"
+            aria-label="Language selector"
+          >
+            <button
+              class="lang-switch__button"
+              type="button"
+              data-lang-toggle="en"
+              aria-pressed="true"
+            >
+              EN
+            </button>
+            <button
+              class="lang-switch__button"
+              type="button"
+              data-lang-toggle="es"
+              aria-pressed="false"
+            >
+              ES
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="pill pulse" data-i18n="hero.status">
+              Containment report // Annex sealed
+            </span>
+
+            <div class="logo-wrap">
+              <img
+                class="pixel-art"
+                src="assets/images/mortigen_title.png"
+                alt="Mortigen"
+              >
+            </div>
+
+            <h1 data-i18n="hero.heading">
+              Survive the outbreak. Weaponize the dead. Get out alive.
+            </h1>
+            <p class="section-copy" data-i18n="hero.body">
+              Mortigen is a top-down survival shooter where you play Dr. Luisen,
+              a biochemist trapped inside the Mortigen Biopharma annex after a
+              rushed anti-aging tonic beta release turned the facility into an
+              outbreak zone. You move, the guns fire, and every run is shaped by
+              upgrade choices, crowd control, and how long you can stay alive.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="button primary placeholder"
+                href="https://apps.apple.com/app/idYOUR_APP_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.appStore"
+                data-i18n-placeholder-label="ui.placeholderBadge"
+                data-placeholder-label="placeholder"
+              >
+                App Store
+              </a>
+              <a
+                class="button secondary placeholder"
+                href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.googlePlay"
+                data-i18n-placeholder-label="ui.placeholderBadge"
+                data-placeholder-label="placeholder"
+              >
+                Google Play
+              </a>
+              <a class="button ghost" href="#features" data-i18n="hero.exploreCta">
+                Explore the build system
+              </a>
+            </div>
+
+            <p class="hero-note" data-i18n="hero.note">
+              Store buttons currently use placeholder URLs so the page can be
+              published before the live listings exist.
+            </p>
+
+            <div class="stat-row">
+              <article class="stat-card panel">
+                <strong>14</strong>
+                <span data-i18n="hero.statUpgrades">bio-upgrades across 4 rarity tiers</span>
+              </article>
+              <article class="stat-card panel">
+                <strong>16</strong>
+                <span data-i18n="hero.statTrophies">
+                  trophies tied to persistent progression
+                </span>
+              </article>
+              <article class="stat-card panel">
+                <strong>3</strong>
+                <span data-i18n="hero.statBosses">featured boss encounters hunting each run</span>
+              </article>
+              <article class="stat-card panel">
+                <strong>EN / ES</strong>
+                <span data-i18n="hero.statControls">
+                  full localization plus touch, keyboard, and gamepad
+                </span>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="hero-scene"
+            data-i18n-aria-label="hero.sceneAria"
+            aria-label="Mortigen artwork montage"
+          >
+            <article class="hero-card portrait-card panel">
+              <div class="portrait-copy">
+                <span class="eyebrow" data-i18n="hero.portraitEyebrow">
+                  Last confirmed survivor
+                </span>
+                <h2>Dr. Luisen</h2>
+                <p data-i18n="hero.portraitBody">
+                  Lead biochemist. Last human still moving inside the annex. Every
+                  weapon in his hands was manufactured from infected tissue,
+                  volatile serum residue, and whatever emergency chemistry still
+                  works.
+                </p>
+              </div>
+              <div class="portrait-frame">
+                <img
+                  src="assets/images/professor_drawing_5.png"
+                  data-i18n-alt="hero.portraitAlt"
+                  alt="Illustration of Dr. Luisen"
+                >
+              </div>
+            </article>
+
+            <div class="hero-scene-row">
+              <article class="floating-card scene-card scene-card-a panel">
+                <img
+                  class="pixel-art scene-thumb"
+                  src="assets/images/night.png"
+                  data-i18n-alt="hero.cardAAlt"
+                  alt="Outbreak city artwork"
+                >
+                <div>
+                  <span class="eyebrow" data-i18n="hero.cardAEyebrow">Quarantine perimeter</span>
+                  <h3 data-i18n="hero.cardATitle">The dead are still moving</h3>
+                  <p data-i18n="hero.cardABody">
+                    Horde pacing ramps from calm intervals into crowd surges and
+                    boss arrivals while the soundtrack gains more intensity.
+                  </p>
+                </div>
+              </article>
+
+              <article class="floating-card scene-card scene-card-b panel">
+                <img
+                  class="pixel-art scene-thumb"
+                  src="assets/images/biopharma.png"
+                  data-i18n-alt="hero.cardBAlt"
+                  alt="Mortigen Biopharma building"
+                >
+                <div>
+                  <span class="eyebrow" data-i18n="hero.cardBEyebrow">Location</span>
+                  <h3 data-i18n="hero.cardBTitle">Mortigen Biopharma annex</h3>
+                  <p data-i18n="hero.cardBBody">
+                    Every run rebuilds the lab into a fresh procedural layout with
+                    rooms, corridors, loops, and breakable lab clutter.
+                  </p>
+                </div>
+              </article>
+
+              <article class="floating-card scene-card scene-card-c panel">
+                <img
+                  class="pixel-art scene-thumb"
+                  src="assets/images/serum.png"
+                  data-i18n-alt="hero.cardCAlt"
+                  alt="Prototype serum bottle"
+                >
+                <div>
+                  <span class="eyebrow" data-i18n="hero.cardCEyebrow">Catalyst</span>
+                  <h3 data-i18n="hero.cardCTitle">A rushed anti-aging tonic</h3>
+                  <p data-i18n="hero.cardCBody">
+                    Investor pressure pushed the beta release before neural
+                    stability was understood. By dawn, the annex was overrun.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container">
+          <div class="metrics-grid">
+            <article class="metric-block panel">
+              <span class="metric-value">192 x 192</span>
+              <span class="metric-label" data-i18n="metrics.grid">Tile grid lab layout</span>
+            </article>
+            <article class="metric-block panel">
+              <span class="metric-value">6</span>
+              <span class="metric-label" data-i18n="metrics.slots">Upgrade slots per run</span>
+            </article>
+            <article class="metric-block panel">
+              <span class="metric-value">7</span>
+              <span class="metric-label" data-i18n="metrics.enemies">
+                Enemy types including bosses
+              </span>
+            </article>
+            <article class="metric-block panel">
+              <span class="metric-value">1x</span>
+              <span class="metric-label" data-i18n="metrics.reviveCount">
+                Emergency revive per run
+              </span>
+            </article>
+            <article class="metric-block panel">
+              <span class="metric-value">65%</span>
+              <span class="metric-label" data-i18n="metrics.reviveHealth">
+                Health restored on revive
+              </span>
+            </article>
+            <article class="metric-block panel">
+              <span class="metric-value" data-i18n="metrics.localDataValue">No backend</span>
+              <span class="metric-label" data-i18n="metrics.localData">
+                Progress stays on-device
+              </span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="story">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-kicker" data-i18n="story.kicker">Recovered chronology</span>
+            <h2 data-i18n="story.heading">
+              The outbreak was not an accident. It was a deadline.
+            </h2>
+            <p class="section-copy" data-i18n="story.body">
+              Mortigen Biopharma sold a promise of youth without decay. Behind
+              the branding sat a private annex, investor pressure, and a beta
+              release that detonated into a mass-casualty event.
+            </p>
+          </header>
+
+          <div class="story-grid">
+            <article class="story-card panel">
+              <img
+                class="pixel-art"
+                src="assets/images/biopharma.png"
+                data-i18n-alt="story.card1Alt"
+                alt="Mortigen Biopharma annex"
+              >
+              <div>
+                <span class="eyebrow" data-i18n="story.phase1">Phase 01</span>
+                <h3 data-i18n="story.card1Title">Private longevity lab</h3>
+                <p data-i18n="story.card1Body">
+                  Mortigen Biopharma built an isolated annex for regenerative
+                  medicine and accelerated tissue repair, aiming to sell youth as
+                  a premium product.
+                </p>
+              </div>
+            </article>
+
+            <article class="story-card panel">
+              <img
+                class="pixel-art"
+                src="assets/images/news.png"
+                data-i18n-alt="story.card2Alt"
+                alt="Recovered outbreak report artwork"
+              >
+              <div>
+                <span class="eyebrow" data-i18n="story.phase2">Phase 02</span>
+                <h3 data-i18n="story.card2Title">Investor pressure beats caution</h3>
+                <p data-i18n="story.card2Body">
+                  Staff objections were ignored. The restricted human beta went
+                  live before long-term neural stability was understood, and the
+                  facility fell within minutes.
+                </p>
+              </div>
+            </article>
+
+            <article class="story-card panel">
+              <img
+                class="pixel-art"
+                src="assets/images/serum.png"
+                data-i18n-alt="story.card3Alt"
+                alt="Prototype serum bottle"
+              >
+              <div>
+                <span class="eyebrow" data-i18n="story.phase3">Phase 03</span>
+                <h3 data-i18n="story.card3Title">Last survivor inside</h3>
+                <p data-i18n="story.card3Body">
+                  Dr. Luisen sealed himself inside an armed research block,
+                  weaponized whatever remained in the lab, and stayed alive long
+                  enough to expose what Mortigen released.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-kicker" data-i18n="features.kicker">Built from the dead</span>
+            <h2 data-i18n="features.heading">
+              Every run becomes a lab experiment under pressure.
+            </h2>
+            <p class="section-copy" data-i18n="features.body">
+              The build system ships with 14 upgrades, weighted level-up choices,
+              trophy-gated rarities, and synergies that mutate the run as the
+              horde closes in.
+            </p>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card panel">
+              <div class="icon-wrap">
+                <img
+                  class="pixel-art"
+                  src="assets/images/electricity.png"
+                  data-i18n-alt="features.card1Alt"
+                  alt="Electric pistol icon"
+                >
+              </div>
+              <div>
+                <span class="eyebrow" data-i18n="features.card1Eyebrow">Storm Serum</span>
+                <h3 data-i18n="features.card1Title">Chain electricity through packed targets</h3>
+                <p data-i18n="features.card1Body">
+                  Shock damage jumps into nearby enemies and turns every crowded
+                  corridor into a conductive kill zone.
+                </p>
+                <div class="feature-meta">
+                  <span data-i18n="features.card1Meta1">Elemental rider</span>
+                  <span data-i18n="features.card1Meta2">Up to 4 nearby targets</span>
+                  <span data-i18n="features.card1Meta3">Scales with stacks</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="feature-card panel">
+              <div class="icon-wrap">
+                <img
+                  class="pixel-art"
+                  src="assets/images/ice.png"
+                  data-i18n-alt="features.card2Alt"
+                  alt="Frozen rounds icon"
+                >
+              </div>
+              <div>
+                <span class="eyebrow" data-i18n="features.card2Eyebrow">Frost Plague</span>
+                <h3 data-i18n="features.card2Title">Slow the rush before it reaches you</h3>
+                <p data-i18n="features.card2Body">
+                  Freeze effects bleed into other combat systems, buying space
+                  against faster waves and making crowd control matter.
+                </p>
+                <div class="feature-meta">
+                  <span data-i18n="features.card2Meta1">Movement suppression</span>
+                  <span data-i18n="features.card2Meta2">Synergizes with grenades</span>
+                  <span data-i18n="features.card2Meta3">Synergizes with wind cannon</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="feature-card panel">
+              <div class="icon-wrap">
+                <img
+                  class="pixel-art"
+                  src="assets/images/belt.png"
+                  data-i18n-alt="features.card3Alt"
+                  alt="Aura power-up icon"
+                >
+              </div>
+              <div>
+                <span class="eyebrow" data-i18n="features.card3Eyebrow">Rot Halo</span>
+                <h3 data-i18n="features.card3Title">
+                  Carry a damage aura that melts anything too close
+                </h3>
+                <p data-i18n="features.card3Body">
+                  Rot Halo wraps the player in a persistent aura, turning tight
+                  spacing into free damage and making panic kiting much more
+                  forgiving once the horde closes around you.
+                </p>
+                <div class="feature-meta">
+                  <span data-i18n="features.card3Meta1">Persistent radius</span>
+                  <span data-i18n="features.card3Meta2">Close-range DPS</span>
+                  <span data-i18n="features.card3Meta3">Legendary pressure valve</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="feature-card panel">
+              <div class="icon-wrap">
+                <img
+                  class="pixel-art"
+                  src="assets/images/windcannon.png"
+                  data-i18n-alt="features.card4Alt"
+                  alt="Wind cannon icon"
+                >
+              </div>
+              <div>
+                <span class="eyebrow" data-i18n="features.card4Eyebrow">Wind Cannon</span>
+                <h3 data-i18n="features.card4Title">
+                  Blow a corridor open without firing a bullet
+                </h3>
+                <p data-i18n="features.card4Body">
+                  Wind Cannon fires a timed frontal cone that deals no direct
+                  damage, but throws enemies back hard and becomes much nastier
+                  once frost and electricity synergies are online.
+                </p>
+                <div class="feature-meta">
+                  <span data-i18n="features.card4Meta1">Timed cone blast</span>
+                  <span data-i18n="features.card4Meta2">Pure crowd control</span>
+                  <span data-i18n="features.card4Meta3">Elemental synergy carrier</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-kicker" data-i18n="threat.kicker">Threat index</span>
+            <h2 data-i18n="threat.heading">
+              The annex keeps changing, but the pressure only goes up.
+            </h2>
+            <p class="section-copy" data-i18n="threat.body">
+              Standard enemies unlock in stages, hordes spike the tempo, and the
+              late-game stops feeling like survival and starts feeling like a
+              hunt.
+            </p>
+          </header>
+
+          <div class="threat-grid">
+            <article class="threat-card panel">
+              <span class="eyebrow" data-i18n="threat.card1Eyebrow">Swarm pressure</span>
+              <h3 data-i18n="threat.card1Title">Walkers and fast infected</h3>
+              <p data-i18n="threat.card1Body">
+                The run opens with direct pursuers, then layers in zigzag and
+                fast enemies to punish lazy routes and weak spacing.
+              </p>
+              <ul>
+                <li data-i18n="threat.card1Item1">
+                  Predictive spawning pushes enemies into your path.
+                </li>
+                <li data-i18n="threat.card1Item2">
+                  Regular spawn intervals shrink as waves advance.
+                </li>
+                <li data-i18n="threat.card1Item3">
+                  Full unlock mix reaches four standard enemy behaviors.
+                </li>
+              </ul>
+            </article>
+
+            <article class="threat-card panel">
+              <span class="eyebrow" data-i18n="threat.card2Eyebrow">Spacing breakers</span>
+              <h3 data-i18n="threat.card2Title">Chargers, brutes, and boss bodies</h3>
+              <p data-i18n="threat.card2Body">
+                Heavy enemies absorb punishment, ignore knockback in key fights,
+                and punish hesitation with wind-up charge patterns.
+              </p>
+              <ul>
+                <li data-i18n="threat.card2Item1">
+                  Horde phases add calm windows, then burst spikes.
+                </li>
+                <li data-i18n="threat.card2Item2">
+                  Boss slots can stack into multi-boss late runs.
+                </li>
+                <li data-i18n="threat.card2Item3">
+                  Vehicle runs change how you survive contact pressure.
+                </li>
+              </ul>
+            </article>
+
+            <article class="threat-card panel">
+              <span class="eyebrow" data-i18n="threat.card3Eyebrow">Final hunter</span>
+              <h3 data-i18n="threat.card3Title">The Dark Professor still thinks</h3>
+              <p data-i18n="threat.card3Body">
+                The architect of Mortigen's fatal beta release retains his
+                intellect, kites at range, and wants Luisen dead before the truth
+                escapes the annex.
+              </p>
+              <ul>
+                <li data-i18n="threat.card3Item1">Ranged boss with preferred spacing behavior.</li>
+                <li data-i18n="threat.card3Item2">Former superior turned active antagonist.</li>
+                <li data-i18n="threat.card3Item3">Not a shambling infected, a deliberate threat.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-kicker" data-i18n="gallery.kicker">Inside the annex</span>
+            <h2 data-i18n="gallery.heading">
+              Moody biotech fiction with arcade survival momentum.
+            </h2>
+            <p class="section-copy" data-i18n="gallery.body">
+              Mortigen mixes pixel outbreak imagery, procedural labs, layered
+              music intensity, and a clean auto-fire loop that keeps the focus on
+              movement and positioning.
+            </p>
+          </header>
+
+          <div class="gallery-layout">
+            <figure class="panel gallery-main">
+              <img
+                class="pixel-art"
+                src="assets/images/night.png"
+                data-i18n-alt="gallery.mainAlt"
+                alt="Pixel art city outbreak scene"
+              >
+              <figcaption data-i18n="gallery.mainCaption">
+                Escalating horde pressure outside the sealed annex.
+              </figcaption>
+            </figure>
+
+            <div class="gallery-stack">
+              <figure class="panel">
+                <img
+                  class="pixel-art"
+                  src="assets/images/biopharma.png"
+                  data-i18n-alt="gallery.secondAlt"
+                  alt="Mortigen Biopharma exterior"
+                >
+                <figcaption data-i18n="gallery.secondCaption">
+                  The public face of Mortigen Biopharma.
+                </figcaption>
+              </figure>
+
+              <figure class="panel">
+                <img
+                  class="pixel-art"
+                  src="assets/images/news.png"
+                  data-i18n-alt="gallery.thirdAlt"
+                  alt="Recovered emergency report artwork"
+                >
+                <figcaption data-i18n="gallery.thirdCaption">
+                  Recovered records point back to the beta release.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <figure class="panel gallery-wide">
+            <img
+              class="pixel-art"
+              src="assets/images/defeated.png"
+              data-i18n-alt="gallery.wideAlt"
+              alt="Defeated Dr. Luisen sprite artwork"
+            >
+            <figcaption data-i18n="gallery.wideCaption">
+              One mistake can still end the run, unless you spend the single
+              emergency revive.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="privacy-summary">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-kicker" data-i18n="privacy.kicker">Privacy by design</span>
+            <h2 data-i18n="privacy.heading">
+              No account wall. No backend. No hidden analytics layer.
+            </h2>
+            <p class="section-copy" data-i18n="privacy.body">
+              Mortigen stores gameplay progression locally on-device. Rewarded ads
+              and payments are handled through platform services only when the
+              player explicitly uses them.
+            </p>
+          </header>
+
+          <div class="privacy-grid">
+            <article class="privacy-card panel">
+              <h3 data-i18n="privacy.card1Title">Local-only progression</h3>
+              <p data-i18n="privacy.card1Body">
+                High score, survival time, trophies, audio settings, store
+                ownership, and selected outfit are persisted locally with no
+                server-side profile.
+              </p>
+            </article>
+
+            <article class="privacy-card panel">
+              <h3 data-i18n="privacy.card2Title">No account or analytics SDK</h3>
+              <p data-i18n="privacy.card2Body">
+                No login, no email capture, no location collection, and no remote
+                analytics system are described in the current product
+                architecture.
+              </p>
+            </article>
+
+            <article class="privacy-card panel">
+              <h3 data-i18n="privacy.card3Title">Optional platform monetization</h3>
+              <p data-i18n="privacy.card3Body">
+                Rewarded revive ads use Google AdMob on mobile, and purchases are
+                processed through Google Play Billing or Apple In-App Purchase.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="cta-panel panel">
+            <div>
+              <span class="section-kicker" data-i18n="cta.kicker">Release surface</span>
+              <h2 data-i18n="cta.heading">
+                Publish the landing page now, swap the store URLs later.
+              </h2>
+              <p class="section-copy" data-i18n="cta.body">
+                The site is static, self-contained, and already linked to terms
+                and privacy pages. Replace the App Store and Google Play
+                placeholders when your listings go live.
+              </p>
+            </div>
+
+            <div class="legal-links">
+              <a
+                class="button primary placeholder"
+                href="https://apps.apple.com/app/idYOUR_APP_ID"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.appStore"
+                data-i18n-placeholder-label="ui.placeholderBadge"
+                data-placeholder-label="placeholder"
+              >
+                App Store
+              </a>
+              <a
+                class="button secondary placeholder"
+                href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="hero.googlePlay"
+                data-i18n-placeholder-label="ui.placeholderBadge"
+                data-placeholder-label="placeholder"
+              >
+                Google Play
+              </a>
+              <a
+                class="button ghost"
+                href="terms.html"
+                data-i18n="nav.terms"
+                data-i18n-href="links.terms"
+              >
+                Terms
+              </a>
+              <a
+                class="button ghost"
+                href="privacy.html"
+                data-i18n="nav.privacyPolicy"
+                data-i18n-href="links.privacy"
+              >
+                Privacy Policy
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <strong data-i18n="footer.title">Mortigen landing site</strong>
+          <p data-i18n="footer.body">
+            Static promotional page based on the current game design, store copy,
+            and legal guidance in this repository.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a
+            href="terms.html"
+            data-i18n="footer.terms"
+            data-i18n-href="links.terms"
+          >
+            Terms and Conditions
+          </a>
+          <a
+            href="privacy.html"
+            data-i18n="footer.privacy"
+            data-i18n-href="links.privacy"
+          >
+            Privacy Policy
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
