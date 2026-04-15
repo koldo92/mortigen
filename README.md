@@ -1,19 +1,13 @@
 # Mortigen Landing Site
 
-This folder is a self-contained static marketing site for Mortigen.
+This project is a self-contained static marketing site for Mortigen the videogame.
 
 ## Files
 
 - `index.html`: landing page
 - `privacy.html`: privacy policy
 - `terms.html`: terms and conditions
-- `assets/`: copied art, font, and shared stylesheet
-
-## Before Publishing
-
-- Replace the placeholder App Store URL in `index.html`
-- Replace the placeholder Google Play URL in `index.html`
-- Replace `[DEVELOPER_NAME]`, `[CONTACT_EMAIL]`, `[DEVELOPER_ADDRESS]`, and `[CITY]` in the legal pages
+- `assets/`: art, font, and shared stylesheet
 
 ## Asset Rights
 

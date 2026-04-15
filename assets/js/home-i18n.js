@@ -9,6 +9,7 @@ const HOME_TRANSLATIONS = {
     "nav.home": "Home",
     "nav.story": "Story",
     "nav.features": "Builds",
+    "nav.gallery": "Gallery",
     "nav.privacy": "Privacy",
     "nav.terms": "Terms and Conditions",
     "nav.privacyPolicy": "Privacy Policy",
@@ -22,8 +23,8 @@ const HOME_TRANSLATIONS = {
     "hero.status": "Containment report // Annex sealed",
     "hero.heading": "Survive the outbreak. Weaponize the dead. Get out alive.",
     "hero.body":
-      "Mortigen is a top-down survival shooter where you play Dr. Luisen, a biochemist trapped inside the Mortigen Biopharma annex after a rushed anti-aging tonic beta release turned the facility into an outbreak zone. You move, the guns fire, and every run is shaped by upgrade choices, crowd control, and how long you can stay alive.",
-    "hero.exploreCta": "Explore the build system",
+      "Fight through Mortigen Biopharma as Dr. Luisen, build weapons from infected matter, and stay alive as the outbreak escalates.",
+    "hero.exploreCta": "See features",
     "hero.note":
       "Store buttons currently use placeholder URLs so the page can be published before the live listings exist.",
     "hero.statUpgrades": "bio-upgrades across 4 rarity tiers",
@@ -33,7 +34,7 @@ const HOME_TRANSLATIONS = {
     "hero.sceneAria": "Mortigen artwork montage",
     "hero.portraitEyebrow": "Last confirmed survivor",
     "hero.portraitBody":
-      "Lead biochemist. Last human still moving inside the annex. Every weapon in his hands was manufactured from infected tissue, volatile serum residue, and whatever emergency chemistry still works.",
+      "Lead biochemist. Last human still moving inside the annex. Every run turns the lab's failed research into new weapons.",
     "hero.portraitAlt": "Illustration of Dr. Luisen",
     "hero.cardAAlt": "Outbreak city artwork",
     "hero.cardAEyebrow": "Quarantine perimeter",
@@ -79,12 +80,12 @@ const HOME_TRANSLATIONS = {
     "features.kicker": "Built from the dead",
     "features.heading": "Every run becomes a lab experiment under pressure.",
     "features.body":
-      "The build system ships with 14 upgrades, weighted level-up choices, trophy-gated rarities, and synergies that mutate the run as the horde closes in.",
+      "Four standout upgrades show how each run can shift from crowd control to raw survival pressure.",
     "features.card1Alt": "Electric pistol icon",
     "features.card1Eyebrow": "Storm Serum",
     "features.card1Title": "Chain electricity through packed targets",
     "features.card1Body":
-      "Shock damage jumps into nearby enemies and turns every crowded corridor into a conductive kill zone.",
+      "Shock arcs through nearby enemies and clears packed corridors.",
     "features.card1Meta1": "Elemental rider",
     "features.card1Meta2": "Up to 4 nearby targets",
     "features.card1Meta3": "Scales with stacks",
@@ -92,7 +93,7 @@ const HOME_TRANSLATIONS = {
     "features.card2Eyebrow": "Frost Plague",
     "features.card2Title": "Slow the rush before it reaches you",
     "features.card2Body":
-      "Freeze effects bleed into other combat systems, buying space against faster waves and making crowd control matter.",
+      "Freeze effects buy space and make faster waves manageable.",
     "features.card2Meta1": "Movement suppression",
     "features.card2Meta2": "Synergizes with grenades",
     "features.card2Meta3": "Synergizes with wind cannon",
@@ -100,7 +101,7 @@ const HOME_TRANSLATIONS = {
     "features.card3Eyebrow": "Rot Halo",
     "features.card3Title": "Carry a damage aura that melts anything too close",
     "features.card3Body":
-      "Rot Halo wraps the player in a persistent aura, turning tight spacing into free damage and making panic kiting much more forgiving once the horde closes around you.",
+      "A persistent aura punishes close enemies and stabilizes tight fights.",
     "features.card3Meta1": "Persistent radius",
     "features.card3Meta2": "Close-range DPS",
     "features.card3Meta3": "Legendary pressure valve",
@@ -108,7 +109,7 @@ const HOME_TRANSLATIONS = {
     "features.card4Eyebrow": "Wind Cannon",
     "features.card4Title": "Blow a corridor open without firing a bullet",
     "features.card4Body":
-      "Wind Cannon fires a timed frontal cone that deals no direct damage, but throws enemies back hard and becomes much nastier once frost and electricity synergies are online.",
+      "A timed cone blast creates breathing room and sets up other synergies.",
     "features.card4Meta1": "Timed cone blast",
     "features.card4Meta2": "Pure crowd control",
     "features.card4Meta3": "Elemental synergy carrier",
@@ -153,19 +154,20 @@ const HOME_TRANSLATIONS = {
     "privacy.kicker": "Privacy by design",
     "privacy.heading": "No account wall. No backend. No hidden analytics layer.",
     "privacy.body":
-      "Mortigen stores gameplay progression locally on-device. Rewarded ads and payments are handled through platform services only when the player explicitly uses them.",
+      "Progress stays on-device, and ads or purchases only appear through platform services when the player chooses them.",
     "privacy.card1Title": "Local-only progression",
     "privacy.card1Body":
-      "High score, survival time, trophies, audio settings, store ownership, and selected outfit are persisted locally with no server-side profile.",
+      "Saves, trophies, settings, and cosmetics stay on the device.",
     "privacy.card2Title": "No account or analytics SDK",
     "privacy.card2Body":
-      "No login, no email capture, no location collection, and no remote analytics system are described in the current product architecture.",
+      "No login, no email capture, and no remote analytics layer.",
     "privacy.card3Title": "Optional platform monetization",
     "privacy.card3Body":
-      "Rewarded revive ads use Google AdMob on mobile, and purchases are processed through Google Play Billing or Apple In-App Purchase.",
-    "footer.title": "Mortigen",
+      "Rewarded ads and purchases run through Google Play or Apple platform services.",
+    "footer.title": "Mortigen™",
     "footer.body":
       "A survival shooter about a biopharma outbreak, coming to mobile.",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. All rights reserved.",
     "footer.terms": "Terms and Conditions",
     "footer.privacy": "Privacy Policy"
   },
@@ -179,6 +181,7 @@ const HOME_TRANSLATIONS = {
     "nav.home": "Inicio",
     "nav.story": "Historia",
     "nav.features": "Mejoras",
+    "nav.gallery": "Galería",
     "nav.privacy": "Privacidad",
     "nav.terms": "Términos y Condiciones",
     "nav.privacyPolicy": "Política de Privacidad",
@@ -192,8 +195,8 @@ const HOME_TRANSLATIONS = {
     "hero.status": "Informe de contención // Anexo sellado",
     "hero.heading": "Sobrevive al brote. Inventa nuevas armas. Sal con vida.",
     "hero.body":
-      "Mortigen es un shooter de supervivencia cenital en el que encarnas al Dr. Luisen, un bioquímico atrapado dentro del anexo de Mortigen Biopharma después de que una beta precipitada de un tónico antiedad convirtiera la instalación en una zona de brote. Tú te mueves, las armas disparan y cada partida la definen las mejoras, el control de multitudes y cuánto tiempo logras seguir con vida.",
-    "hero.exploreCta": "Explorar sistema de mejoras",
+      "Lucha dentro de Mortigen Biopharma como el Dr. Luisen, fabrica armas con materia infectada y sigue con vida mientras el brote empeora.",
+    "hero.exploreCta": "Ver mejoras",
     "hero.note":
       "Los botones de las tiendas usan URLs provisionales para que la página pueda publicarse antes de que existan las fichas definitivas.",
     "hero.statUpgrades": "biomejoras en 4 niveles de rareza",
@@ -203,7 +206,7 @@ const HOME_TRANSLATIONS = {
     "hero.sceneAria": "Montaje de ilustraciones de Mortigen",
     "hero.portraitEyebrow": "Último superviviente confirmado",
     "hero.portraitBody":
-      "Bioquímico principal. Último humano que sigue moviéndose dentro del anexo. Cada arma que lleva fue fabricada con tejido infectado, residuos séricos volátiles y toda la química de emergencia que aún funciona.",
+      "Bioquímico principal. Último humano que sigue moviéndose dentro del anexo. Cada partida convierte la investigación fallida del laboratorio en nuevas armas.",
     "hero.portraitAlt": "Ilustración del Dr. Luisen",
     "hero.cardAAlt": "Ilustración de la ciudad en brote",
     "hero.cardAEyebrow": "Perímetro de cuarentena",
@@ -249,12 +252,12 @@ const HOME_TRANSLATIONS = {
     "features.kicker": "Fabricado con los muertos",
     "features.heading": "Cada partida se convierte en un experimento de laboratorio bajo presión.",
     "features.body":
-      "El sistema de builds incluye 14 mejoras, elecciones ponderadas al subir de nivel, rarezas bloqueadas por trofeos y sinergias que mutan la partida cuando la horda se te echa encima.",
+      "Cuatro mejoras destacadas muestran cómo cada partida puede pasar del control de masas a la supervivencia pura.",
     "features.card1Alt": "Icono de suero eléctrico",
     "features.card1Eyebrow": "Suero Tormenta",
     "features.card1Title": "Encadena electricidad entre objetivos agrupados",
     "features.card1Body":
-      "El daño eléctrico salta a enemigos cercanos y convierte cada pasillo saturado en una zona de muerte conductiva.",
+      "La descarga salta a enemigos cercanos y limpia pasillos saturados.",
     "features.card1Meta1": "Atributo elemental",
     "features.card1Meta2": "Hasta 4 objetivos cercanos",
     "features.card1Meta3": "Escala con acumulaciones",
@@ -262,7 +265,7 @@ const HOME_TRANSLATIONS = {
     "features.card2Eyebrow": "Plaga Gélida",
     "features.card2Title": "Frena la avalancha antes de que te alcance",
     "features.card2Body":
-      "La congelación se propaga a otros sistemas de combate, compra espacio contra oleadas más rápidas y hace que el control de masas importe de verdad.",
+      "La congelación compra espacio y hace manejables las oleadas más rápidas.",
     "features.card2Meta1": "Supresión de movimiento",
     "features.card2Meta2": "Combina con granadas",
     "features.card2Meta3": "Combina con el cañón de viento",
@@ -270,7 +273,7 @@ const HOME_TRANSLATIONS = {
     "features.card3Eyebrow": "Halo Pútrido",
     "features.card3Title": "Lleva un aura de daño que derrite todo lo que se acerque",
     "features.card3Body":
-      "Halo Pútrido envuelve al jugador en un aura persistente, convierte el contacto cercano en daño gratis y te permite reposicionarte con mucha más facilidad cuando la horda te rodea.",
+      "Un aura persistente castiga a los enemigos cercanos y estabiliza los combates cerrados.",
     "features.card3Meta1": "Radio persistente",
     "features.card3Meta2": "DPS a corta distancia",
     "features.card3Meta3": "Válvula legendaria de presión",
@@ -278,7 +281,7 @@ const HOME_TRANSLATIONS = {
     "features.card4Eyebrow": "Cañón de Viento",
     "features.card4Title": "Abre un pasillo sin disparar una bala",
     "features.card4Body":
-      "Cañón de Viento lanza un cono frontal temporizado que no hace daño directo, pero empuja con fuerza y se vuelve mucho más peligroso cuando activas sinergias de hielo y electricidad.",
+      "Un cono temporizado crea espacio y prepara otras sinergias.",
     "features.card4Meta1": "Cono temporizado",
     "features.card4Meta2": "Control de masas puro",
     "features.card4Meta3": "Portador de sinergias elementales",
@@ -323,19 +326,20 @@ const HOME_TRANSLATIONS = {
     "privacy.kicker": "Privacidad desde el diseño",
     "privacy.heading": "Sin muro de cuentas. Sin backend. Sin analítica oculta.",
     "privacy.body":
-      "Mortigen guarda la progresión localmente en el dispositivo. Los anuncios recompensados y los pagos se delegan en servicios de plataforma solo cuando el jugador decide usarlos.",
+      "La progresión se queda en el dispositivo y los anuncios o pagos solo aparecen mediante servicios de plataforma cuando el jugador los usa.",
     "privacy.card1Title": "Progresión solo local",
     "privacy.card1Body":
-      "La puntuación máxima, el tiempo, los trofeos, los ajustes de audio, la propiedad de la tienda y el atuendo seleccionado se persisten localmente sin perfil del lado del servidor.",
+      "Partidas, trofeos, ajustes y cosméticos se quedan en el dispositivo.",
     "privacy.card2Title": "Sin cuenta ni SDK de analítica",
     "privacy.card2Body":
-      "No hay login, captura de email, recogida de ubicación ni sistema remoto de analítica descrito en la arquitectura actual del producto.",
+      "No hay login, captura de email ni capa remota de analítica.",
     "privacy.card3Title": "Monetización opcional de plataforma",
     "privacy.card3Body":
-      "Los anuncios de reanimación usan Google AdMob en móvil y las compras se procesan mediante Google Play Billing o Apple In-App Purchase.",
-    "footer.title": "Mortigen",
+      "Los anuncios recompensados y las compras pasan por servicios de Google Play o Apple.",
+    "footer.title": "Mortigen™",
     "footer.body":
       "Un shooter de supervivencia sobre un brote biotecnológico, próximamente en móvil.",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. Todos los derechos reservados.",
     "footer.terms": "Términos y Condiciones",
     "footer.privacy": "Política de Privacidad"
   }
