@@ -429,7 +429,7 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.section13.heading": "13. Contact",
     "termsPage.section13.intro":
       "If you have questions about these Terms, contact us at:",
-    "termsPage.section13.item1": "Email: koldoru92@gmail.com",
+    "termsPage.section13.item1": "Email: drluisen@icloud.com",
     "termsPage.section13.item2": "Developer: Luis Enrique Ruiz",
     "termsPage.section13.item3":
       "Address: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
@@ -520,7 +520,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.contact.heading": "Contact",
     "privacyPage.contact.intro":
       "If you have questions about this Privacy Policy, contact us at:",
-    "privacyPage.contact.item1": "Email: koldoru92@gmail.com",
+    "privacyPage.contact.item1": "Email: drluisen@icloud.com",
     "privacyPage.contact.item2": "Developer: Luis Enrique Ruiz",
     "privacyPage.contact.item3":
       "Address: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia"
@@ -611,7 +611,7 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.section13.heading": "13. Contacto",
     "termsPage.section13.intro":
       "Si tienes preguntas sobre estos Términos, puedes contactarnos en:",
-    "termsPage.section13.item1": "Email: koldoru92@gmail.com",
+    "termsPage.section13.item1": "Email: drluisen@icloud.com",
     "termsPage.section13.item2": "Desarrollador: Luis Enrique Ruiz",
     "termsPage.section13.item3":
       "Dirección: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
@@ -704,7 +704,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.contact.heading": "Contacto",
     "privacyPage.contact.intro":
       "Si tienes preguntas sobre esta Política de Privacidad, puedes contactarnos en:",
-    "privacyPage.contact.item1": "Email: koldoru92@gmail.com",
+    "privacyPage.contact.item1": "Email: drluisen@icloud.com",
     "privacyPage.contact.item2": "Desarrollador: Luis Enrique Ruiz",
     "privacyPage.contact.item3":
       "Dirección: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia"
