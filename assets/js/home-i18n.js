@@ -371,7 +371,7 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.overview.item3":
       "Rewarded ads are optional and tied to revive flow only.",
     "termsPage.overview.item4": "Spanish law governs these terms.",
-    "termsPage.lastUpdated": "<strong>Last updated:</strong> April 14, 2026",
+    "termsPage.lastUpdated": "<strong>Last updated:</strong> April 16, 2026",
     "termsPage.readCarefully":
       "Please read these Terms and Conditions carefully before using Mortigen.",
     "termsPage.section1.heading": "1. Acceptance of Terms",
@@ -454,7 +454,7 @@ const LEGAL_TRANSLATIONS = {
       "No analytics SDK is part of the current setup.",
     "privacyPage.overview.item4":
       "Rewarded ads and payments are delegated to platform services.",
-    "privacyPage.lastUpdated": "<strong>Last updated:</strong> April 14, 2026",
+    "privacyPage.lastUpdated": "<strong>Last updated:</strong> April 16, 2026",
     "privacyPage.intro":
       'Luis Enrique Ruiz ("we", "us", or "our") built Mortigen as a free-to-play mobile application. This Privacy Policy explains what information the app collects, how it is used, and your choices regarding that information.',
     "privacyPage.collect.heading": "Information We Collect",
@@ -476,15 +476,16 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.thirdParty.heading": "Third-Party Services",
     "privacyPage.thirdParty.intro":
       "Mortigen integrates third-party platform services that may collect data independently:",
-    "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> for rewarded video ads on Android and iOS. AdMob may collect device identifiers, IP address, and ad interaction data. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.`,
+    "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> for rewarded video ads on Android and iOS. Depending on your region and privacy choices, Google may serve personalized, non-personalized, or limited ads. The Google Mobile Ads SDK may collect or access data such as IP address and general location inferred from IP, device and advertising identifiers, ads viewed, ad interactions such as taps or rewarded video views, and diagnostic or performance data such as app launch time, hang rate, or energy usage. Where applicable, those choices are handled through Google's consent flow and the in-app privacy options. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.`,
     "privacyPage.thirdParty.item2":
-      "<strong>Google Play Billing / Apple In-App Purchase</strong> for optional in-app purchases. Purchase transactions are handled by Google or Apple. We do not collect or store payment information.",
+      "<strong>Google Play Billing / Apple In-App Purchase</strong> for optional in-app purchases. Purchase transactions are handled by Google or Apple, which may process billing details, purchase history, and transaction identifiers under their own policies. We do not receive or store payment card details.",
     "privacyPage.thirdParty.item3":
       "<strong>Google Play Services / Apple Game Services</strong> as part of normal platform operation on Android and iOS.",
     "privacyPage.noCollect.heading": "Data We Do Not Collect",
     "privacyPage.noCollect.item1":
       "We do not collect personal information such as name or email.",
-    "privacyPage.noCollect.item2": "We do not collect location data.",
+    "privacyPage.noCollect.item2":
+      "We do not directly collect precise location data. AdMob may infer general location from IP address as described above.",
     "privacyPage.noCollect.item3":
       "We do not require account creation or login.",
     "privacyPage.noCollect.item4":
@@ -499,10 +500,10 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.gdpr.item2":
       "<strong>Right to erasure.</strong> You can delete game data by clearing app data in your device settings or uninstalling the app.",
     "privacyPage.gdpr.item3":
-      "<strong>Right to restriction and objection.</strong> You can opt out of personalized advertising through your device's ad personalization settings.",
+      "<strong>Right to restriction and objection.</strong> You can review or change your advertising choices through the in-app privacy options, and you may also use your device's ad personalization settings where available.",
     "privacyPage.gdpr.item4": `<strong>Right to lodge a complaint.</strong> You may file a complaint with the Spanish Data Protection Agency at <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> or with another EU supervisory authority.`,
     "privacyPage.gdpr.body":
-      "Where third-party services such as Google AdMob process personal data, the legal basis is consent, which you can withdraw through your device settings.",
+      "Where third-party services such as Google AdMob process personal data, the legal basis is consent where required. You can review or withdraw applicable advertising choices through the in-app privacy options.",
     "privacyPage.children.heading": "Children's Privacy",
     "privacyPage.children.body":
       "Mortigen is not directed at children under 13, or 16 in certain EU member states. We do not knowingly collect personal information from children. If you believe a child has provided personal information through an integrated third-party service, contact us so we can take appropriate action.",
@@ -514,6 +515,9 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.retention.item2": "Uninstalling the app",
     "privacyPage.retention.body":
       "We have no server-side gameplay data to delete because we do not collect or store it remotely.",
+    "privacyPage.security.heading": "Data Security",
+    "privacyPage.security.body":
+      "Mortigen keeps gameplay progress locally on your device. When integrated third-party services such as Google AdMob, Google Play Billing, or Apple In-App Purchase transmit data, they use encrypted transport supported by the platform, such as HTTPS/TLS. We do not operate our own gameplay servers or maintain remote player databases.",
     "privacyPage.changes.heading": "Changes to This Policy",
     "privacyPage.changes.body":
       'We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the revised policy.',
@@ -552,7 +556,7 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.overview.item4":
       "Estos términos se rigen por la legislación española.",
     "termsPage.lastUpdated":
-      "<strong>Última actualización:</strong> 14 de abril de 2026",
+      "<strong>Última actualización:</strong> 16 de abril de 2026",
     "termsPage.readCarefully":
       "Lee atentamente estos Términos y Condiciones antes de usar Mortigen.",
     "termsPage.section1.heading": "1. Aceptación de los términos",
@@ -638,7 +642,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.overview.item4":
       "Los anuncios recompensados y los pagos se delegan en servicios de plataforma.",
     "privacyPage.lastUpdated":
-      "<strong>Última actualización:</strong> 14 de abril de 2026",
+      "<strong>Última actualización:</strong> 16 de abril de 2026",
     "privacyPage.intro":
       'Luis Enrique Ruiz ("nosotros" o "nuestro") desarrolló Mortigen como una aplicación móvil gratuita. Esta Política de Privacidad explica qué información recoge la aplicación, cómo se utiliza y qué opciones tienes al respecto.',
     "privacyPage.collect.heading": "Información que recogemos",
@@ -660,15 +664,16 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.thirdParty.heading": "Servicios de terceros",
     "privacyPage.thirdParty.intro":
       "Mortigen integra servicios de plataforma de terceros que pueden recoger datos de forma independiente:",
-    "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> para anuncios de vídeo recompensados en Android e iOS. AdMob puede recoger identificadores de dispositivo, dirección IP y datos de interacción con anuncios. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.`,
+    "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> para anuncios de vídeo recompensados en Android e iOS. Según tu región y tus elecciones de privacidad, Google puede servir anuncios personalizados, no personalizados o limitados. El SDK de Google Mobile Ads puede recoger o acceder a datos como la dirección IP y la ubicación general inferida a partir de esa IP, identificadores de dispositivo y publicitarios, anuncios vistos, interacciones publicitarias como toques o visualizaciones de vídeo recompensado, y datos de diagnóstico o rendimiento como el tiempo de arranque, la tasa de bloqueos o el uso de energía. Cuando corresponda, esas elecciones se gestionan mediante el flujo de consentimiento de Google y las opciones de privacidad dentro de la app. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.`,
     "privacyPage.thirdParty.item2":
-      "<strong>Google Play Billing / Compras In-App de Apple</strong> para compras opcionales dentro de la aplicación. Las transacciones las gestionan Google o Apple. No recogemos ni almacenamos información de pago.",
+      "<strong>Google Play Billing / Compras In-App de Apple</strong> para compras opcionales dentro de la aplicación. Las transacciones las gestionan Google o Apple, que pueden tratar datos de facturación, historial de compras e identificadores de transacción conforme a sus propias políticas. No recibimos ni almacenamos datos de tarjeta.",
     "privacyPage.thirdParty.item3":
       "<strong>Google Play Services / Apple Game Services</strong> como parte del funcionamiento habitual de Android e iOS.",
     "privacyPage.noCollect.heading": "Datos que no recogemos",
     "privacyPage.noCollect.item1":
       "No recogemos información personal como nombre o email.",
-    "privacyPage.noCollect.item2": "No recogemos datos de ubicación.",
+    "privacyPage.noCollect.item2":
+      "No recogemos directamente datos de ubicación precisa. AdMob puede inferir una ubicación general a partir de la dirección IP tal y como se indica arriba.",
     "privacyPage.noCollect.item3":
       "No requerimos creación de cuenta ni inicio de sesión.",
     "privacyPage.noCollect.item4":
@@ -683,10 +688,10 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.gdpr.item2":
       "<strong>Derecho de supresión.</strong> Puedes borrar los datos del juego limpiando los datos de la aplicación en los ajustes de tu dispositivo o desinstalando la app.",
     "privacyPage.gdpr.item3":
-      "<strong>Derecho de limitación y oposición.</strong> Puedes desactivar la publicidad personalizada desde los ajustes de personalización de anuncios de tu dispositivo.",
+      "<strong>Derecho de limitación y oposición.</strong> Puedes revisar o cambiar tus elecciones publicitarias desde las opciones de privacidad dentro de la app, y también usar los ajustes de personalización de anuncios de tu dispositivo cuando estén disponibles.",
     "privacyPage.gdpr.item4": `<strong>Derecho a presentar una reclamación.</strong> Puedes presentar una reclamación ante la Agencia Española de Protección de Datos en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> o ante otra autoridad de control de la UE.`,
     "privacyPage.gdpr.body":
-      "Cuando servicios de terceros como Google AdMob tratan datos personales, la base jurídica es el consentimiento, que puedes retirar desde los ajustes de tu dispositivo.",
+      "Cuando servicios de terceros como Google AdMob tratan datos personales, la base jurídica es el consentimiento cuando sea exigible. Puedes revisar o retirar las elecciones publicitarias aplicables desde las opciones de privacidad dentro de la app.",
     "privacyPage.children.heading": "Privacidad de menores",
     "privacyPage.children.body":
       "Mortigen no está dirigido a menores de 13 años, o 16 en determinados estados miembros de la UE. No recopilamos conscientemente información personal de menores. Si crees que un menor ha proporcionado información personal a través de un servicio integrado de terceros, contáctanos para que podamos actuar en consecuencia.",
@@ -698,6 +703,9 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.retention.item2": "Desinstalando la aplicación",
     "privacyPage.retention.body":
       "No tenemos datos de juego en el servidor que borrar porque no los recogemos ni almacenamos de forma remota.",
+    "privacyPage.security.heading": "Seguridad de los datos",
+    "privacyPage.security.body":
+      "Mortigen conserva el progreso de la partida localmente en tu dispositivo. Cuando servicios integrados de terceros como Google AdMob, Google Play Billing o Compras In-App de Apple transmiten datos, utilizan transporte cifrado soportado por la plataforma, como HTTPS/TLS. No operamos servidores propios de juego ni mantenemos bases de datos remotas de jugadores.",
     "privacyPage.changes.heading": "Cambios en esta política",
     "privacyPage.changes.body":
       'Podemos actualizar esta Política de Privacidad periódicamente. Los cambios se reflejarán actualizando la fecha de "Última actualización" indicada arriba. El uso continuado de la aplicación tras esos cambios implica la aceptación de la política revisada.',
