@@ -166,7 +166,7 @@ const HOME_TRANSLATIONS = {
       "Rewarded ads and purchases run through Google Play or Apple platform services.",
     "footer.title": "Mortigen™",
     "footer.body":
-      "A survival shooter about a biopharma outbreak, coming to mobile.",
+      "A survival shooter about a biopharma outbreak, available in Android & iOS.",
     "footer.copyright": "© 2026 Luis Enrique Ruiz. All rights reserved.",
     "footer.terms": "Terms and Conditions",
     "footer.privacy": "Privacy Policy"
@@ -338,7 +338,7 @@ const HOME_TRANSLATIONS = {
       "Los anuncios recompensados y las compras pasan por servicios de Google Play o Apple.",
     "footer.title": "Mortigen™",
     "footer.body":
-      "Un shooter de supervivencia sobre un brote biotecnológico, próximamente en móvil.",
+      "Un shooter de supervivencia sobre un brote biotecnológico, disponible en Android & iOS.",
     "footer.copyright": "© 2026 Luis Enrique Ruiz. Todos los derechos reservados.",
     "footer.terms": "Términos y Condiciones",
     "footer.privacy": "Política de Privacidad"
