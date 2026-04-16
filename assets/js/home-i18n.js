@@ -360,14 +360,14 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.hero.pill": "Legal dossier",
     "termsPage.hero.heading": "Terms and Conditions",
     "termsPage.hero.intro":
-      "These terms explain the rules for using Mortigen, including optional purchases, rewarded ads, and governing law.",
+      "These terms explain the rules for using Mortigen, including any optional in-app purchases, rewarded ads, and governing law.",
     "termsPage.quick.overview": "Overview",
     "termsPage.quick.fullTerms": "Full terms",
     "termsPage.overview.kicker": "At a glance",
     "termsPage.overview.item1":
       "Single-player mobile survival shooter for Android and iOS.",
     "termsPage.overview.item2":
-      "Optional purchases: No-Ads Revive and Crimson Protocol outfit.",
+      "Optional in-app purchases may be offered through platform stores.",
     "termsPage.overview.item3":
       "Rewarded ads are optional and tied to revive flow only.",
     "termsPage.overview.item4": "Spanish law governs these terms.",
@@ -379,16 +379,16 @@ const LEGAL_TRANSLATIONS = {
       "By downloading, installing, or using Mortigen, you agree to be bound by these Terms and Conditions. If you do not agree, do not use the app.",
     "termsPage.section2.heading": "2. Description of Service",
     "termsPage.section2.body":
-      "Mortigen is a single-player top-down survival shooter game available on Android and iOS. The game includes optional in-app purchases and rewarded advertisements.",
+      "Mortigen is a single-player top-down survival shooter game available on Android and iOS. The game may include optional in-app purchases and rewarded advertisements.",
     "termsPage.section3.heading": "3. In-App Purchases",
     "termsPage.section3.intro":
-      "Mortigen offers the following optional in-app purchases:",
+      "Mortigen may offer optional in-app purchases within the app. Availability, pricing, and included features may vary by platform, region, and release.",
     "termsPage.section3.item1":
-      "<strong>No-Ads Revive</strong> (EUR 1.99) for instant revive once per run",
+      "Optional in-app purchases may be offered through your platform billing service.",
     "termsPage.section3.item2":
-      "<strong>Crimson Protocol Outfit</strong> (EUR 0.99) as a permanent cosmetic outfit",
+      "Availability, pricing, and included features may vary by platform, region, and release.",
     "termsPage.section3.body":
-      "All purchases are processed through Google Play or the Apple App Store. Prices may vary by region and are subject to change. Purchases are final and non-refundable except as required by applicable law or the refund policies of Google Play or Apple.",
+      "All purchases are processed through Google Play or the Apple App Store when available. Prices may vary by region and are subject to change. Purchases are final and non-refundable except as required by applicable law or the refund policies of Google Play or Apple.",
     "termsPage.section4.heading": "4. Rewarded Advertisements",
     "termsPage.section4.body":
       "Mortigen displays rewarded video advertisements through Google AdMob. These ads are optional and only shown when you choose to watch one in exchange for an in-game revive. No ads are shown during normal gameplay.",
@@ -416,7 +416,7 @@ const LEGAL_TRANSLATIONS = {
       "To the maximum extent permitted by applicable law, Luis Enrique Ruiz shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the app.",
     "termsPage.section9.heading": "9. Third-Party Services",
     "termsPage.section9.body":
-      "The app integrates third-party services including Google AdMob, Google Play Billing, and Apple In-App Purchase. Your use of these services is subject to their respective terms and privacy policies. We are not responsible for the practices of these third parties.",
+      "The app integrates third-party services including Google AdMob and, where available, Google Play Billing and Apple In-App Purchase. Your use of these services is subject to their respective terms and privacy policies. We are not responsible for the practices of these third parties.",
     "termsPage.section10.heading": "10. Termination",
     "termsPage.section10.body":
       "We reserve the right to modify or discontinue the app at any time without notice. We are not liable to you or any third party for any modification, suspension, or discontinuation of the app.",
@@ -453,7 +453,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.overview.item3":
       "No analytics SDK is part of the current setup.",
     "privacyPage.overview.item4":
-      "Rewarded ads and payments are delegated to platform services.",
+      "Rewarded ads and any optional purchases are handled by platform services.",
     "privacyPage.lastUpdated": "<strong>Last updated:</strong> April 16, 2026",
     "privacyPage.intro":
       'Luis Enrique Ruiz ("we", "us", or "our") built Mortigen as a free-to-play mobile application. This Privacy Policy explains what information the app collects, how it is used, and your choices regarding that information.',
@@ -469,7 +469,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.local.item4":
       "Audio settings such as music and SFX state or volume",
     "privacyPage.local.item5":
-      "Store purchase ownership and selected cosmetic outfit",
+      "In-app purchase entitlements or related preferences, if those features are available",
     "privacyPage.local.item6": "First-launch flag",
     "privacyPage.local.body2":
       "This data is not transmitted to any server and cannot be accessed by us.",
@@ -478,7 +478,7 @@ const LEGAL_TRANSLATIONS = {
       "Mortigen integrates third-party platform services that may collect data independently:",
     "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> for rewarded video ads on Android and iOS. Depending on your region and privacy choices, Google may serve personalized, non-personalized, or limited ads. The Google Mobile Ads SDK may collect or access data such as IP address and general location inferred from IP, device and advertising identifiers, ads viewed, ad interactions such as taps or rewarded video views, and diagnostic or performance data such as app launch time, hang rate, or energy usage. Where applicable, those choices are handled through Google's consent flow and the in-app privacy options. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>.`,
     "privacyPage.thirdParty.item2":
-      "<strong>Google Play Billing / Apple In-App Purchase</strong> for optional in-app purchases. Purchase transactions are handled by Google or Apple, which may process billing details, purchase history, and transaction identifiers under their own policies. We do not receive or store payment card details.",
+      "<strong>Google Play Billing / Apple In-App Purchase</strong> may be used if optional in-app purchases are offered in the app. Purchase transactions are handled by Google or Apple, which may process billing details, purchase history, and transaction identifiers under their own policies. We do not receive or store payment card details.",
     "privacyPage.thirdParty.item3":
       "<strong>Google Play Services / Apple Game Services</strong> as part of normal platform operation on Android and iOS.",
     "privacyPage.noCollect.heading": "Data We Do Not Collect",
@@ -517,7 +517,7 @@ const LEGAL_TRANSLATIONS = {
       "We have no server-side gameplay data to delete because we do not collect or store it remotely.",
     "privacyPage.security.heading": "Data Security",
     "privacyPage.security.body":
-      "Mortigen keeps gameplay progress locally on your device. When integrated third-party services such as Google AdMob, Google Play Billing, or Apple In-App Purchase transmit data, they use encrypted transport supported by the platform, such as HTTPS/TLS. We do not operate our own gameplay servers or maintain remote player databases.",
+      "Mortigen keeps gameplay progress locally on your device. When integrated third-party services such as Google AdMob and, where enabled, Google Play Billing or Apple In-App Purchase transmit data, they use encrypted transport supported by the platform, such as HTTPS/TLS. We do not operate our own gameplay servers or maintain remote player databases.",
     "privacyPage.changes.heading": "Changes to This Policy",
     "privacyPage.changes.body":
       'We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the revised policy.',
@@ -543,14 +543,14 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.hero.pill": "Dossier legal",
     "termsPage.hero.heading": "Términos y Condiciones",
     "termsPage.hero.intro":
-      "Estos términos explican las reglas de uso de Mortigen, incluidas las compras opcionales, los anuncios recompensados y la legislación aplicable.",
+      "Estos términos explican las reglas de uso de Mortigen, incluidas las posibles compras opcionales dentro de la aplicación, los anuncios recompensados y la legislación aplicable.",
     "termsPage.quick.overview": "Resumen",
     "termsPage.quick.fullTerms": "Términos completos",
     "termsPage.overview.kicker": "De un vistazo",
     "termsPage.overview.item1":
       "Juego de supervivencia cenital para móvil, para un jugador, en Android e iOS.",
     "termsPage.overview.item2":
-      "Compras opcionales: Reanimación sin anuncios y traje Protocolo Carmesí.",
+      "La aplicación puede ofrecer compras opcionales dentro de la aplicación a través de las tiendas de plataforma.",
     "termsPage.overview.item3":
       "Los anuncios recompensados son opcionales y solo intervienen en la reanimación.",
     "termsPage.overview.item4":
@@ -564,16 +564,16 @@ const LEGAL_TRANSLATIONS = {
       "Al descargar, instalar o usar Mortigen, aceptas quedar vinculado por estos Términos y Condiciones. Si no estás de acuerdo, no uses la aplicación.",
     "termsPage.section2.heading": "2. Descripción del servicio",
     "termsPage.section2.body":
-      "Mortigen es un juego de supervivencia cenital para un jugador disponible en Android e iOS. El juego incluye compras opcionales dentro de la aplicación y anuncios recompensados.",
+      "Mortigen es un juego de supervivencia cenital para un jugador disponible en Android e iOS. El juego puede incluir compras opcionales dentro de la aplicación y anuncios recompensados.",
     "termsPage.section3.heading": "3. Compras dentro de la aplicación",
     "termsPage.section3.intro":
-      "Mortigen ofrece las siguientes compras opcionales dentro de la aplicación:",
+      "Mortigen puede ofrecer compras opcionales dentro de la aplicación. La disponibilidad, los precios y las funcionalidades incluidas pueden variar según la plataforma, la región y la versión.",
     "termsPage.section3.item1":
-      "<strong>Reanimación sin anuncios</strong> (EUR 1.99) para una reanimación instantánea una vez por partida",
+      "Las compras opcionales dentro de la aplicación pueden ofrecerse a través del sistema de facturación de tu plataforma.",
     "termsPage.section3.item2":
-      "<strong>Traje Protocolo Carmesí</strong> (EUR 0.99) como aspecto cosmético permanente",
+      "La disponibilidad, los precios y las funcionalidades incluidas pueden variar según la plataforma, la región y la versión.",
     "termsPage.section3.body":
-      "Todas las compras se procesan a través de Google Play o la App Store de Apple. Los precios pueden variar según la región y están sujetos a cambios. Las compras son finales y no reembolsables salvo que la legislación aplicable o las políticas de reembolso de Google Play o Apple dispongan lo contrario.",
+      "Todas las compras se procesan a través de Google Play o la App Store de Apple cuando estén disponibles. Los precios pueden variar según la región y están sujetos a cambios. Las compras son finales y no reembolsables salvo que la legislación aplicable o las políticas de reembolso de Google Play o Apple dispongan lo contrario.",
     "termsPage.section4.heading": "4. Anuncios recompensados",
     "termsPage.section4.body":
       "Mortigen muestra anuncios de vídeo recompensados a través de Google AdMob. Estos anuncios son opcionales y solo se muestran cuando eliges ver uno a cambio de una reanimación dentro del juego. No se muestran anuncios durante la jugabilidad normal.",
@@ -602,7 +602,7 @@ const LEGAL_TRANSLATIONS = {
       "En la máxima medida permitida por la legislación aplicable, Luis Enrique Ruiz no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos derivados del uso de la aplicación o de la imposibilidad de usarla.",
     "termsPage.section9.heading": "9. Servicios de terceros",
     "termsPage.section9.body":
-      "La aplicación integra servicios de terceros, incluidos Google AdMob, Google Play Billing y Compras In-App de Apple. Tu uso de estos servicios está sujeto a sus respectivos términos y políticas de privacidad. No somos responsables de las prácticas de estos terceros.",
+      "La aplicación integra servicios de terceros, incluidos Google AdMob y, cuando estén disponibles, Google Play Billing y Compras In-App de Apple. Tu uso de estos servicios está sujeto a sus respectivos términos y políticas de privacidad. No somos responsables de las prácticas de estos terceros.",
     "termsPage.section10.heading": "10. Terminación",
     "termsPage.section10.body":
       "Nos reservamos el derecho de modificar o descontinuar la aplicación en cualquier momento y sin previo aviso. No seremos responsables ante ti ni ante terceros por ninguna modificación, suspensión o interrupción de la aplicación.",
@@ -640,7 +640,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.overview.item3":
       "Ningún SDK de analítica forma parte de la configuración actual.",
     "privacyPage.overview.item4":
-      "Los anuncios recompensados y los pagos se delegan en servicios de plataforma.",
+      "Los anuncios recompensados y cualquier compra opcional se gestionan mediante servicios de plataforma.",
     "privacyPage.lastUpdated":
       "<strong>Última actualización:</strong> 16 de abril de 2026",
     "privacyPage.intro":
@@ -657,7 +657,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.local.item4":
       "Ajustes de audio como música y efectos o su volumen",
     "privacyPage.local.item5":
-      "Propiedad de compras de la tienda y traje cosmético seleccionado",
+      "Derechos o preferencias relacionados con compras dentro de la aplicación, si esas funciones están disponibles",
     "privacyPage.local.item6": "Indicador de primer inicio",
     "privacyPage.local.body2":
       "Estos datos no se transmiten a ningún servidor y nosotros no podemos acceder a ellos.",
@@ -666,7 +666,7 @@ const LEGAL_TRANSLATIONS = {
       "Mortigen integra servicios de plataforma de terceros que pueden recoger datos de forma independiente:",
     "privacyPage.thirdParty.item1": `<strong>Google AdMob</strong> para anuncios de vídeo recompensados en Android e iOS. Según tu región y tus elecciones de privacidad, Google puede servir anuncios personalizados, no personalizados o limitados. El SDK de Google Mobile Ads puede recoger o acceder a datos como la dirección IP y la ubicación general inferida a partir de esa IP, identificadores de dispositivo y publicitarios, anuncios vistos, interacciones publicitarias como toques o visualizaciones de vídeo recompensado, y datos de diagnóstico o rendimiento como el tiempo de arranque, la tasa de bloqueos o el uso de energía. Cuando corresponda, esas elecciones se gestionan mediante el flujo de consentimiento de Google y las opciones de privacidad dentro de la app. Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.`,
     "privacyPage.thirdParty.item2":
-      "<strong>Google Play Billing / Compras In-App de Apple</strong> para compras opcionales dentro de la aplicación. Las transacciones las gestionan Google o Apple, que pueden tratar datos de facturación, historial de compras e identificadores de transacción conforme a sus propias políticas. No recibimos ni almacenamos datos de tarjeta.",
+      "<strong>Google Play Billing / Compras In-App de Apple</strong> puede utilizarse si la aplicación ofrece compras opcionales dentro de la aplicación. Las transacciones las gestionan Google o Apple, que pueden tratar datos de facturación, historial de compras e identificadores de transacción conforme a sus propias políticas. No recibimos ni almacenamos datos de tarjeta.",
     "privacyPage.thirdParty.item3":
       "<strong>Google Play Services / Apple Game Services</strong> como parte del funcionamiento habitual de Android e iOS.",
     "privacyPage.noCollect.heading": "Datos que no recogemos",
@@ -705,7 +705,7 @@ const LEGAL_TRANSLATIONS = {
       "No tenemos datos de juego en el servidor que borrar porque no los recogemos ni almacenamos de forma remota.",
     "privacyPage.security.heading": "Seguridad de los datos",
     "privacyPage.security.body":
-      "Mortigen conserva el progreso de la partida localmente en tu dispositivo. Cuando servicios integrados de terceros como Google AdMob, Google Play Billing o Compras In-App de Apple transmiten datos, utilizan transporte cifrado soportado por la plataforma, como HTTPS/TLS. No operamos servidores propios de juego ni mantenemos bases de datos remotas de jugadores.",
+      "Mortigen conserva el progreso de la partida localmente en tu dispositivo. Cuando servicios integrados de terceros como Google AdMob y, cuando estén habilitados, Google Play Billing o Compras In-App de Apple transmiten datos, utilizan transporte cifrado soportado por la plataforma, como HTTPS/TLS. No operamos servidores propios de juego ni mantenemos bases de datos remotas de jugadores.",
     "privacyPage.changes.heading": "Cambios en esta política",
     "privacyPage.changes.body":
       'Podemos actualizar esta Política de Privacidad periódicamente. Los cambios se reflejarán actualizando la fecha de "Última actualización" indicada arriba. El uso continuado de la aplicación tras esos cambios implica la aceptación de la política revisada.',
