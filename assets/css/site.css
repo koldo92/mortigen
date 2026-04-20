@@ -923,6 +923,14 @@ figcaption {
     align-items: flex-start;
   }
 
+  .footer-inner {
+    justify-content: flex-start;
+  }
+
+  .footer-copy {
+    flex: 0 0 auto;
+  }
+
   .topbar-tools,
   .nav,
   .footer-links {
