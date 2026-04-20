@@ -19,6 +19,10 @@ const HOME_TRANSLATIONS = {
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
     "hero.appStore": "App Store",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
+    "hero.appStoreBadgeAria": "Download Mortigen on the App Store",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg",
+    "hero.googlePlayBadgeAria": "Get Mortigen on Google Play",
     "hero.googlePlay": "Google Play",
     "hero.status": "Containment report // Annex sealed",
     "hero.heading": "Survive the outbreak. Weaponize the dead. Get out alive.",
@@ -168,6 +172,9 @@ const HOME_TRANSLATIONS = {
     "footer.body":
       "A survival shooter about a biopharma outbreak, available in Android & iOS.",
     "footer.copyright": "© 2026 Luis Enrique Ruiz. All rights reserved.",
+    "footer.appleTrademark":
+      "Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc.",
+    "footer.googleTrademark": "Google Play is a trademark of Google LLC.",
     "footer.terms": "Terms and Conditions",
     "footer.privacy": "Privacy Policy"
   },
@@ -191,6 +198,10 @@ const HOME_TRANSLATIONS = {
     "links.terms": "terms.html?lang=es",
     "links.privacy": "privacy.html?lang=es",
     "hero.appStore": "App Store",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge-es.svg",
+    "hero.appStoreBadgeAria": "Descargar Mortigen en el App Store",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-es.svg",
+    "hero.googlePlayBadgeAria": "Consigue Mortigen en Google Play",
     "hero.googlePlay": "Google Play",
     "hero.status": "Informe de contención // Anexo sellado",
     "hero.heading": "Sobrevive al brote. Inventa nuevas armas. Sal con vida.",
@@ -340,6 +351,9 @@ const HOME_TRANSLATIONS = {
     "footer.body":
       "Un shooter de supervivencia sobre un brote biotecnológico, disponible en Android & iOS.",
     "footer.copyright": "© 2026 Luis Enrique Ruiz. Todos los derechos reservados.",
+    "footer.appleTrademark":
+      "Apple y el logotipo de Apple son marcas de Apple Inc. App Store es una marca de servicio de Apple Inc.",
+    "footer.googleTrademark": "Google Play es una marca de Google LLC.",
     "footer.terms": "Términos y Condiciones",
     "footer.privacy": "Política de Privacidad"
   }
@@ -778,6 +792,13 @@ function translatePage(lang) {
     const key = element.dataset.i18nHref;
     if (hasCopy(key)) {
       element.setAttribute("href", copy[key]);
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-src]").forEach((element) => {
+    const key = element.dataset.i18nSrc;
+    if (hasCopy(key)) {
+      element.setAttribute("src", copy[key]);
     }
   });
 

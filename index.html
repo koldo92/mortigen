@@ -125,26 +125,36 @@
 
             <div class="hero-actions">
               <a
-                class="button primary placeholder"
-                href="https://apps.apple.com/app/idYOUR_APP_ID"
+                class="store-badge-link"
+                href="https://apps.apple.com/us/app/mortigen/id6761758806"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-i18n="hero.appStore"
-                data-i18n-placeholder-label="ui.placeholderBadge"
-                data-placeholder-label="placeholder"
+                data-i18n-aria-label="hero.appStoreBadgeAria"
+                aria-label="Download Mortigen on the App Store"
               >
-                App Store
+                <img
+                  class="store-badge store-badge--app-store"
+                  src="assets/images/app-store-badge.svg"
+                  data-i18n-src="hero.appStoreBadgeSrc"
+                  alt=""
+                  aria-hidden="true"
+                >
               </a>
               <a
-                class="button secondary placeholder"
+                class="store-badge-link"
                 href="https://play.google.com/store/apps/details?id=YOUR_PACKAGE_NAME"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-i18n="hero.googlePlay"
-                data-i18n-placeholder-label="ui.placeholderBadge"
-                data-placeholder-label="placeholder"
+                data-i18n-aria-label="hero.googlePlayBadgeAria"
+                aria-label="Get Mortigen on Google Play"
               >
-                Google Play
+                <img
+                  class="store-badge store-badge--google"
+                  src="assets/images/google-play-badge-en.svg"
+                  data-i18n-src="hero.googlePlayBadgeSrc"
+                  alt=""
+                  aria-hidden="true"
+                >
               </a>
             </div>
 
@@ -428,13 +438,22 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <div>
+        <div class="footer-copy">
           <strong data-i18n="footer.title">Mortigen™</strong>
           <p data-i18n="footer.body">
             A survival shooter about a biopharma outbreak, available in Android & iOS.
           </p>
           <p data-i18n="footer.copyright">
             © 2026 Luis Enrique Ruiz. All rights reserved.
+          </p>
+          <p class="footer-legal-note footer-legal-note-inline">
+            <span data-i18n="footer.appleTrademark">
+              Apple and the Apple logo are trademarks of Apple Inc. App Store is
+              a service mark of Apple Inc.
+            </span>
+            <span data-i18n="footer.googleTrademark">
+              Google Play is a trademark of Google LLC.
+            </span>
           </p>
         </div>
 
