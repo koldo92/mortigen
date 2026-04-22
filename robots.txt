@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://koldo92.github.io/mortigen/sitemap.xml
