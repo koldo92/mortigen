@@ -216,7 +216,7 @@ const HOME_TRANSLATIONS = {
     "hero.statBosses": "jefes destacados persiguen cada partida",
     "hero.statControls": "localización completa y control táctil, teclado y mando",
     "hero.sceneAria": "Montaje de ilustraciones de Mortigen",
-    "hero.portraitEyebrow": "Último superviviente confirmado",
+    "hero.portraitEyebrow": "Único superviviente confirmado",
     "hero.portraitBody":
       "Bioquímico principal. Último humano que sigue moviéndose dentro del anexo. Cada partida convierte la investigación fallida del laboratorio en nuevas armas.",
     "hero.portraitAlt": "Ilustración del Dr. Luisen",
