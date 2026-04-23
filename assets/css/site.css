@@ -510,15 +510,16 @@ h3 {
     linear-gradient(180deg, rgba(7, 15, 25, 0.55), rgba(7, 15, 25, 0.92));
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   overflow: hidden;
 }
 
 .portrait-frame img {
-  width: auto;
-  height: 100%;
-  max-width: none;
+  width: min(100%, 420px);
+  height: auto;
+  max-height: 100%;
   object-fit: contain;
+  object-position: center;
 }
 
 .floating-card {
@@ -661,14 +662,13 @@ h3 {
 
 .gallery-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
 .gallery-stack {
-  display: grid;
-  gap: 1rem;
+  display: contents;
 }
 
 .gallery-main img {

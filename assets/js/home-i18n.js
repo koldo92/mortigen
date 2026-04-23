@@ -10,7 +10,7 @@ const HOME_TRANSLATIONS = {
     "nav.story": "Story",
     "nav.features": "Builds",
     "nav.gallery": "Gallery",
-    "nav.privacy": "Privacy",
+    "nav.privacy": "Offline",
     "nav.terms": "Terms and Conditions",
     "nav.privacyPolicy": "Privacy Policy",
     "lang.aria": "Language selector",
@@ -155,19 +155,20 @@ const HOME_TRANSLATIONS = {
     "gallery.wideAlt": "Defeated Dr. Luisen sprite artwork",
     "gallery.wideCaption":
       "One mistake can still end the run, unless you spend the single emergency revive.",
-    "privacy.kicker": "Privacy by design",
-    "privacy.heading": "No account wall. No backend. No hidden analytics layer.",
+    "privacy.kicker": "Offline by design",
+    "privacy.heading":
+      "The core game runs offline. Your progress stays on your device.",
     "privacy.body":
-      "Progress stays on-device, and ads or purchases only appear through platform services when the player chooses them.",
-    "privacy.card1Title": "Local-only progression",
+      "Mortigen does not need an account, backend, or analytics SDK to play. Networked platform services only appear for optional rewarded ads or purchases.",
+    "privacy.card1Title": "Fully offline play",
     "privacy.card1Body":
-      "Saves, trophies, settings, and cosmetics stay on the device.",
-    "privacy.card2Title": "No account or analytics SDK",
+      "Runs, upgrades, trophies, settings, and cosmetics work without a server account.",
+    "privacy.card2Title": "No account or tracking layer",
     "privacy.card2Body":
-      "No login, no email capture, and no remote analytics layer.",
-    "privacy.card3Title": "Optional platform monetization",
+      "No login, no email capture, no custom backend, and no analytics SDK.",
+    "privacy.card3Title": "Optional platform services",
     "privacy.card3Body":
-      "Rewarded ads and purchases run through Google Play or Apple platform services.",
+      "Rewarded ads and purchases stay behind Google Play or Apple services when the player chooses them.",
     "footer.title": "Mortigen™",
     "footer.body":
       "A survival shooter about a biopharma outbreak, available in Android & iOS.",
@@ -189,7 +190,7 @@ const HOME_TRANSLATIONS = {
     "nav.story": "Historia",
     "nav.features": "Mejoras",
     "nav.gallery": "Galería",
-    "nav.privacy": "Privacidad",
+    "nav.privacy": "Offline",
     "nav.terms": "Términos y Condiciones",
     "nav.privacyPolicy": "Política de Privacidad",
     "lang.aria": "Selector de idioma",
@@ -334,19 +335,20 @@ const HOME_TRANSLATIONS = {
     "gallery.wideAlt": "Ilustración del Dr. Luisen derrotado",
     "gallery.wideCaption":
       "Un solo error todavía puede terminar la partida, salvo que gastes la única reanimación de emergencia.",
-    "privacy.kicker": "Privacidad desde el diseño",
-    "privacy.heading": "Sin muro de cuentas. Sin backend. Sin analítica oculta.",
+    "privacy.kicker": "Sin conexión por diseño",
+    "privacy.heading":
+      "El juego principal funciona offline. Tu progreso se queda en tu dispositivo.",
     "privacy.body":
-      "La progresión se queda en el dispositivo y los anuncios o pagos solo aparecen mediante servicios de plataforma cuando el jugador los usa.",
-    "privacy.card1Title": "Progresión solo local",
+      "Mortigen no necesita cuenta, backend ni SDK de analítica para jugar. Los servicios de red de plataforma solo aparecen en anuncios recompensados o compras opcionales.",
+    "privacy.card1Title": "Juego offline completo",
     "privacy.card1Body":
-      "Partidas, trofeos, ajustes y cosméticos se quedan en el dispositivo.",
-    "privacy.card2Title": "Sin cuenta ni SDK de analítica",
+      "Partidas, mejoras, trofeos, ajustes y cosméticos funcionan sin cuenta ni servidor.",
+    "privacy.card2Title": "Sin cuenta ni capa de rastreo",
     "privacy.card2Body":
-      "No hay login, captura de email ni capa remota de analítica.",
-    "privacy.card3Title": "Monetización opcional de plataforma",
+      "Sin login, sin captura de email, sin backend propio y sin SDK de analítica.",
+    "privacy.card3Title": "Servicios de plataforma opcionales",
     "privacy.card3Body":
-      "Los anuncios recompensados y las compras pasan por servicios de Google Play o Apple.",
+      "Los anuncios recompensados y las compras quedan en servicios de Google Play o Apple cuando el jugador los elige.",
     "footer.title": "Mortigen™",
     "footer.body":
       "Un shooter de supervivencia sobre un brote biotecnológico, disponible en Android & iOS.",
