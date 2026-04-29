@@ -165,7 +165,7 @@ const HOME_TRANSLATIONS = {
       "Runs, upgrades, trophies, settings, and cosmetics work without a server account.",
     "privacy.card2Title": "No account or tracking layer",
     "privacy.card2Body":
-      "No login, no email capture, no custom backend, and no analytics SDK.",
+      "No login, no email capture, and no analytics SDK. The leaderboard uses anonymous authentication only.",
     "privacy.card3Title": "Optional platform services",
     "privacy.card3Body":
       "Rewarded ads and purchases stay behind Google Play or Apple services when the player chooses them.",
@@ -345,7 +345,7 @@ const HOME_TRANSLATIONS = {
       "Partidas, mejoras, trofeos, ajustes y cosméticos funcionan sin cuenta ni servidor.",
     "privacy.card2Title": "Sin cuenta ni capa de rastreo",
     "privacy.card2Body":
-      "Sin login, sin captura de email, sin backend propio y sin SDK de analítica.",
+      "Sin login, sin captura de email y sin SDK de analítica. La clasificación usa solo autenticación anónima.",
     "privacy.card3Title": "Servicios de plataforma opcionales",
     "privacy.card3Body":
       "Los anuncios recompensados y las compras quedan en servicios de Google Play o Apple cuando el jugador los elige.",
@@ -465,12 +465,12 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.overview.kicker": "At a glance",
     "privacyPage.overview.item1": "Mortigen stores progression locally on-device.",
     "privacyPage.overview.item2":
-      "No account creation or backend is described.",
+      "An optional online leaderboard stores player-chosen aliases and run scores on Firebase.",
     "privacyPage.overview.item3":
-      "No analytics SDK is part of the current setup.",
+      "Firebase Anonymous Authentication generates a device-level identifier; no email or login is required.",
     "privacyPage.overview.item4":
       "Rewarded ads and any optional purchases are handled by platform services.",
-    "privacyPage.lastUpdated": "<strong>Last updated:</strong> April 16, 2026",
+    "privacyPage.lastUpdated": "<strong>Last updated:</strong> April 28, 2026",
     "privacyPage.intro":
       'Luis Enrique Ruiz ("we", "us", or "our") built Mortigen as a free-to-play mobile application. This Privacy Policy explains what information the app collects, how it is used, and your choices regarding that information.',
     "privacyPage.collect.heading": "Information We Collect",
@@ -489,6 +489,19 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.local.item6": "First-launch flag",
     "privacyPage.local.body2":
       "This data is not transmitted to any server and cannot be accessed by us.",
+    "privacyPage.leaderboard.heading": "Leaderboard Data (Firebase)",
+    "privacyPage.leaderboard.body1":
+      "Mortigen includes an optional online leaderboard powered by Google Firebase. When you complete a run, the app may submit your score to the leaderboard. The following data is sent to and stored in Google Cloud Firestore:",
+    "privacyPage.leaderboard.item1":
+      "A player-chosen alias (up to 16 characters)",
+    "privacyPage.leaderboard.item2":
+      "Gameplay stats for the run: score, enemies killed, level reached, and survival time",
+    "privacyPage.leaderboard.item3":
+      "A Firebase anonymous user identifier (UID) generated automatically by Firebase Authentication",
+    "privacyPage.leaderboard.item4":
+      "A timestamp of when the entry was created",
+    "privacyPage.leaderboard.body2":
+      `Firebase Anonymous Authentication creates a persistent identifier tied to your device installation. It does not collect your name, email, or any other personal information. Leaderboard entries are publicly visible to all players. Data is stored on Google Cloud servers and processed under <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase's privacy documentation</a>.`,
     "privacyPage.thirdParty.heading": "Third-Party Services",
     "privacyPage.thirdParty.intro":
       "Mortigen integrates third-party platform services that may collect data independently:",
@@ -499,22 +512,20 @@ const LEGAL_TRANSLATIONS = {
       "<strong>Google Play Services / Apple Game Services</strong> as part of normal platform operation on Android and iOS.",
     "privacyPage.noCollect.heading": "Data We Do Not Collect",
     "privacyPage.noCollect.item1":
-      "We do not collect personal information such as name or email.",
+      "We do not collect personal information such as real name or email. The leaderboard alias is freely chosen and does not need to be a real name.",
     "privacyPage.noCollect.item2":
       "We do not directly collect precise location data. AdMob may infer general location from IP address as described above.",
     "privacyPage.noCollect.item3":
-      "We do not require account creation or login.",
+      "We do not require account creation or login. Firebase Anonymous Authentication operates automatically without user credentials.",
     "privacyPage.noCollect.item4":
       "We do not use analytics SDKs in the current documented setup.",
-    "privacyPage.noCollect.item5":
-      "We do not maintain a server or backend for gameplay data.",
     "privacyPage.gdpr.heading": "Your Rights Under the GDPR",
     "privacyPage.gdpr.intro":
       "As a user in the European Economic Area, you have rights under the General Data Protection Regulation (EU) 2016/679:",
     "privacyPage.gdpr.item1":
-      "<strong>Right of access.</strong> Because Mortigen stores data locally and has no server-side profile system, there is no remote gameplay dataset for us to retrieve.",
+      "<strong>Right of access.</strong> Local gameplay data is stored on your device. Leaderboard entries stored in Firebase contain only your chosen alias, run stats, and an anonymous UID. You may contact us to request a copy of your leaderboard data.",
     "privacyPage.gdpr.item2":
-      "<strong>Right to erasure.</strong> You can delete game data by clearing app data in your device settings or uninstalling the app.",
+      "<strong>Right to erasure.</strong> You can delete local game data by clearing app data or uninstalling. To request deletion of your leaderboard entries from Firebase, contact us using the details below.",
     "privacyPage.gdpr.item3":
       "<strong>Right to restriction and objection.</strong> You can review or change your advertising choices through the in-app privacy options, and you may also use your device's ad personalization settings where available.",
     "privacyPage.gdpr.item4": `<strong>Right to lodge a complaint.</strong> You may file a complaint with the Spanish Data Protection Agency at <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> or with another EU supervisory authority.`,
@@ -525,15 +536,15 @@ const LEGAL_TRANSLATIONS = {
       "Mortigen is not directed at children under 13, or 16 in certain EU member states. We do not knowingly collect personal information from children. If you believe a child has provided personal information through an integrated third-party service, contact us so we can take appropriate action.",
     "privacyPage.retention.heading": "Data Retention and Deletion",
     "privacyPage.retention.intro":
-      "All game data is stored locally on your device. You can delete it at any time by:",
+      "Local game data is stored on your device. You can delete it at any time by:",
     "privacyPage.retention.item1":
       "Clearing the app's data through your device settings",
     "privacyPage.retention.item2": "Uninstalling the app",
     "privacyPage.retention.body":
-      "We have no server-side gameplay data to delete because we do not collect or store it remotely.",
+      "Leaderboard entries stored in Firebase are retained indefinitely. To request deletion of your leaderboard data, contact us using the details in the Contact section below.",
     "privacyPage.security.heading": "Data Security",
     "privacyPage.security.body":
-      "Mortigen keeps gameplay progress locally on your device. When integrated third-party services such as Google AdMob and, where enabled, Google Play Billing or Apple In-App Purchase transmit data, they use encrypted transport supported by the platform, such as HTTPS/TLS. We do not operate our own gameplay servers or maintain remote player databases.",
+      "Mortigen keeps gameplay progress locally on your device. Leaderboard data is transmitted to and stored in Google Cloud Firestore using encrypted transport (HTTPS/TLS). Firebase Anonymous Authentication secures write access so that only authenticated app installations can submit entries. When integrated third-party services such as Google AdMob and, where enabled, Google Play Billing or Apple In-App Purchase transmit data, they also use encrypted transport supported by the platform.",
     "privacyPage.changes.heading": "Changes to This Policy",
     "privacyPage.changes.body":
       'We may update this Privacy Policy from time to time. Changes will be reflected by updating the "Last updated" date above. Continued use of the app after changes constitutes acceptance of the revised policy.',
@@ -652,13 +663,13 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.overview.item1":
       "Mortigen guarda la progresión localmente en el dispositivo.",
     "privacyPage.overview.item2":
-      "No se describe creación de cuenta ni backend.",
+      "Una clasificación online opcional almacena alias elegidos por el jugador y puntuaciones de partida en Firebase.",
     "privacyPage.overview.item3":
-      "Ningún SDK de analítica forma parte de la configuración actual.",
+      "Firebase Anonymous Authentication genera un identificador a nivel de dispositivo; no se requiere email ni inicio de sesión.",
     "privacyPage.overview.item4":
       "Los anuncios recompensados y cualquier compra opcional se gestionan mediante servicios de plataforma.",
     "privacyPage.lastUpdated":
-      "<strong>Última actualización:</strong> 16 de abril de 2026",
+      "<strong>Última actualización:</strong> 28 de abril de 2026",
     "privacyPage.intro":
       'Luis Enrique Ruiz ("nosotros" o "nuestro") desarrolló Mortigen como una aplicación móvil gratuita. Esta Política de Privacidad explica qué información recoge la aplicación, cómo se utiliza y qué opciones tienes al respecto.',
     "privacyPage.collect.heading": "Información que recogemos",
@@ -677,6 +688,19 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.local.item6": "Indicador de primer inicio",
     "privacyPage.local.body2":
       "Estos datos no se transmiten a ningún servidor y nosotros no podemos acceder a ellos.",
+    "privacyPage.leaderboard.heading": "Datos de la clasificación (Firebase)",
+    "privacyPage.leaderboard.body1":
+      "Mortigen incluye una clasificación online opcional impulsada por Google Firebase. Al completar una partida, la app puede enviar tu puntuación a la clasificación. Los siguientes datos se envían y almacenan en Google Cloud Firestore:",
+    "privacyPage.leaderboard.item1":
+      "Un alias elegido por el jugador (hasta 16 caracteres)",
+    "privacyPage.leaderboard.item2":
+      "Estadísticas de la partida: puntuación, enemigos eliminados, nivel alcanzado y tiempo de supervivencia",
+    "privacyPage.leaderboard.item3":
+      "Un identificador anónimo de usuario (UID) generado automáticamente por Firebase Authentication",
+    "privacyPage.leaderboard.item4":
+      "Una marca de tiempo del momento en que se creó la entrada",
+    "privacyPage.leaderboard.body2":
+      `Firebase Anonymous Authentication crea un identificador persistente vinculado a la instalación de tu dispositivo. No recoge tu nombre, email ni ninguna otra información personal. Las entradas de la clasificación son visibles públicamente para todos los jugadores. Los datos se almacenan en servidores de Google Cloud y se procesan conforme a la <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">documentación de privacidad de Firebase</a>.`,
     "privacyPage.thirdParty.heading": "Servicios de terceros",
     "privacyPage.thirdParty.intro":
       "Mortigen integra servicios de plataforma de terceros que pueden recoger datos de forma independiente:",
@@ -687,22 +711,20 @@ const LEGAL_TRANSLATIONS = {
       "<strong>Google Play Services / Apple Game Services</strong> como parte del funcionamiento habitual de Android e iOS.",
     "privacyPage.noCollect.heading": "Datos que no recogemos",
     "privacyPage.noCollect.item1":
-      "No recogemos información personal como nombre o email.",
+      "No recogemos información personal como nombre real o email. El alias de la clasificación es de libre elección y no tiene que ser un nombre real.",
     "privacyPage.noCollect.item2":
       "No recogemos directamente datos de ubicación precisa. AdMob puede inferir una ubicación general a partir de la dirección IP tal y como se indica arriba.",
     "privacyPage.noCollect.item3":
-      "No requerimos creación de cuenta ni inicio de sesión.",
+      "No requerimos creación de cuenta ni inicio de sesión. Firebase Anonymous Authentication funciona automáticamente sin credenciales del usuario.",
     "privacyPage.noCollect.item4":
       "No usamos SDKs de analítica en la configuración documentada actual.",
-    "privacyPage.noCollect.item5":
-      "No mantenemos un servidor ni backend para los datos de juego.",
     "privacyPage.gdpr.heading": "Tus derechos según el RGPD",
     "privacyPage.gdpr.intro":
       "Como usuario en el Espacio Económico Europeo, tienes derechos conforme al Reglamento General de Protección de Datos (UE) 2016/679:",
     "privacyPage.gdpr.item1":
-      "<strong>Derecho de acceso.</strong> Como Mortigen almacena los datos localmente y no tiene un sistema de perfiles del lado del servidor, no existe un conjunto remoto de datos de juego que podamos recuperar.",
+      "<strong>Derecho de acceso.</strong> Los datos locales de juego se almacenan en tu dispositivo. Las entradas de la clasificación almacenadas en Firebase contienen únicamente tu alias elegido, estadísticas de partida y un UID anónimo. Puedes contactarnos para solicitar una copia de tus datos de clasificación.",
     "privacyPage.gdpr.item2":
-      "<strong>Derecho de supresión.</strong> Puedes borrar los datos del juego limpiando los datos de la aplicación en los ajustes de tu dispositivo o desinstalando la app.",
+      "<strong>Derecho de supresión.</strong> Puedes borrar los datos locales del juego limpiando los datos de la aplicación o desinstalándola. Para solicitar la eliminación de tus entradas de clasificación en Firebase, contáctanos usando los datos que aparecen más abajo.",
     "privacyPage.gdpr.item3":
       "<strong>Derecho de limitación y oposición.</strong> Puedes revisar o cambiar tus elecciones publicitarias desde las opciones de privacidad dentro de la app, y también usar los ajustes de personalización de anuncios de tu dispositivo cuando estén disponibles.",
     "privacyPage.gdpr.item4": `<strong>Derecho a presentar una reclamación.</strong> Puedes presentar una reclamación ante la Agencia Española de Protección de Datos en <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer">www.aepd.es</a> o ante otra autoridad de control de la UE.`,
@@ -713,15 +735,15 @@ const LEGAL_TRANSLATIONS = {
       "Mortigen no está dirigido a menores de 13 años, o 16 en determinados estados miembros de la UE. No recopilamos conscientemente información personal de menores. Si crees que un menor ha proporcionado información personal a través de un servicio integrado de terceros, contáctanos para que podamos actuar en consecuencia.",
     "privacyPage.retention.heading": "Conservación y eliminación de datos",
     "privacyPage.retention.intro":
-      "Todos los datos del juego se almacenan localmente en tu dispositivo. Puedes eliminarlos en cualquier momento de estas formas:",
+      "Los datos locales del juego se almacenan en tu dispositivo. Puedes eliminarlos en cualquier momento de estas formas:",
     "privacyPage.retention.item1":
       "Borrando los datos de la aplicación desde los ajustes de tu dispositivo",
     "privacyPage.retention.item2": "Desinstalando la aplicación",
     "privacyPage.retention.body":
-      "No tenemos datos de juego en el servidor que borrar porque no los recogemos ni almacenamos de forma remota.",
+      "Las entradas de clasificación almacenadas en Firebase se conservan indefinidamente. Para solicitar la eliminación de tus datos de clasificación, contáctanos usando los datos de la sección Contacto más abajo.",
     "privacyPage.security.heading": "Seguridad de los datos",
     "privacyPage.security.body":
-      "Mortigen conserva el progreso de la partida localmente en tu dispositivo. Cuando servicios integrados de terceros como Google AdMob y, cuando estén habilitados, Google Play Billing o Compras In-App de Apple transmiten datos, utilizan transporte cifrado soportado por la plataforma, como HTTPS/TLS. No operamos servidores propios de juego ni mantenemos bases de datos remotas de jugadores.",
+      "Mortigen conserva el progreso de la partida localmente en tu dispositivo. Los datos de la clasificación se transmiten y almacenan en Google Cloud Firestore mediante transporte cifrado (HTTPS/TLS). Firebase Anonymous Authentication protege el acceso de escritura para que solo las instalaciones autenticadas puedan enviar entradas. Cuando servicios integrados de terceros como Google AdMob y, cuando estén habilitados, Google Play Billing o Compras In-App de Apple transmiten datos, también utilizan transporte cifrado soportado por la plataforma.",
     "privacyPage.changes.heading": "Cambios en esta política",
     "privacyPage.changes.body":
       'Podemos actualizar esta Política de Privacidad periódicamente. Los cambios se reflejarán actualizando la fecha de "Última actualización" indicada arriba. El uso continuado de la aplicación tras esos cambios implica la aceptación de la política revisada.',

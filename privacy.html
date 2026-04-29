@@ -163,10 +163,12 @@
                   Mortigen stores progression locally on-device.
                 </li>
                 <li data-i18n="privacyPage.overview.item2">
-                  No account creation or backend is described.
+                  An optional online leaderboard stores player-chosen aliases
+                  and run scores on Firebase.
                 </li>
                 <li data-i18n="privacyPage.overview.item3">
-                  No analytics SDK is part of the current setup.
+                  Firebase Anonymous Authentication generates a device-level
+                  identifier; no email or login is required.
                 </li>
                 <li data-i18n="privacyPage.overview.item4">
                   Rewarded ads and any optional purchases are handled by
@@ -179,7 +181,7 @@
 
           <article class="legal-article panel" id="full-policy">
             <p data-i18n-html="privacyPage.lastUpdated">
-              <strong>Last updated:</strong> April 16, 2026
+              <strong>Last updated:</strong> April 28, 2026
             </p>
 
             <p data-i18n-html="privacyPage.intro">
@@ -217,6 +219,44 @@
             <p data-i18n="privacyPage.local.body2">
               This data is not transmitted to any server and cannot be accessed
               by us.
+            </p>
+
+            <h3 data-i18n="privacyPage.leaderboard.heading">Leaderboard Data (Firebase)</h3>
+            <p data-i18n="privacyPage.leaderboard.body1">
+              Mortigen includes an optional online leaderboard powered by
+              Google Firebase. When you complete a run, the app may submit
+              your score to the leaderboard. The following data is sent to
+              and stored in Google Cloud Firestore:
+            </p>
+            <ul>
+              <li data-i18n="privacyPage.leaderboard.item1">
+                A player-chosen alias (up to 16 characters)
+              </li>
+              <li data-i18n="privacyPage.leaderboard.item2">
+                Gameplay stats for the run: score, enemies killed, level
+                reached, and survival time
+              </li>
+              <li data-i18n="privacyPage.leaderboard.item3">
+                A Firebase anonymous user identifier (UID) generated
+                automatically by Firebase Authentication
+              </li>
+              <li data-i18n="privacyPage.leaderboard.item4">
+                A timestamp of when the entry was created
+              </li>
+            </ul>
+            <p data-i18n-html="privacyPage.leaderboard.body2">
+              Firebase Anonymous Authentication creates a persistent
+              identifier tied to your device installation. It does not
+              collect your name, email, or any other personal information.
+              Leaderboard entries are publicly visible to all players. Data
+              is stored on Google Cloud servers and processed under
+              <a
+                href="https://firebase.google.com/support/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Firebase's privacy documentation
+              </a>.
             </p>
 
             <h3 data-i18n="privacyPage.thirdParty.heading">Third-Party Services</h3>
@@ -261,20 +301,21 @@
             <h2 data-i18n="privacyPage.noCollect.heading">Data We Do Not Collect</h2>
             <ul>
               <li data-i18n="privacyPage.noCollect.item1">
-                We do not collect personal information such as name or email.
+                We do not collect personal information such as real name or
+                email. The leaderboard alias is freely chosen and does not
+                need to be a real name.
               </li>
               <li data-i18n="privacyPage.noCollect.item2">
                 We do not directly collect precise location data. AdMob may
                 infer general location from IP address as described above.
               </li>
               <li data-i18n="privacyPage.noCollect.item3">
-                We do not require account creation or login.
+                We do not require account creation or login. Firebase
+                Anonymous Authentication operates automatically without
+                user credentials.
               </li>
               <li data-i18n="privacyPage.noCollect.item4">
                 We do not use analytics SDKs in the current documented setup.
-              </li>
-              <li data-i18n="privacyPage.noCollect.item5">
-                We do not maintain a server or backend for gameplay data.
               </li>
             </ul>
 
@@ -285,14 +326,17 @@
             </p>
             <ul>
               <li data-i18n-html="privacyPage.gdpr.item1">
-                <strong>Right of access.</strong> Because Mortigen stores data
-                locally and has no server-side profile system, there is no
-                remote gameplay dataset for us to retrieve.
+                <strong>Right of access.</strong> Local gameplay data is
+                stored on your device. Leaderboard entries stored in
+                Firebase contain only your chosen alias, run stats, and an
+                anonymous UID. You may contact us to request a copy of your
+                leaderboard data.
               </li>
               <li data-i18n-html="privacyPage.gdpr.item2">
-                <strong>Right to erasure.</strong> You can delete game data by
-                clearing app data in your device settings or uninstalling the
-                app.
+                <strong>Right to erasure.</strong> You can delete local game
+                data by clearing app data or uninstalling. To request
+                deletion of your leaderboard entries from Firebase, contact
+                us using the details below.
               </li>
               <li data-i18n-html="privacyPage.gdpr.item3">
                 <strong>Right to restriction and objection.</strong> You can
@@ -333,7 +377,7 @@
               Data Retention and Deletion
             </h2>
             <p data-i18n="privacyPage.retention.intro">
-              All game data is stored locally on your device. You can delete it
+              Local game data is stored on your device. You can delete it
               at any time by:
             </p>
             <ul>
@@ -343,18 +387,22 @@
               <li data-i18n="privacyPage.retention.item2">Uninstalling the app</li>
             </ul>
             <p data-i18n="privacyPage.retention.body">
-              We have no server-side gameplay data to delete because we do not
-              collect or store it remotely.
+              Leaderboard entries stored in Firebase are retained
+              indefinitely. To request deletion of your leaderboard data,
+              contact us using the details in the Contact section below.
             </p>
 
             <h2 data-i18n="privacyPage.security.heading">Data Security</h2>
             <p data-i18n="privacyPage.security.body">
-              Mortigen keeps gameplay progress locally on your device. When
-              integrated third-party services such as Google AdMob and, where
-              enabled, Google Play Billing or Apple In-App Purchase transmit
-              data, they use encrypted transport supported by the platform,
-              such as HTTPS/TLS. We do not operate our own gameplay servers or
-              maintain remote player databases.
+              Mortigen keeps gameplay progress locally on your device.
+              Leaderboard data is transmitted to and stored in Google Cloud
+              Firestore using encrypted transport (HTTPS/TLS). Firebase
+              Anonymous Authentication secures write access so that only
+              authenticated app installations can submit entries. When
+              integrated third-party services such as Google AdMob and,
+              where enabled, Google Play Billing or Apple In-App Purchase
+              transmit data, they also use encrypted transport supported by
+              the platform.
             </p>
 
             <h2 data-i18n="privacyPage.changes.heading">Changes to This Policy</h2>
