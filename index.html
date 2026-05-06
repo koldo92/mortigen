@@ -77,27 +77,132 @@
           </nav>
 
           <div
-            class="lang-switch"
-            role="group"
-            data-i18n-aria-label="lang.aria"
-            aria-label="Language selector"
+            class="lang-switch lang-switch--dropdown"
+            data-lang-switch
           >
             <button
-              class="lang-switch__button"
+              class="lang-switch__trigger"
               type="button"
-              data-lang-toggle="en"
-              aria-pressed="true"
+              data-lang-trigger
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-i18n-aria-label="lang.aria"
+              aria-label="Language selector"
             >
-              EN
+              <span class="lang-switch__trigger-label" data-lang-trigger-label>EN</span>
+              <span class="lang-switch__chevron" aria-hidden="true">▾</span>
             </button>
-            <button
-              class="lang-switch__button"
-              type="button"
-              data-lang-toggle="es"
-              aria-pressed="false"
+            <div
+              class="lang-switch__menu"
+              role="group"
+              data-lang-menu
+              hidden
             >
-              ES
-            </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="en"
+                aria-pressed="true"
+              >
+                EN
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="es"
+                aria-pressed="false"
+              >
+                ES
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="zh"
+                aria-pressed="false"
+              >
+                中文
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="fr"
+                aria-pressed="false"
+              >
+                FR
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="hi"
+                aria-pressed="false"
+              >
+                HI
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="pt"
+                aria-pressed="false"
+              >
+                PT
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="ru"
+                aria-pressed="false"
+              >
+                RU
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="eu"
+                aria-pressed="false"
+              >
+                EU
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="de"
+                aria-pressed="false"
+              >
+                DE
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="it"
+                aria-pressed="false"
+              >
+                IT
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="ja"
+                aria-pressed="false"
+              >
+                日本語
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="bn"
+                aria-pressed="false"
+              >
+                বাংলা
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="ko"
+                aria-pressed="false"
+              >
+                한국어
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -179,7 +284,7 @@
                 <span data-i18n="hero.statBosses">featured boss encounters hunting each run</span>
               </article>
               <article class="stat-card panel">
-                <strong>EN / ES</strong>
+                <strong>13</strong>
                 <span data-i18n="hero.statControls">
                   full localization plus touch, keyboard, and gamepad
                 </span>

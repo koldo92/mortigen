@@ -14,7 +14,6 @@ const HOME_TRANSLATIONS = {
     "nav.terms": "Terms and Conditions",
     "nav.privacyPolicy": "Privacy Policy",
     "lang.aria": "Language selector",
-    "ui.placeholderBadge": "placeholder",
     "links.home": "index.html",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
@@ -29,8 +28,6 @@ const HOME_TRANSLATIONS = {
     "hero.body":
       "Fight through Mortigen Biopharma as Dr. Luisen, build weapons from infected matter, and stay alive as the outbreak escalates.",
     "hero.exploreCta": "See features",
-    "hero.note":
-      "Store buttons currently use placeholder URLs so the page can be published before the live listings exist.",
     "hero.statUpgrades": "bio-upgrades across 4 rarity tiers",
     "hero.statTrophies": "trophies tied to persistent progression",
     "hero.statBosses": "featured boss encounters hunting each run",
@@ -194,7 +191,6 @@ const HOME_TRANSLATIONS = {
     "nav.terms": "Términos y Condiciones",
     "nav.privacyPolicy": "Política de Privacidad",
     "lang.aria": "Selector de idioma",
-    "ui.placeholderBadge": "pendiente",
     "links.home": "index.html?lang=es",
     "links.terms": "terms.html?lang=es",
     "links.privacy": "privacy.html?lang=es",
@@ -209,8 +205,6 @@ const HOME_TRANSLATIONS = {
     "hero.body":
       "Lucha dentro de Mortigen Biopharma como el Dr. Luisen, fabrica armas con materia infectada y sigue con vida mientras el brote empeora.",
     "hero.exploreCta": "Ver mejoras",
-    "hero.note":
-      "Los botones de las tiendas usan URLs provisionales para que la página pueda publicarse antes de que existan las fichas definitivas.",
     "hero.statUpgrades": "biomejoras en 4 niveles de rareza",
     "hero.statTrophies": "trofeos ligados a progresión persistente",
     "hero.statBosses": "jefes destacados persiguen cada partida",
@@ -757,8 +751,615 @@ const LEGAL_TRANSLATIONS = {
   }
 };
 
+
+const EXTRA_HOME_TRANSLATIONS = {
+  zh: {
+    "meta.title": "Mortigen | 在爆发中生存",
+    "meta.description": "Mortigen 是一款俯视角生存射击游戏，讲述用感染体制成的武器在生物制药灾难中活下去。",
+    "brand.homeAria": "Mortigen 主页",
+    "brand.tagline": "生物制药爆发生存射击游戏",
+    "nav.primaryAria": "主导航",
+    "nav.home": "首页",
+    "nav.story": "故事",
+    "nav.features": "构筑",
+    "nav.gallery": "画廊",
+    "nav.privacy": "离线",
+    "nav.terms": "条款与条件",
+    "nav.privacyPolicy": "隐私政策",
+    "lang.aria": "语言选择器",
+    "links.home": "index.html?lang=zh",
+    "links.terms": "terms.html",
+    "links.privacy": "privacy.html",
+    "hero.appStore": "App Store",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
+    "hero.appStoreBadgeAria": "在 App Store 下载 Mortigen",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg",
+    "hero.googlePlayBadgeAria": "在 Google Play 获取 Mortigen",
+    "hero.googlePlay": "Google Play",
+    "hero.status": "收容报告 // 附楼已封锁",
+    "hero.heading": "在爆发中生存。武器化死者。活着离开。",
+    "hero.body": "化身 Luisen 博士，深入 Mortigen Biopharma，用感染物质打造武器，在不断升级的灾难中活下去。",
+    "hero.exploreCta": "查看特色",
+    "hero.statUpgrades": "跨 4 个稀有度层级的生物升级",
+    "hero.statTrophies": "与持久进度绑定的奖杯",
+    "hero.statBosses": "每局都会追猎你的重点首领战",
+    "hero.statControls": "完整本地化，并支持触控、键盘和手柄",
+    "hero.sceneAria": "Mortigen 美术蒙太奇",
+    "hero.portraitEyebrow": "最后确认的幸存者",
+    "hero.portraitBody": "首席生物化学家。附楼内最后仍在行动的人类。每一局都会把实验室失败的研究变成新武器。",
+    "hero.portraitAlt": "Luisen 博士插画",
+    "hero.cardAAlt": "爆发城市插画",
+    "hero.cardAEyebrow": "隔离边界",
+    "hero.cardATitle": "死者仍在移动",
+    "hero.cardABody": "尸潮节奏会从平静间隔升级为密集冲击和首领到来，配乐也随之增强。",
+    "hero.cardBAlt": "Mortigen Biopharma 建筑",
+    "hero.cardBEyebrow": "地点",
+    "hero.cardBTitle": "Mortigen Biopharma 附楼",
+    "hero.cardBBody": "每一局都会重建实验室，生成新的房间、走廊、环路和可破坏杂物。",
+    "hero.cardCAlt": "原型血清瓶",
+    "hero.cardCEyebrow": "催化剂",
+    "hero.cardCTitle": "仓促推出的抗衰补剂",
+    "hero.cardCBody": "投资压力让测试在神经稳定性明确前上线。到黎明时，附楼已被淹没。",
+    "metrics.grid": "实验室瓦片网格",
+    "metrics.slots": "每局升级槽位",
+    "metrics.enemies": "包含首领的敌人类型",
+    "metrics.reviveCount": "每局紧急复活",
+    "metrics.reviveHealth": "复活恢复生命",
+    "metrics.localDataValue": "无后端",
+    "metrics.localData": "进度保存在设备上",
+    "story.kicker": "回收时间线",
+    "story.heading": "爆发不是事故，而是最后期限。",
+    "story.body": "Mortigen Biopharma 出售不衰老的青春承诺。品牌背后，是私人附楼、投资压力，以及引爆大规模伤亡的人体测试。",
+    "story.card1Alt": "Mortigen Biopharma 附楼",
+    "story.phase1": "阶段 01",
+    "story.card1Title": "私人长寿实验室",
+    "story.card1Body": "Mortigen Biopharma 建立隔离附楼研究再生医学和快速组织修复，试图把青春卖成高端产品。",
+    "story.card2Alt": "回收爆发报告插画",
+    "story.phase2": "阶段 02",
+    "story.card2Title": "投资压力压过谨慎",
+    "story.card2Body": "员工反对被忽视。长期神经稳定性尚未明确，受限人体测试就已经上线，设施数分钟内沦陷。",
+    "story.card3Alt": "原型血清瓶",
+    "story.phase3": "阶段 03",
+    "story.card3Title": "最后的幸存者仍在里面",
+    "story.card3Body": "Luisen 博士封锁了武装研究区，把实验室残余全部改造成武器，并活得足够久，揭露 Mortigen 释放了什么。",
+    "features.kicker": "由死者制成",
+    "features.heading": "每一局都是压力下的实验室实验。",
+    "features.body": "四个代表性升级展示每局如何从控场转向纯粹生存压力。",
+    "features.card1Alt": "电击手枪图标",
+    "features.card1Eyebrow": "风暴血清",
+    "features.card1Title": "让电流贯穿密集目标",
+    "features.card1Body": "电弧会跳向附近敌人，清理拥挤走廊。",
+    "features.card1Meta1": "元素附加",
+    "features.card1Meta2": "最多 4 个附近目标",
+    "features.card1Meta3": "随层数成长",
+    "features.card2Alt": "冰冻弹药图标",
+    "features.card2Eyebrow": "霜疫",
+    "features.card2Title": "在冲锋抵达前先让它慢下来",
+    "features.card2Body": "冻结效果争取空间，让更快的波次变得可控。",
+    "features.card2Meta1": "移动压制",
+    "features.card2Meta2": "与手雷联动",
+    "features.card2Meta3": "与风压炮联动",
+    "features.card3Alt": "腐烂光环图标",
+    "features.card3Eyebrow": "腐烂光环",
+    "features.card3Title": "携带能融化近身敌人的伤害光环",
+    "features.card3Body": "持续光环会惩罚贴近敌人，稳定狭窄战斗。",
+    "features.card3Meta1": "持续半径",
+    "features.card3Meta2": "近距离伤害",
+    "features.card3Meta3": "传奇级压力阀",
+    "features.card4Alt": "风压炮图标",
+    "features.card4Eyebrow": "风压炮",
+    "features.card4Title": "不开一枪也能轰开走廊",
+    "features.card4Body": "定时扇形冲击制造喘息空间，并为其他组合创造机会。",
+    "features.card4Meta1": "定时扇形冲击",
+    "features.card4Meta2": "纯控场",
+    "features.card4Meta3": "元素联动载体",
+    "threat.kicker": "威胁指数",
+    "threat.heading": "附楼不断变化，压力只会升高。",
+    "threat.body": "标准敌人分阶段解锁，尸潮会抬高节奏，而后期不再只是生存，更像一场猎杀。",
+    "threat.card1Eyebrow": "群体压力",
+    "threat.card1Title": "行尸与高速感染体",
+    "threat.card1Body": "开局是直接追击，随后加入之字和高速敌人，惩罚懒散路线和糟糕间距。",
+    "threat.card1Item1": "预测式生成会把敌人压到你的路径上。",
+    "threat.card1Item2": "常规生成间隔会随波次推进缩短。",
+    "threat.card1Item3": "完整组合会达到四种标准敌人行为。",
+    "threat.card2Eyebrow": "破坏站位",
+    "threat.card2Title": "冲锋者、Brute 与首领躯体",
+    "threat.card2Body": "重型敌人吸收惩罚，在关键战中无视击退，并用蓄力冲锋惩罚犹豫。",
+    "threat.card2Item1": "尸潮阶段会加入短暂平静，然后爆发冲击。",
+    "threat.card2Item2": "后期首领槽位可能叠成多首领战。",
+    "threat.card2Item3": "载具局会改变你承受接触压力的方式。",
+    "threat.card3Eyebrow": "最终猎手",
+    "threat.card3Title": "黑暗教授仍会思考",
+    "threat.card3Body": "Mortigen 致命测试的设计者保留了智性，会保持距离，并想在真相逃出附楼前杀死 Luisen。",
+    "threat.card3Item1": "拥有偏好距离行为的远程首领。",
+    "threat.card3Item2": "昔日上级变成主动敌手。",
+    "threat.card3Item3": "不是蹒跚感染体，而是有意图的威胁。",
+    "gallery.kicker": "附楼内部",
+    "gallery.heading": "阴郁生物科技幻想，配合街机生存节奏。",
+    "gallery.body": "Mortigen 融合像素爆发画面、程序化实验室、分层音乐强度和清晰自动射击循环，让注意力集中在移动与站位上。",
+    "gallery.mainAlt": "像素风城市爆发场景",
+    "gallery.mainCaption": "封锁附楼外不断升级的尸潮压力。",
+    "gallery.secondAlt": "Mortigen Biopharma 外观",
+    "gallery.secondCaption": "Mortigen Biopharma 的公开面孔。",
+    "gallery.thirdAlt": "回收紧急报告插画",
+    "gallery.thirdCaption": "回收记录指回那次测试发布。",
+    "gallery.wideAlt": "战败的 Luisen 博士像素图",
+    "gallery.wideCaption": "一个失误仍可能终结本局，除非你用掉唯一的紧急复活。",
+    "privacy.kicker": "离线优先设计",
+    "privacy.heading": "核心游戏可离线运行。进度保留在你的设备上。",
+    "privacy.body": "Mortigen 游玩不需要账号、后端或分析 SDK。只有可选激励广告或购买会调用平台网络服务。",
+    "privacy.card1Title": "完整离线游玩",
+    "privacy.card1Body": "局内进度、升级、奖杯、设置和外观无需服务器账号即可使用。",
+    "privacy.card2Title": "没有账号或追踪层",
+    "privacy.card2Body": "无需登录，不收集邮箱，也没有分析 SDK。排行榜仅使用匿名认证。",
+    "privacy.card3Title": "可选平台服务",
+    "privacy.card3Body": "只有在玩家选择时，激励广告和购买才会通过 Google Play 或 Apple 服务。",
+    "footer.title": "Mortigen™",
+    "footer.body": "一款关于生物制药爆发的生存射击游戏，登陆 Android 与 iOS。",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. 保留所有权利。",
+    "footer.appleTrademark": "Apple 和 Apple 标志是 Apple Inc. 的商标。App Store 是 Apple Inc. 的服务标志。",
+    "footer.googleTrademark": "Google Play 是 Google LLC 的商标。",
+    "footer.terms": "条款与条件",
+    "footer.privacy": "隐私政策"
+  },
+  fr: {
+    "meta.title": "Mortigen | Survivre à l'épidémie", "meta.description": "Mortigen est un shooter de survie en vue du dessus où l'on survit à une épidémie biopharma avec des armes tirées des infectés.", "brand.homeAria": "Accueil Mortigen", "brand.tagline": "Shooter de survie biopharma", "nav.primaryAria": "Navigation principale", "nav.home": "Accueil", "nav.story": "Histoire", "nav.features": "Builds", "nav.gallery": "Galerie", "nav.privacy": "Hors ligne", "nav.terms": "Conditions générales", "nav.privacyPolicy": "Politique de confidentialité", "lang.aria": "Sélecteur de langue", "links.home": "index.html?lang=fr", "links.terms": "terms.html", "links.privacy": "privacy.html", "hero.appStore": "App Store", "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg", "hero.appStoreBadgeAria": "Télécharger Mortigen sur l'App Store", "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg", "hero.googlePlayBadgeAria": "Obtenir Mortigen sur Google Play", "hero.googlePlay": "Google Play", "hero.status": "Rapport de confinement // Annexe scellée", "hero.heading": "Survivez à l'épidémie. Armez les morts. Sortez vivant.", "hero.body": "Combattez dans Mortigen Biopharma avec le Dr Luisen, fabriquez des armes à partir de matière infectée et survivez tandis que l'épidémie s'aggrave.", "hero.exploreCta": "Voir les fonctionnalités", "hero.statUpgrades": "bio-améliorations sur 4 niveaux de rareté", "hero.statTrophies": "trophées liés à la progression persistante", "hero.statBosses": "boss majeurs qui traquent chaque run", "hero.statControls": "localisation complète avec tactile, clavier et manette", "hero.sceneAria": "Montage d'illustrations Mortigen", "hero.portraitEyebrow": "Dernier survivant confirmé", "hero.portraitBody": "Biochimiste en chef. Dernier humain encore mobile dans l'annexe. Chaque run transforme la recherche ratée du labo en nouvelles armes.", "hero.portraitAlt": "Illustration du Dr Luisen", "hero.cardAAlt": "Ville en pleine épidémie", "hero.cardAEyebrow": "Périmètre de quarantaine", "hero.cardATitle": "Les morts bougent encore", "hero.cardABody": "Le rythme des hordes passe d'intervalles calmes à des poussées de foule et des arrivées de boss, pendant que la bande-son gagne en intensité.", "hero.cardBAlt": "Bâtiment Mortigen Biopharma", "hero.cardBEyebrow": "Lieu", "hero.cardBTitle": "Annexe Mortigen Biopharma", "hero.cardBBody": "Chaque run reconstruit le labo en nouveau plan procédural avec salles, couloirs, boucles et matériel destructible.", "hero.cardCAlt": "Flacon de sérum prototype", "hero.cardCEyebrow": "Catalyseur", "hero.cardCTitle": "Un tonique anti-âge lancé trop vite", "hero.cardCBody": "La pression des investisseurs a imposé la bêta avant de comprendre la stabilité neuronale. À l'aube, l'annexe était envahie.", "metrics.grid": "Grille de laboratoire", "metrics.slots": "Emplacements d'amélioration par run", "metrics.enemies": "Types d'ennemis avec boss", "metrics.reviveCount": "Réanimation d'urgence par run", "metrics.reviveHealth": "Santé restaurée à la réanimation", "metrics.localDataValue": "Sans backend", "metrics.localData": "La progression reste sur l'appareil", "story.kicker": "Chronologie récupérée", "story.heading": "L'épidémie n'était pas un accident. C'était une échéance.", "story.body": "Mortigen Biopharma vendait une promesse de jeunesse sans déclin. Derrière la marque se trouvaient une annexe privée, la pression des investisseurs et une bêta devenue massacre.", "story.card1Alt": "Annexe Mortigen Biopharma", "story.phase1": "Phase 01", "story.card1Title": "Laboratoire privé de longévité", "story.card1Body": "Mortigen Biopharma a bâti une annexe isolée pour la médecine régénérative et la réparation accélérée des tissus, afin de vendre la jeunesse comme produit premium.", "story.card2Alt": "Rapport d'épidémie récupéré", "story.phase2": "Phase 02", "story.card2Title": "La pression des investisseurs l'emporte", "story.card2Body": "Les objections du personnel ont été ignorées. La bêta humaine restreinte a été lancée avant que la stabilité neuronale à long terme soit comprise.", "story.card3Alt": "Flacon de sérum prototype", "story.phase3": "Phase 03", "story.card3Title": "Le dernier survivant est dedans", "story.card3Body": "Le Dr Luisen s'est scellé dans un bloc armé, a transformé le labo en arsenal et a survécu assez longtemps pour révéler ce que Mortigen avait libéré.", "features.kicker": "Fabriqué avec les morts", "features.heading": "Chaque run devient une expérience de labo sous pression.", "features.body": "Quatre améliorations clés montrent comment un run peut basculer du contrôle de foule à la survie brute.", "features.card1Alt": "Icône de pistolet électrique", "features.card1Eyebrow": "Sérum-tempête", "features.card1Title": "Chaîner l'électricité dans les groupes", "features.card1Body": "Les arcs frappent les ennemis proches et nettoient les couloirs saturés.", "features.card1Meta1": "Effet élémentaire", "features.card1Meta2": "Jusqu'à 4 cibles proches", "features.card1Meta3": "Progresse avec les cumuls", "features.card2Alt": "Icône de munitions gelées", "features.card2Eyebrow": "Peste de givre", "features.card2Title": "Ralentir la ruée avant l'impact", "features.card2Body": "Le gel achète de l'espace et rend les vagues rapides gérables.", "features.card2Meta1": "Suppression du mouvement", "features.card2Meta2": "Synergie avec les grenades", "features.card2Meta3": "Synergie avec le canon à vent", "features.card3Alt": "Icône du Halo de pourriture", "features.card3Eyebrow": "Halo de pourriture", "features.card3Title": "Porter une aura qui fond le proche", "features.card3Body": "Une aura persistante punit les ennemis proches et stabilise les combats serrés.", "features.card3Meta1": "Rayon persistant", "features.card3Meta2": "DPS de proximité", "features.card3Meta3": "Soupape légendaire", "features.card4Alt": "Icône du Canon à vent", "features.card4Eyebrow": "Canon à vent", "features.card4Title": "Ouvrir un couloir sans tirer", "features.card4Body": "Un cône temporisé crée de l'air et prépare d'autres synergies.", "features.card4Meta1": "Cône temporisé", "features.card4Meta2": "Contrôle de foule pur", "features.card4Meta3": "Support de synergie élémentaire", "threat.kicker": "Indice de menace", "threat.heading": "L'annexe change, la pression monte.", "threat.body": "Les ennemis se débloquent par étapes, les hordes accélèrent le tempo et la fin de partie devient une chasse.", "threat.card1Eyebrow": "Pression d'essaim", "threat.card1Title": "Marcheurs et infectés rapides", "threat.card1Body": "Le run commence avec des poursuivants directs, puis ajoute zigzags et ennemis rapides pour punir les routes paresseuses.", "threat.card1Item1": "L'apparition prédictive pousse les ennemis sur votre trajectoire.", "threat.card1Item2": "Les intervalles diminuent à mesure que les vagues avancent.", "threat.card1Item3": "Le mélange complet atteint quatre comportements standard.", "threat.card2Eyebrow": "Briseurs d'espace", "threat.card2Title": "Chargeurs, brutes et boss", "threat.card2Body": "Les lourds absorbent les dégâts, ignorent le recul dans les combats clés et punissent l'hésitation.", "threat.card2Item1": "Les phases de horde alternent fenêtres calmes et pics brutaux.", "threat.card2Item2": "Les emplacements de boss peuvent se cumuler en fin de run.", "threat.card2Item3": "Les runs avec véhicule changent la pression de contact.", "threat.card3Eyebrow": "Chasseur final", "threat.card3Title": "Le Professeur Noir pense encore", "threat.card3Body": "L'architecte de la bêta fatale garde son intellect, kite à distance et veut Luisen mort avant que la vérité s'échappe.", "threat.card3Item1": "Boss à distance avec espacement préféré.", "threat.card3Item2": "Ancien supérieur devenu antagoniste actif.", "threat.card3Item3": "Pas un infecté titubant, une menace volontaire.", "gallery.kicker": "Dans l'annexe", "gallery.heading": "Fiction biotech sombre et élan arcade.", "gallery.body": "Mortigen mélange pixel art d'épidémie, laboratoires procéduraux, intensité musicale en couches et boucle d'auto-tir nette.", "gallery.mainAlt": "Scène pixel art d'épidémie urbaine", "gallery.mainCaption": "La pression des hordes monte hors de l'annexe scellée.", "gallery.secondAlt": "Extérieur de Mortigen Biopharma", "gallery.secondCaption": "La façade publique de Mortigen Biopharma.", "gallery.thirdAlt": "Rapport d'urgence récupéré", "gallery.thirdCaption": "Les archives récupérées renvoient à la bêta.", "gallery.wideAlt": "Sprite du Dr Luisen vaincu", "gallery.wideCaption": "Une erreur peut encore terminer le run, sauf si vous dépensez l'unique réanimation d'urgence.", "privacy.kicker": "Hors ligne par conception", "privacy.heading": "Le jeu principal fonctionne hors ligne. Votre progression reste sur l'appareil.", "privacy.body": "Mortigen n'a pas besoin de compte, de backend ni de SDK analytique pour jouer. Les services réseau restent optionnels.", "privacy.card1Title": "Jeu entièrement hors ligne", "privacy.card1Body": "Runs, améliorations, trophées, réglages et cosmétiques fonctionnent sans compte serveur.", "privacy.card2Title": "Pas de compte ni de suivi", "privacy.card2Body": "Pas de connexion, pas d'e-mail capturé et pas de SDK analytique. Le classement utilise seulement une authentification anonyme.", "privacy.card3Title": "Services optionnels", "privacy.card3Body": "Publicités récompensées et achats restent derrière Google Play ou Apple quand le joueur les choisit.", "footer.title": "Mortigen™", "footer.body": "Un shooter de survie sur une épidémie biopharma, disponible sur Android et iOS.", "footer.copyright": "© 2026 Luis Enrique Ruiz. Tous droits réservés.", "footer.appleTrademark": "Apple et le logo Apple sont des marques d'Apple Inc. App Store est une marque de service d'Apple Inc.", "footer.googleTrademark": "Google Play est une marque de Google LLC.", "footer.terms": "Conditions générales", "footer.privacy": "Politique de confidentialité"
+  },
+  pt: {
+    "meta.title": "Mortigen | Sobrevive ao surto", "meta.description": "Mortigen é um shooter de sobrevivência visto de cima sobre sobreviver a um surto biofarmacêutico com armas feitas a partir dos infetados.", "brand.homeAria": "Início Mortigen", "brand.tagline": "Shooter de sobrevivência biofarmacêutico", "nav.primaryAria": "Navegação principal", "nav.features": "Builds", "nav.gallery": "Galeria", "nav.privacy": "Offline", "lang.aria": "Seletor de idioma", "links.terms": "terms.html", "links.privacy": "privacy.html", "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg", "hero.appStoreBadgeAria": "Descarregar Mortigen na App Store", "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg", "hero.googlePlayBadgeAria": "Obter Mortigen no Google Play", "hero.status": "Relatório de contenção // Anexo selado", "hero.heading": "Sobrevive ao surto. Usa os mortos como armas. Sai vivo.", "hero.body": "Luta pela Mortigen Biopharma como Dr. Luisen, constrói armas com matéria infetada e mantém-te vivo enquanto o surto escala.", "hero.statUpgrades": "bio-melhorias em 4 níveis de raridade", "hero.statTrophies": "troféus ligados à progressão persistente", "hero.statBosses": "chefes destacados caçam cada partida", "hero.statControls": "localização completa com toque, teclado e comando", "hero.sceneAria": "Montagem de arte Mortigen", "hero.portraitEyebrow": "Último sobrevivente confirmado", "hero.portraitBody": "Bioquímico principal. Último humano ainda em movimento dentro do anexo. Cada run transforma a investigação falhada do laboratório em novas armas.", "hero.portraitAlt": "Ilustração do Dr. Luisen", "features.kicker": "Feito dos mortos", "features.heading": "Cada partida torna-se uma experiência de laboratório sob pressão.", "features.body": "Quatro melhorias mostram como cada partida pode passar de controlo de multidão para sobrevivência pura.", "features.card1Alt": "Ícone de pistola elétrica", "features.card1Eyebrow": "Soro Tempestade", "features.card1Title": "Encadeia eletricidade por alvos agrupados", "features.card1Body": "Os arcos atingem inimigos próximos e limpam corredores cheios.", "features.card1Meta1": "Efeito elemental", "features.card1Meta2": "Até 4 alvos próximos", "features.card1Meta3": "Escala com acumulações", "features.card2Alt": "Ícone de munições geladas", "features.card2Eyebrow": "Praga Gélida", "features.card2Title": "Abranda a investida antes de te atingir", "features.card2Body": "O gelo compra espaço e torna as vagas rápidas controláveis.", "features.card2Meta1": "Supressão de movimento", "features.card2Meta2": "Combina com granadas", "features.card2Meta3": "Combina com o canhão de vento", "features.card3Alt": "Ícone do Halo Pútrido", "features.card3Eyebrow": "Halo Pútrido", "features.card3Title": "Leva uma aura de dano que derrete quem se aproxima", "features.card3Body": "Uma aura persistente castiga inimigos próximos e estabiliza combates apertados.", "features.card3Meta1": "Raio persistente", "features.card3Meta2": "Dano a curta distância", "features.card3Meta3": "Válvula lendária de pressão", "features.card4Alt": "Ícone do Canhão de Vento", "features.card4Eyebrow": "Canhão de Vento", "features.card4Title": "Abre um corredor sem disparar uma bala", "features.card4Body": "Um cone temporizado cria espaço e prepara outras sinergias.", "features.card4Meta1": "Cone temporizado", "features.card4Meta2": "Controlo puro", "features.card4Meta3": "Suporte de sinergia elemental", "gallery.kicker": "Dentro do anexo", "gallery.heading": "Ficção biotecnológica sombria com impulso arcade.", "gallery.mainAlt": "Cena pixel art de cidade em surto", "gallery.mainCaption": "A pressão da horda aumenta fora do anexo selado.", "gallery.secondAlt": "Exterior da Mortigen Biopharma", "gallery.secondCaption": "A face pública da Mortigen Biopharma.", "gallery.thirdAlt": "Arte de relatório de emergência recuperado", "gallery.thirdCaption": "Os registos recuperados apontam de volta à beta.", "gallery.wideAlt": "Arte do Dr. Luisen derrotado", "gallery.wideCaption": "Um erro ainda pode acabar a run, a menos que uses o único reviver de emergência.", "privacy.kicker": "Offline por design", "privacy.heading": "O jogo principal funciona offline. O progresso fica no teu dispositivo.", "privacy.body": "Mortigen não precisa de conta, backend ou SDK de analítica para jogar. Serviços de rede só aparecem para anúncios recompensados ou compras opcionais.", "privacy.card1Title": "Jogo totalmente offline", "privacy.card1Body": "Runs, melhorias, troféus, definições e cosméticos funcionam sem conta de servidor.", "privacy.card2Title": "Sem conta nem camada de rastreio", "privacy.card2Body": "Sem login, sem captura de email e sem SDK de analítica. A classificação usa apenas autenticação anónima.", "privacy.card3Title": "Serviços opcionais", "privacy.card3Body": "Anúncios recompensados e compras ficam nos serviços Google Play ou Apple quando o jogador os escolhe.", "footer.title": "Mortigen™", "footer.body": "Um shooter de sobrevivência sobre um surto biofarmacêutico, disponível em Android e iOS.", "footer.copyright": "© 2026 Luis Enrique Ruiz. Todos os direitos reservados.", "footer.appleTrademark": "Apple e o logótipo Apple são marcas da Apple Inc. App Store é uma marca de serviço da Apple Inc.", "footer.googleTrademark": "Google Play é uma marca da Google LLC.", "footer.terms": "Termos e Condições", "footer.privacy": "Política de Privacidade"
+  },
+  ru: {
+    "meta.title": "Mortigen | Выживите во вспышке", "meta.description": "Mortigen — шутер на выживание с видом сверху о выживании во вспышке биофармы с оружием из зараженных.", "brand.homeAria": "Главная Mortigen", "brand.tagline": "Биофармацевтический шутер на выживание", "nav.primaryAria": "Основная навигация", "nav.features": "Сборки", "nav.gallery": "Галерея", "nav.privacy": "Офлайн", "lang.aria": "Выбор языка", "links.terms": "terms.html", "links.privacy": "privacy.html", "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg", "hero.appStoreBadgeAria": "Скачать Mortigen в App Store", "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg", "hero.googlePlayBadgeAria": "Получить Mortigen в Google Play", "hero.status": "Отчет сдерживания // Аннекс запечатан", "hero.heading": "Выживите во вспышке. Превратите мертвых в оружие. Выберитесь живым.", "hero.body": "Сражайтесь в Mortigen Biopharma за доктора Luisen, создавайте оружие из зараженной материи и держитесь, пока вспышка усиливается.", "hero.statUpgrades": "биоулучшений в 4 уровнях редкости", "hero.statTrophies": "трофеи, связанные с постоянным прогрессом", "hero.statBosses": "ключевые боссы охотятся в каждом забеге", "hero.statControls": "полная локализация, сенсор, клавиатура и геймпад", "hero.sceneAria": "Монтаж иллюстраций Mortigen", "hero.portraitEyebrow": "Последний подтвержденный выживший", "hero.portraitBody": "Ведущий биохимик. Последний человек, все еще движущийся в аннексе. Каждый забег превращает проваленные исследования лаборатории в новое оружие.", "hero.portraitAlt": "Иллюстрация доктора Luisen", "features.kicker": "Создано из мертвых", "features.heading": "Каждый забег становится лабораторным экспериментом под давлением.", "features.body": "Четыре заметных улучшения показывают, как забег меняется от контроля толпы к жесткому выживанию.", "features.card1Alt": "Иконка электрического пистолета", "features.card1Eyebrow": "Штормовая сыворотка", "features.card1Title": "Проводите электричество через плотные цели", "features.card1Body": "Разряды прыгают по ближайшим врагам и чистят забитые коридоры.", "features.card1Meta1": "Стихийный эффект", "features.card1Meta2": "До 4 ближайших целей", "features.card1Meta3": "Растет со стаками", "features.card2Alt": "Иконка ледяных патронов", "features.card2Eyebrow": "Морозная чума", "features.card2Title": "Замедлите рывок до контакта", "features.card2Body": "Заморозка дает пространство и делает быстрые волны управляемыми.", "features.card2Meta1": "Подавление движения", "features.card2Meta2": "Сочетается с гранатами", "features.card2Meta3": "Сочетается с ветряной пушкой", "features.card3Alt": "Иконка Гнилого ореола", "features.card3Eyebrow": "Гнилой ореол", "features.card3Title": "Носите ауру урона, плавящую все рядом", "features.card3Body": "Постоянная аура карает ближних врагов и стабилизирует тесные бои.", "features.card3Meta1": "Постоянный радиус", "features.card3Meta2": "Ближний урон", "features.card3Meta3": "Легендарный клапан давления", "features.card4Alt": "Иконка Ветряной пушки", "features.card4Eyebrow": "Ветряная пушка", "features.card4Title": "Откройте коридор без единого выстрела", "features.card4Body": "Синхронный конусный удар создает передышку и готовит синергии.", "features.card4Meta1": "Конусный импульс", "features.card4Meta2": "Чистый контроль толпы", "features.card4Meta3": "Носитель стихийных синергий", "gallery.kicker": "Внутри аннекса", "gallery.heading": "Мрачная биотех-фантастика с аркадным темпом.", "gallery.mainAlt": "Пиксельная сцена городской вспышки", "gallery.mainCaption": "Давление орды растет за пределами запечатанного аннекса.", "gallery.secondAlt": "Фасад Mortigen Biopharma", "gallery.secondCaption": "Публичное лицо Mortigen Biopharma.", "gallery.thirdAlt": "Восстановленный аварийный отчет", "gallery.thirdCaption": "Восстановленные записи ведут обратно к бете.", "gallery.wideAlt": "Изображение поверженного доктора Luisen", "gallery.wideCaption": "Одна ошибка все еще может завершить забег, если не потратить единственное аварийное возрождение.", "privacy.kicker": "Офлайн по замыслу", "privacy.heading": "Основная игра работает офлайн. Прогресс остается на устройстве.", "privacy.body": "Для игры Mortigen не нужны аккаунт, backend или аналитический SDK. Сетевые сервисы появляются только для опциональной рекламы или покупок.", "privacy.card1Title": "Полная офлайн-игра", "privacy.card1Body": "Забеги, улучшения, трофеи, настройки и облики работают без серверного аккаунта.", "privacy.card2Title": "Без аккаунта и отслеживания", "privacy.card2Body": "Без входа, сбора email и аналитического SDK. Рейтинг использует только анонимную авторизацию.", "privacy.card3Title": "Опциональные сервисы", "privacy.card3Body": "Вознаграждаемая реклама и покупки остаются за сервисами Google Play или Apple, когда игрок выбирает их.", "footer.title": "Mortigen™", "footer.body": "Шутер на выживание о биофармацевтической вспышке, доступный на Android и iOS.", "footer.copyright": "© 2026 Luis Enrique Ruiz. Все права защищены.", "footer.appleTrademark": "Apple и логотип Apple являются товарными знаками Apple Inc. App Store является знаком обслуживания Apple Inc.", "footer.googleTrademark": "Google Play является товарным знаком Google LLC.", "footer.terms": "Условия", "footer.privacy": "Политика конфиденциальности"
+  },
+  hi: {
+    "meta.title": "Mortigen | प्रकोप में जीवित रहें", "meta.description": "Mortigen ऊपर से दिखने वाला जीवित-रहने का शूटर है, जिसमें जैव-फार्मा प्रकोप से संक्रमितों से बने हथियारों के साथ बचना है।", "brand.homeAria": "Mortigen होम", "brand.tagline": "जैव-फार्मा प्रकोप शूटर", "nav.primaryAria": "मुख्य नेविगेशन", "nav.features": "बिल्ड", "nav.gallery": "गैलरी", "nav.privacy": "ऑफलाइन", "lang.aria": "भाषा चयन", "links.terms": "terms.html", "links.privacy": "privacy.html", "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg", "hero.appStoreBadgeAria": "App Store से Mortigen डाउनलोड करें", "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg", "hero.googlePlayBadgeAria": "Google Play पर Mortigen पाएं", "hero.status": "नियंत्रण रिपोर्ट // एनेक्स सील", "hero.heading": "प्रकोप में बचें। मृतकों को हथियार बनाएं। जीवित निकलें।", "hero.body": "डॉ. Luisen बनकर Mortigen Biopharma में लड़ें, संक्रमित पदार्थ से हथियार बनाएं और बढ़ते प्रकोप में जीवित रहें।", "hero.statUpgrades": "4 दुर्लभता स्तरों में जैव-अपग्रेड", "hero.statTrophies": "स्थायी प्रगति से जुड़े ट्रॉफी", "hero.statBosses": "हर रन में पीछा करते प्रमुख बॉस", "hero.statControls": "पूर्ण स्थानीयकरण, स्पर्श, कीबोर्ड और गेमपैड", "hero.sceneAria": "Mortigen कला मोंटाज", "hero.portraitEyebrow": "अंतिम पुष्ट जीवित व्यक्ति", "hero.portraitBody": "प्रमुख जैवरसायनज्ञ। एनेक्स में अब भी चलता अंतिम मानव। हर रन लैब की विफल रिसर्च को नए हथियारों में बदलता है।", "hero.portraitAlt": "डॉ. Luisen का चित्र", "features.kicker": "मृतकों से निर्मित", "features.heading": "हर रन दबाव में लैब प्रयोग बन जाता है।", "features.body": "चार प्रमुख अपग्रेड दिखाते हैं कि रन भीड़ नियंत्रण से शुद्ध जीवित-रहने के दबाव तक कैसे बदलता है।", "features.card1Alt": "बिजली पिस्तौल आइकन", "features.card1Eyebrow": "तूफान सीरम", "features.card1Title": "घने लक्ष्यों में बिजली फैलाएं", "features.card1Body": "बिजली पास के दुश्मनों में कूदती है और भरे गलियारे साफ करती है।", "features.card1Meta1": "तत्व प्रभाव", "features.card1Meta2": "पास के 4 लक्ष्य तक", "features.card1Meta3": "स्टैक के साथ बढ़ता", "features.card2Alt": "जमी हुई गोलियों का आइकन", "features.card2Eyebrow": "हिम महामारी", "features.card2Title": "लहर पहुंचने से पहले उसे धीमा करें", "features.card2Body": "जमाव जगह देता है और तेज वेव को संभालने योग्य बनाता है।", "features.card2Meta1": "गति नियंत्रण", "features.card2Meta2": "ग्रेनेड से तालमेल", "features.card2Meta3": "हवा तोप से तालमेल", "features.card3Alt": "सड़न प्रभामंडल आइकन", "features.card3Eyebrow": "सड़न प्रभामंडल", "features.card3Title": "नजदीक आने वालों को पिघलाने वाली आभा रखें", "features.card3Body": "लगातार आभा नजदीकी दुश्मनों को सजा देती है और तंग लड़ाइयों को संभालती है।", "features.card3Meta1": "लगातार दायरा", "features.card3Meta2": "नजदीकी नुकसान", "features.card3Meta3": "पौराणिक दबाव वाल्व", "features.card4Alt": "हवा तोप आइकन", "features.card4Eyebrow": "हवा तोप", "features.card4Title": "बिना गोली चलाए गलियारा खोलें", "features.card4Body": "समयबद्ध शंकु-धक्का जगह बनाता है और दूसरे तालमेल तैयार करता है।", "features.card4Meta1": "समयबद्ध शंकु", "features.card4Meta2": "शुद्ध भीड़ नियंत्रण", "features.card4Meta3": "तत्व तालमेल वाहक", "gallery.kicker": "एनेक्स के भीतर", "gallery.heading": "गंभीर जैव-तकनीकी कल्पना और आर्केड जीवित-रहने की गति।", "gallery.mainAlt": "पिक्सेल कला शहर प्रकोप दृश्य", "gallery.mainCaption": "सील एनेक्स के बाहर बढ़ता झुंड-दबाव।", "gallery.secondAlt": "Mortigen Biopharma बाहरी दृश्य", "gallery.secondCaption": "Mortigen Biopharma का सार्वजनिक चेहरा।", "gallery.thirdAlt": "बरामद आपात रिपोर्ट कला", "gallery.thirdCaption": "बरामद रिकॉर्ड बीटा रिलीज की ओर लौटते हैं।", "gallery.wideAlt": "पराजित डॉ. Luisen कला", "gallery.wideCaption": "एक गलती अब भी रन खत्म कर सकती है, जब तक आप एकमात्र आपात रिवाइव खर्च न करें।", "privacy.kicker": "डिजाइन से ऑफलाइन", "privacy.heading": "मुख्य गेम ऑफलाइन चलता है। आपकी प्रगति डिवाइस पर रहती है।", "privacy.body": "Mortigen खेलने के लिए खाता, सर्वर ढांचा या विश्लेषण SDK नहीं मांगता। नेटवर्क सेवाएं केवल वैकल्पिक रिवॉर्ड विज्ञापन या खरीद के लिए आती हैं।", "privacy.card1Title": "पूरी तरह ऑफलाइन खेल", "privacy.card1Body": "रन, अपग्रेड, ट्रॉफियां, सेटिंग्स और सजावटी वस्तुएं बिना सर्वर खाते काम करती हैं।", "privacy.card2Title": "कोई खाता या ट्रैकिंग परत नहीं", "privacy.card2Body": "कोई लॉगिन नहीं, ईमेल संग्रह नहीं, विश्लेषण SDK नहीं। लीडरबोर्ड केवल अनाम प्रमाणीकरण इस्तेमाल करता है।", "privacy.card3Title": "वैकल्पिक प्लेटफॉर्म सेवाएं", "privacy.card3Body": "रिवॉर्ड विज्ञापन और खरीद खिलाड़ी चुनने पर Google Play या Apple सेवाओं के पीछे रहते हैं।", "footer.title": "Mortigen™", "footer.body": "जैव-फार्मा प्रकोप पर आधारित जीवित-रहने का शूटर, Android और iOS पर उपलब्ध।", "footer.copyright": "© 2026 Luis Enrique Ruiz. सर्वाधिकार सुरक्षित।", "footer.appleTrademark": "Apple और Apple लोगो Apple Inc. के ट्रेडमार्क हैं। App Store Apple Inc. का सेवा-चिह्न है।", "footer.googleTrademark": "Google Play Google LLC का ट्रेडमार्क है।", "footer.terms": "नियम और शर्तें", "footer.privacy": "गोपनीयता नीति"
+  },
+  eu: {
+    "meta.title": "Mortigen | Iraun agerraldiari", "meta.description": "Mortigen goitik ikusitako biziraupen-shooterra da: biofarma agerraldi batean bizirik iraun, kutsatuetatik egindako armekin.", "brand.homeAria": "Mortigen hasiera", "brand.tagline": "Biofarma agerraldiaren biziraupen-shooterra", "nav.primaryAria": "Nabigazio nagusia", "nav.features": "Konfigurazioak", "nav.gallery": "Galeria", "nav.privacy": "Offline", "lang.aria": "Hizkuntza hautatzailea", "links.terms": "terms.html", "links.privacy": "privacy.html", "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg", "hero.appStoreBadgeAria": "Deskargatu Mortigen App Store-n", "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg", "hero.googlePlayBadgeAria": "Lortu Mortigen Google Play-n", "hero.status": "Euste-txostena // Anexoa zigilatuta", "hero.heading": "Iraun agerraldiari. Bihurtu hildakoak arma. Irten bizirik.", "hero.body": "Borrokatu Mortigen Biopharman Luisen doktore gisa, eraiki armak materia kutsatuarekin eta iraun agerraldia handitzen den bitartean.", "hero.statUpgrades": "4 arrarotasun-mailatako bio-hobekuntzak", "hero.statTrophies": "progresio iraunkorrari lotutako trofeoak", "hero.statBosses": "partida bakoitzean ehizan dabiltzan buruzagiak", "hero.statControls": "lokalizazio osoa, ukipena, teklatua eta agintea", "hero.sceneAria": "Mortigen arte-muntaia", "hero.portraitEyebrow": "Azken bizirik egiaztatua", "hero.portraitBody": "Bio-kimikari nagusia. Anexo barruan oraindik mugitzen den azken gizakia. Run bakoitzak laborategiko ikerketa hutsak arma berri bihurtzen ditu.", "hero.portraitAlt": "Luisen doktorearen ilustrazioa", "features.kicker": "Hildakoekin egina", "features.heading": "Partida bakoitza presiopeko laborategi-esperimentu bihurtzen da.", "features.body": "Lau hobekuntzak erakusten dute partida bat nola pasa daitekeen jendetza-kontroletik biziraupen gordina izatera.", "features.card1Alt": "Pistola elektrikoaren ikonoa", "features.card1Eyebrow": "Ekaitz-seruma", "features.card1Title": "Kateatu elektrizitatea helburu trinkoetan", "features.card1Body": "Deskargek inguruko etsaietara salto egiten dute eta korridore beteak garbitzen dituzte.", "features.card1Meta1": "Efektu elementala", "features.card1Meta2": "Gertuko 4 helburu arte", "features.card1Meta3": "Pilaketekin hazten da", "features.card2Alt": "Munizio izoztuaren ikonoa", "features.card2Eyebrow": "Izotz-izurria", "features.card2Title": "Moteldu oldarra iritsi aurretik", "features.card2Body": "Izozteak espazioa ematen du eta olatu azkarrak kudeagarri bihurtzen ditu.", "features.card2Meta1": "Mugimenduaren zapalketa", "features.card2Meta2": "Granadekin sinergia", "features.card2Meta3": "Haize-kanoiarekin sinergia", "features.card3Alt": "Ustel-haloaren ikonoa", "features.card3Eyebrow": "Ustel-haloa", "features.card3Title": "Eraman hurbiltzen dena urtzen duen aura", "features.card3Body": "Aura iraunkorrak gertuko etsaiak zigortzen ditu eta borroka estuak egonkortzen ditu.", "features.card3Meta1": "Erradio iraunkorra", "features.card3Meta2": "Gertuko kaltea", "features.card3Meta3": "Presio-balbula mitikoa", "features.card4Alt": "Haize-kanoiaren ikonoa", "features.card4Eyebrow": "Haize-kanoia", "features.card4Title": "Ireki korridore bat balarik bota gabe", "features.card4Body": "Denboratutako konoak arnasa ematen du eta beste sinergiak prestatzen ditu.", "features.card4Meta1": "Denboratutako konoa", "features.card4Meta2": "Jendetza-kontrol hutsa", "features.card4Meta3": "Sinergia elementalaren euskarri", "gallery.kicker": "Anexoaren barruan", "gallery.heading": "Bio-tech fikzio iluna arcade biziraupen-erritmoarekin.", "gallery.mainAlt": "Pixel art hiriko agerraldi-eszena", "gallery.mainCaption": "Hordaren presioa hazten da anexo zigilatuaren kanpoan.", "gallery.secondAlt": "Mortigen Biopharmaren kanpoaldea", "gallery.secondCaption": "Mortigen Biopharmaren aurpegi publikoa.", "gallery.thirdAlt": "Berreskuratutako larrialdi-txostenaren artea", "gallery.thirdCaption": "Berreskuratutako erregistroek betara eramaten dute berriro.", "gallery.wideAlt": "Luisen doktorea garaituta", "gallery.wideCaption": "Akats batek runa amai dezake oraindik, larrialdiko berpizte bakarra erabili ezean.", "privacy.kicker": "Diseinuz offline", "privacy.heading": "Joko nagusia offline dabil. Zure progresioa gailuan geratzen da.", "privacy.body": "Mortigenek ez du konturik, backendik edo analitika SDK-rik behar jolasteko. Sareko zerbitzuak saridun iragarki edo erosketa aukerakoetan bakarrik agertzen dira.", "privacy.card1Title": "Joko guztiz offlinea", "privacy.card1Body": "Runak, hobekuntzak, trofeoak, ezarpenak eta kosmetikoak zerbitzari-konturik gabe dabiltza.", "privacy.card2Title": "Konturik eta jarraipen-geruzarik ez", "privacy.card2Body": "Loginik ez, email-bilketarik ez eta analitika SDK-rik ez. Sailkapenak autentifikazio anonimoa bakarrik erabiltzen du.", "privacy.card3Title": "Aukerako plataforma-zerbitzuak", "privacy.card3Body": "Saridun iragarkiak eta erosketak Google Play edo Apple zerbitzuetan geratzen dira jokalariak aukeratzen dituenean.", "footer.title": "Mortigen™", "footer.body": "Biofarma agerraldi bati buruzko biziraupen-shooterra, Android eta iOS-en erabilgarri.", "footer.copyright": "© 2026 Luis Enrique Ruiz. Eskubide guztiak erreserbatuta.", "footer.appleTrademark": "Apple eta Apple logotipoa Apple Inc.-en markak dira. App Store Apple Inc.-en zerbitzu-marka da.", "footer.googleTrademark": "Google Play Google LLC-ren marka da.", "footer.terms": "Baldintzak", "footer.privacy": "Pribatutasun-politika"
+  }
+
+};
+
+Object.assign(EXTRA_HOME_TRANSLATIONS, {
+  "de": {
+    "meta.title": "Mortigen | Überlebe den Ausbruch",
+    "meta.description": "Mortigen ist ein Top-down-Survival-Shooter über einen Biopharma-Ausbruch, in dem du mit Waffen aus infiziertem Material überlebst.",
+    "brand.homeAria": "Mortigen-Startseite",
+    "brand.tagline": "Survival-Shooter zum Biopharma-Ausbruch",
+    "nav.primaryAria": "Hauptnavigation",
+    "nav.features": "Ausrüstung",
+    "nav.gallery": "Galerie",
+    "nav.privacy": "Offline",
+    "lang.aria": "Sprachauswahl",
+    "links.terms": "terms.html",
+    "links.privacy": "privacy.html",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
+    "hero.appStoreBadgeAria": "Mortigen im App Store laden",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg",
+    "hero.googlePlayBadgeAria": "Mortigen bei Google Play holen",
+    "hero.status": "Eindämmungsbericht // Anbau versiegelt",
+    "hero.heading": "Überlebe den Ausbruch. Mache die Toten zu Waffen. Entkomme lebend.",
+    "hero.body": "Kämpfe als Dr. Luisen durch Mortigen Biopharma, baue Waffen aus infiziertem Material und bleibe am Leben, während der Ausbruch eskaliert.",
+    "hero.statUpgrades": "Bio-Upgrades über 4 Seltenheitsstufen",
+    "hero.statTrophies": "Trophäen mit dauerhaftem Fortschritt",
+    "hero.statBosses": "Bossbegegnungen, die jede Runde jagen",
+    "hero.statControls": "vollständige Lokalisierung plus Touch, Tastatur und Gamepad",
+    "hero.sceneAria": "Mortigen-Artwork-Montage",
+    "hero.portraitEyebrow": "Letzter bestätigter Überlebender",
+    "hero.portraitBody": "Leitender Biochemiker. Der letzte Mensch, der sich noch im Anbau bewegt. Jede Runde verwandelt die gescheiterte Forschung des Labors in neue Waffen.",
+    "hero.portraitAlt": "Illustration von Dr. Luisen",
+    "features.kicker": "Aus den Toten gebaut",
+    "features.heading": "Jede Runde wird zu einem Laborexperiment unter Druck.",
+    "features.body": "Vier markante Upgrades zeigen, wie eine Runde von Kontrolle der Menge zu blankem Überlebensdruck kippen kann.",
+    "features.card1Alt": "Symbol einer Elektropistole",
+    "features.card1Eyebrow": "Sturmserum",
+    "features.card1Title": "Leite Elektrizität durch dicht gedrängte Ziele",
+    "features.card1Body": "Schockbögen springen auf nahe Gegner über und räumen volle Korridore frei.",
+    "features.card1Meta1": "Elementare Verstärkung",
+    "features.card1Meta2": "Bis zu 4 nahe Ziele",
+    "features.card1Meta3": "Skaliert mit Stapeln",
+    "features.card2Alt": "Symbol gefrorener Munition",
+    "features.card2Eyebrow": "Frostseuche",
+    "features.card2Title": "Verlangsame den Ansturm, bevor er dich erreicht",
+    "features.card2Body": "Frost verschafft Raum und macht schnellere Wellen kontrollierbar.",
+    "features.card2Meta1": "Bewegungsunterdrückung",
+    "features.card2Meta2": "Synergie mit Granaten",
+    "features.card2Meta3": "Synergie mit der Windkanone",
+    "features.card3Alt": "Symbol des Verwesungshalos",
+    "features.card3Eyebrow": "Verwesungshalo",
+    "features.card3Title": "Trage eine Schadensaura, die alles zu Nahe schmilzt",
+    "features.card3Body": "Eine dauerhafte Aura bestraft nahe Gegner und stabilisiert enge Kämpfe.",
+    "features.card3Meta1": "Dauerhafter Radius",
+    "features.card3Meta2": "Nahbereichsschaden",
+    "features.card3Meta3": "Legendäres Druckventil",
+    "features.card4Alt": "Symbol der Windkanone",
+    "features.card4Eyebrow": "Windkanone",
+    "features.card4Title": "Sprenge einen Korridor frei, ohne eine Kugel abzufeuern",
+    "features.card4Body": "Ein getakteter Kegelstoß schafft Luft und bereitet weitere Synergien vor.",
+    "features.card4Meta1": "Getakteter Kegelstoß",
+    "features.card4Meta2": "Reine Massenkontrolle",
+    "features.card4Meta3": "Träger elementarer Synergien",
+    "gallery.kicker": "Im Anbau",
+    "gallery.heading": "Düstere Biotech-Fiktion mit Arcade-Überlebensdruck.",
+    "gallery.mainAlt": "Pixel-Art-Szene eines Stadtausbruchs",
+    "gallery.mainCaption": "Wachsender Hordendruck außerhalb des versiegelten Anbaus.",
+    "gallery.secondAlt": "Außenansicht von Mortigen Biopharma",
+    "gallery.secondCaption": "Das öffentliche Gesicht von Mortigen Biopharma.",
+    "gallery.thirdAlt": "Wiederhergestelltes Notfallbericht-Artwork",
+    "gallery.thirdCaption": "Wiederhergestellte Aufzeichnungen führen zurück zur Beta-Freigabe.",
+    "gallery.wideAlt": "Besiegter Dr. Luisen als Sprite-Artwork",
+    "gallery.wideCaption": "Ein Fehler kann die Runde noch immer beenden, außer du verbrauchst die einzige Notfall-Wiederbelebung.",
+    "privacy.kicker": "Offline entwickelt",
+    "privacy.heading": "Das Hauptspiel läuft offline. Dein Fortschritt bleibt auf deinem Gerät.",
+    "privacy.body": "Mortigen braucht zum Spielen kein Konto, kein Backend und kein Analyse-SDK. Netzwerkdienste erscheinen nur bei optionalen belohnten Anzeigen oder Käufen.",
+    "privacy.card1Title": "Vollständig offline spielbar",
+    "privacy.card1Body": "Runden, Upgrades, Trophäen, Einstellungen und Kosmetik funktionieren ohne Serverkonto.",
+    "privacy.card2Title": "Kein Konto und keine Tracking-Schicht",
+    "privacy.card2Body": "Kein Login, keine E-Mail-Erfassung, kein eigenes Backend und kein Analyse-SDK.",
+    "privacy.card3Title": "Optionale Plattformdienste",
+    "privacy.card3Body": "Belohnte Anzeigen und Käufe bleiben bei Google Play oder Apple-Diensten, wenn der Spieler sie auswählt.",
+    "footer.title": "Mortigen™",
+    "footer.body": "Ein Survival-Shooter über einen Biopharma-Ausbruch, verfügbar für Android und iOS.",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. Alle Rechte vorbehalten.",
+    "footer.appleTrademark": "Apple und das Apple-Logo sind Marken von Apple Inc. App Store ist eine Dienstleistungsmarke von Apple Inc.",
+    "footer.googleTrademark": "Google Play ist eine Marke von Google LLC.",
+    "footer.terms": "Allgemeine Geschäftsbedingungen",
+    "footer.privacy": "Datenschutzrichtlinie"
+  },
+  "it": {
+    "meta.title": "Mortigen | Sopravvivi al focolaio",
+    "meta.description": "Mortigen è uno shooter survival dall'alto su un focolaio biopharma, con armi create dai materiali degli infetti.",
+    "brand.homeAria": "Home di Mortigen",
+    "brand.tagline": "Shooter survival biopharma",
+    "nav.primaryAria": "Navigazione principale",
+    "nav.features": "Potenziamenti",
+    "nav.gallery": "Galleria",
+    "nav.privacy": "Offline",
+    "lang.aria": "Selettore lingua",
+    "links.terms": "terms.html",
+    "links.privacy": "privacy.html",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
+    "hero.appStoreBadgeAria": "Scarica Mortigen dall'App Store",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg",
+    "hero.googlePlayBadgeAria": "Ottieni Mortigen su Google Play",
+    "hero.status": "Rapporto di contenimento // Annesso sigillato",
+    "hero.heading": "Sopravvivi al focolaio. Trasforma i morti in armi. Esci vivo.",
+    "hero.body": "Combatti dentro Mortigen Biopharma come il Dr. Luisen, costruisci armi da materia infetta e resta vivo mentre il focolaio peggiora.",
+    "hero.statUpgrades": "bio-potenziamenti in 4 livelli di rarità",
+    "hero.statTrophies": "trofei legati alla progressione persistente",
+    "hero.statBosses": "boss principali a caccia in ogni run",
+    "hero.statControls": "localizzazione completa più touch, tastiera e gamepad",
+    "hero.sceneAria": "Montaggio artistico di Mortigen",
+    "hero.portraitEyebrow": "Ultimo sopravvissuto confermato",
+    "hero.portraitBody": "Biochimico capo. L'ultimo umano ancora in movimento nell'annesso. Ogni run trasforma la ricerca fallita del laboratorio in nuove armi.",
+    "hero.portraitAlt": "Illustrazione del Dr. Luisen",
+    "features.kicker": "Costruito dai morti",
+    "features.heading": "Ogni run diventa un esperimento di laboratorio sotto pressione.",
+    "features.body": "Quattro potenziamenti chiave mostrano come ogni run possa passare dal controllo della folla alla pura pressione di sopravvivenza.",
+    "features.card1Alt": "Icona di pistola elettrica",
+    "features.card1Eyebrow": "Siero Tempesta",
+    "features.card1Title": "Fai passare l'elettricità tra bersagli compatti",
+    "features.card1Body": "Le scariche saltano sui nemici vicini e ripuliscono corridoi affollati.",
+    "features.card1Meta1": "Effetto elementale",
+    "features.card1Meta2": "Fino a 4 bersagli vicini",
+    "features.card1Meta3": "Scala con gli accumuli",
+    "features.card2Alt": "Icona di munizioni congelate",
+    "features.card2Eyebrow": "Piaga Gelida",
+    "features.card2Title": "Rallenta l'assalto prima che ti raggiunga",
+    "features.card2Body": "Il gelo compra spazio e rende gestibili le ondate più veloci.",
+    "features.card2Meta1": "Soppressione del movimento",
+    "features.card2Meta2": "Sinergia con granate",
+    "features.card2Meta3": "Sinergia con il cannone del vento",
+    "features.card3Alt": "Icona dell'Aureola Putrida",
+    "features.card3Eyebrow": "Aureola Putrida",
+    "features.card3Title": "Porta un'aura di danno che scioglie chiunque si avvicini",
+    "features.card3Body": "Un'aura persistente punisce i nemici vicini e stabilizza gli scontri stretti.",
+    "features.card3Meta1": "Raggio persistente",
+    "features.card3Meta2": "Danni a distanza ravvicinata",
+    "features.card3Meta3": "Valvola di pressione leggendaria",
+    "features.card4Alt": "Icona del Cannone del Vento",
+    "features.card4Eyebrow": "Cannone del Vento",
+    "features.card4Title": "Apri un corridoio senza sparare un colpo",
+    "features.card4Body": "Un'esplosione conica a tempo crea respiro e prepara altre sinergie.",
+    "features.card4Meta1": "Esplosione conica a tempo",
+    "features.card4Meta2": "Puro controllo della folla",
+    "features.card4Meta3": "Supporto per sinergie elementali",
+    "gallery.kicker": "Dentro l'annesso",
+    "gallery.heading": "Fantascienza biotech cupa con slancio survival arcade.",
+    "gallery.mainAlt": "Scena pixel art di città durante il focolaio",
+    "gallery.mainCaption": "Pressione crescente dell'orda fuori dall'annesso sigillato.",
+    "gallery.secondAlt": "Esterno di Mortigen Biopharma",
+    "gallery.secondCaption": "Il volto pubblico di Mortigen Biopharma.",
+    "gallery.thirdAlt": "Illustrazione di un rapporto d'emergenza recuperato",
+    "gallery.thirdCaption": "I registri recuperati riportano alla beta.",
+    "gallery.wideAlt": "Sprite art del Dr. Luisen sconfitto",
+    "gallery.wideCaption": "Un errore può ancora chiudere la run, a meno che tu non spenda l'unico revive d'emergenza.",
+    "privacy.kicker": "Offline per design",
+    "privacy.heading": "Il gioco principale funziona offline. I tuoi progressi restano sul dispositivo.",
+    "privacy.body": "Mortigen non richiede account, backend o SDK di analisi per giocare. I servizi di rete compaiono solo per annunci premiati o acquisti opzionali.",
+    "privacy.card1Title": "Gioco completamente offline",
+    "privacy.card1Body": "Run, potenziamenti, trofei, impostazioni e cosmetici funzionano senza un account server.",
+    "privacy.card2Title": "Nessun account o livello di tracciamento",
+    "privacy.card2Body": "Nessun login, nessuna raccolta email, nessun backend personalizzato e nessun SDK di analisi.",
+    "privacy.card3Title": "Servizi piattaforma opzionali",
+    "privacy.card3Body": "Annunci premiati e acquisti restano dietro i servizi Google Play o Apple quando il giocatore li sceglie.",
+    "footer.title": "Mortigen™",
+    "footer.body": "Uno shooter survival su un focolaio biopharma, disponibile su Android e iOS.",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. Tutti i diritti riservati.",
+    "footer.appleTrademark": "Apple e il logo Apple sono marchi di Apple Inc. App Store è un marchio di servizio di Apple Inc.",
+    "footer.googleTrademark": "Google Play è un marchio di Google LLC.",
+    "footer.terms": "Termini e condizioni",
+    "footer.privacy": "Informativa sulla privacy"
+  },
+  "ja": {
+    "meta.title": "Mortigen | アウトブレイクを生き延びろ",
+    "meta.description": "Mortigenは、感染者由来の武器でバイオ医薬品災害を生き延びるトップダウン型サバイバルシューターです。",
+    "brand.homeAria": "Mortigenホーム",
+    "brand.tagline": "バイオ医薬品アウトブレイク・サバイバルシューター",
+    "nav.primaryAria": "メインナビゲーション",
+    "nav.features": "ビルド",
+    "nav.gallery": "ギャラリー",
+    "nav.privacy": "オフライン",
+    "lang.aria": "言語セレクター",
+    "links.terms": "terms.html",
+    "links.privacy": "privacy.html",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
+    "hero.appStoreBadgeAria": "App StoreでMortigenをダウンロード",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg",
+    "hero.googlePlayBadgeAria": "Google PlayでMortigenを入手",
+    "hero.status": "封じ込め報告 // 別棟封鎖済み",
+    "hero.heading": "アウトブレイクを生き延びろ。死者を武器に変えろ。生きて脱出しろ。",
+    "hero.body": "ルイセン博士としてMortigen Biopharmaを戦い抜き、感染物質から武器を作り、拡大する災害の中で生き延びましょう。",
+    "hero.statUpgrades": "4段階の希少度にわたるバイオアップグレード",
+    "hero.statTrophies": "持続進行に結びついたトロフィー",
+    "hero.statBosses": "各ランで追い詰める主要ボス戦",
+    "hero.statControls": "完全ローカライズ、タッチ、キーボード、ゲームパッド対応",
+    "hero.sceneAria": "Mortigenアートワークモンタージュ",
+    "hero.portraitEyebrow": "最後に確認された生存者",
+    "hero.portraitBody": "主任生化学者。別棟内でまだ動いている最後の人間。各ランで、ラボの失敗した研究が新たな武器へ変わります。",
+    "hero.portraitAlt": "ルイセン博士のイラスト",
+    "features.kicker": "死者から作られた力",
+    "features.heading": "すべてのランは、圧力下のラボ実験になる。",
+    "features.body": "4つの代表的なアップグレードが、群衆制御から純粋な生存圧力までランがどう変化するかを示します。",
+    "features.card1Alt": "電撃ピストルのアイコン",
+    "features.card1Eyebrow": "ストーム血清",
+    "features.card1Title": "密集した標的へ電流を連鎖させる",
+    "features.card1Body": "電撃が近くの敵へ跳ね、詰まった通路を掃討します。",
+    "features.card1Meta1": "属性追加効果",
+    "features.card1Meta2": "近くの標的最大4体",
+    "features.card1Meta3": "スタックで成長",
+    "features.card2Alt": "凍結弾のアイコン",
+    "features.card2Eyebrow": "凍結疫",
+    "features.card2Title": "突進が届く前に遅らせる",
+    "features.card2Body": "凍結効果が間合いを作り、速いウェーブを扱いやすくします。",
+    "features.card2Meta1": "移動抑制",
+    "features.card2Meta2": "グレネードと連携",
+    "features.card2Meta3": "ウィンドキャノンと連携",
+    "features.card3Alt": "腐敗の光輪アイコン",
+    "features.card3Eyebrow": "腐敗の光輪",
+    "features.card3Title": "近づくものを溶かすダメージオーラをまとえ",
+    "features.card3Body": "持続オーラが近い敵を罰し、狭い戦闘を安定させます。",
+    "features.card3Meta1": "持続半径",
+    "features.card3Meta2": "近距離ダメージ",
+    "features.card3Meta3": "レジェンダリーの圧力弁",
+    "features.card4Alt": "ウィンドキャノンのアイコン",
+    "features.card4Eyebrow": "ウィンドキャノン",
+    "features.card4Title": "弾を撃たずに通路をこじ開ける",
+    "features.card4Body": "時間式の円すい爆風が息継ぎの空間を作り、他のシナジーを整えます。",
+    "features.card4Meta1": "時間式円すい爆風",
+    "features.card4Meta2": "純粋な群衆制御",
+    "features.card4Meta3": "属性シナジーの土台",
+    "gallery.kicker": "別棟の内部",
+    "gallery.heading": "陰鬱なバイオテックSFとアーケードサバイバルの勢い。",
+    "gallery.mainAlt": "都市アウトブレイクのピクセルアート",
+    "gallery.mainCaption": "封鎖された別棟の外で高まる群れの圧力。",
+    "gallery.secondAlt": "Mortigen Biopharmaの外観",
+    "gallery.secondCaption": "Mortigen Biopharmaの表向きの顔。",
+    "gallery.thirdAlt": "回収された緊急報告のアートワーク",
+    "gallery.thirdCaption": "回収記録はベータ公開へとつながっています。",
+    "gallery.wideAlt": "倒れたルイセン博士のスプライトアート",
+    "gallery.wideCaption": "唯一の緊急復活を使わなければ、たった一度のミスでランは終わります。",
+    "privacy.kicker": "オフライン設計",
+    "privacy.heading": "コアゲームはオフラインで動作します。進行状況は端末に残ります。",
+    "privacy.body": "Mortigenのプレイにアカウント、バックエンド、分析SDKは不要です。ネットワークサービスは任意のリワード広告や購入時だけ表示されます。",
+    "privacy.card1Title": "完全オフラインプレイ",
+    "privacy.card1Body": "ラン、アップグレード、トロフィー、設定、コスメティックはサーバーアカウントなしで機能します。",
+    "privacy.card2Title": "アカウントも追跡レイヤーもなし",
+    "privacy.card2Body": "ログイン、メール収集、独自バックエンド、分析SDKはありません。",
+    "privacy.card3Title": "任意のプラットフォームサービス",
+    "privacy.card3Body": "リワード広告と購入は、プレイヤーが選んだ場合のみGoogle PlayまたはAppleのサービスを通ります。",
+    "footer.title": "Mortigen™",
+    "footer.body": "バイオ医薬品アウトブレイクを描くサバイバルシューター。AndroidとiOSで提供予定。",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. 無断転載を禁じます。",
+    "footer.appleTrademark": "AppleおよびAppleロゴはApple Inc.の商標です。App StoreはApple Inc.のサービスマークです。",
+    "footer.googleTrademark": "Google PlayはGoogle LLCの商標です。",
+    "footer.terms": "利用規約",
+    "footer.privacy": "プライバシーポリシー"
+  },
+  "bn": {
+    "meta.title": "Mortigen | প্রাদুর্ভাবে বেঁচে থাকুন",
+    "meta.description": "Mortigen একটি টপ-ডাউন সারভাইভাল শুটার, যেখানে সংক্রমিতদের থেকে বানানো অস্ত্র নিয়ে বায়োফার্মা প্রাদুর্ভাবে বেঁচে থাকতে হয়।",
+    "brand.homeAria": "Mortigen হোম",
+    "brand.tagline": "বায়োফার্মা প্রাদুর্ভাব সারভাইভাল শুটার",
+    "nav.primaryAria": "প্রধান নেভিগেশন",
+    "nav.features": "বিল্ড",
+    "nav.gallery": "গ্যালারি",
+    "nav.privacy": "অফলাইন",
+    "lang.aria": "ভাষা নির্বাচন",
+    "links.terms": "terms.html",
+    "links.privacy": "privacy.html",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
+    "hero.appStoreBadgeAria": "App Store থেকে Mortigen ডাউনলোড করুন",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg",
+    "hero.googlePlayBadgeAria": "Google Play-তে Mortigen নিন",
+    "hero.status": "কন্টেইনমেন্ট রিপোর্ট // অ্যানেক্স সিল করা",
+    "hero.heading": "প্রাদুর্ভাবে বেঁচে থাকুন। মৃতদের অস্ত্র বানান। জীবিত বেরিয়ে আসুন।",
+    "hero.body": "ড. লুইসেন হিসেবে Mortigen Biopharma-র ভেতর লড়ুন, সংক্রমিত পদার্থ থেকে অস্ত্র বানান এবং প্রাদুর্ভাব বাড়তে থাকলেও বেঁচে থাকুন।",
+    "hero.statUpgrades": "৪ স্তরের বিরলতায় বায়ো-আপগ্রেড",
+    "hero.statTrophies": "স্থায়ী অগ্রগতির সঙ্গে যুক্ত ট্রফি",
+    "hero.statBosses": "প্রতি রানে শিকার করা প্রধান বস সংঘর্ষ",
+    "hero.statControls": "পূর্ণ স্থানীয়করণ, টাচ, কীবোর্ড এবং গেমপ্যাড",
+    "hero.sceneAria": "Mortigen আর্টওয়ার্ক মন্টাজ",
+    "hero.portraitEyebrow": "শেষ নিশ্চিত জীবিত",
+    "hero.portraitBody": "প্রধান বায়োকেমিস্ট। অ্যানেক্সে এখনও চলমান শেষ মানুষ। প্রতিটি রান ল্যাবের ব্যর্থ গবেষণাকে নতুন অস্ত্রে বদলে দেয়।",
+    "hero.portraitAlt": "ড. লুইসেনের ইলাস্ট্রেশন",
+    "features.kicker": "মৃতদের থেকে নির্মিত",
+    "features.heading": "প্রতিটি রান চাপের মধ্যে ল্যাব পরীক্ষায় বদলে যায়।",
+    "features.body": "চারটি বিশেষ আপগ্রেড দেখায় কীভাবে একটি রান ভিড় নিয়ন্ত্রণ থেকে কাঁচা বেঁচে থাকার চাপে বদলে যেতে পারে।",
+    "features.card1Alt": "বৈদ্যুতিক পিস্তল আইকন",
+    "features.card1Eyebrow": "ঝড়ের সিরাম",
+    "features.card1Title": "ঘন লক্ষ্যগুলোর মধ্যে বিদ্যুৎ ছড়িয়ে দিন",
+    "features.card1Body": "শক কাছের শত্রুদের মধ্যে লাফায় এবং ভরা করিডর পরিষ্কার করে।",
+    "features.card1Meta1": "এলিমেন্টাল প্রভাব",
+    "features.card1Meta2": "কাছের সর্বোচ্চ ৪ লক্ষ্য",
+    "features.card1Meta3": "স্ট্যাকের সঙ্গে বাড়ে",
+    "features.card2Alt": "জমাট রাউন্ড আইকন",
+    "features.card2Eyebrow": "তুষার প্লেগ",
+    "features.card2Title": "আক্রমণ পৌঁছানোর আগেই তা ধীর করুন",
+    "features.card2Body": "জমাট প্রভাব জায়গা করে দেয় এবং দ্রুত ঢেউ সামলানো সহজ করে।",
+    "features.card2Meta1": "চলাচল দমন",
+    "features.card2Meta2": "গ্রেনেডের সঙ্গে সিঙ্ক করে",
+    "features.card2Meta3": "বায়ু কামানের সঙ্গে সিঙ্ক করে",
+    "features.card3Alt": "পচা আভা পাওয়ার-আপ আইকন",
+    "features.card3Eyebrow": "পচা আভা",
+    "features.card3Title": "কাছে আসা সবকিছু গলিয়ে দেওয়া ক্ষতির আভা বহন করুন",
+    "features.card3Body": "স্থায়ী আভা কাছের শত্রুদের শাস্তি দেয় এবং টাইট লড়াই স্থির করে।",
+    "features.card3Meta1": "স্থায়ী ব্যাসার্ধ",
+    "features.card3Meta2": "কাছাকাছি ক্ষতি",
+    "features.card3Meta3": "লেজেন্ডারি চাপ-ভালভ",
+    "features.card4Alt": "বায়ু কামান আইকন",
+    "features.card4Eyebrow": "বায়ু কামান",
+    "features.card4Title": "গুলি না ছুড়েই করিডর খুলে ফেলুন",
+    "features.card4Body": "সময়মতো শঙ্কু বিস্ফোরণ শ্বাস নেওয়ার জায়গা তৈরি করে এবং অন্য সিঙ্ক প্রস্তুত করে।",
+    "features.card4Meta1": "সময়মতো শঙ্কু বিস্ফোরণ",
+    "features.card4Meta2": "খাঁটি ভিড় নিয়ন্ত্রণ",
+    "features.card4Meta3": "এলিমেন্টাল সিঙ্ক বাহক",
+    "gallery.kicker": "অ্যানেক্সের ভেতর",
+    "gallery.heading": "মুডি বায়োটেক ফিকশন, আর্কেড সারভাইভাল গতির সঙ্গে।",
+    "gallery.mainAlt": "পিক্সেল আর্ট শহর প্রাদুর্ভাব দৃশ্য",
+    "gallery.mainCaption": "সিল করা অ্যানেক্সের বাইরে বাড়তে থাকা ঝাঁকের চাপ।",
+    "gallery.secondAlt": "Mortigen Biopharma-র বাইরের দৃশ্য",
+    "gallery.secondCaption": "Mortigen Biopharma-র প্রকাশ্য মুখ।",
+    "gallery.thirdAlt": "উদ্ধার করা জরুরি রিপোর্ট আর্টওয়ার্ক",
+    "gallery.thirdCaption": "উদ্ধার করা রেকর্ড আবার বেটা রিলিজের দিকে ইঙ্গিত করে।",
+    "gallery.wideAlt": "পরাজিত ড. লুইসেন স্প্রাইট আর্টওয়ার্ক",
+    "gallery.wideCaption": "একটি ভুল এখনও রান শেষ করে দিতে পারে, যদি না আপনি একমাত্র জরুরি রিভাইভ ব্যবহার করেন।",
+    "privacy.kicker": "ডিজাইন থেকেই অফলাইন",
+    "privacy.heading": "মূল গেম অফলাইনে চলে। আপনার অগ্রগতি আপনার ডিভাইসেই থাকে।",
+    "privacy.body": "Mortigen খেলতে কোনো অ্যাকাউন্ট, ব্যাকএন্ড বা অ্যানালিটিক্স SDK দরকার নেই। ঐচ্ছিক রিওয়ার্ডেড বিজ্ঞাপন বা ক্রয়ের জন্যই শুধু নেটওয়ার্ক প্ল্যাটফর্ম সেবা আসে।",
+    "privacy.card1Title": "সম্পূর্ণ অফলাইন খেলা",
+    "privacy.card1Body": "রান, আপগ্রেড, ট্রফি, সেটিংস এবং কসমেটিকস সার্ভার অ্যাকাউন্ট ছাড়াই কাজ করে।",
+    "privacy.card2Title": "কোনো অ্যাকাউন্ট বা ট্র্যাকিং স্তর নেই",
+    "privacy.card2Body": "কোনো লগইন নেই, ইমেল সংগ্রহ নেই, কাস্টম ব্যাকএন্ড নেই এবং অ্যানালিটিক্স SDK নেই।",
+    "privacy.card3Title": "ঐচ্ছিক প্ল্যাটফর্ম সেবা",
+    "privacy.card3Body": "খেলোয়াড় চাইলে রিওয়ার্ডেড বিজ্ঞাপন ও ক্রয় Google Play বা Apple সেবার মাধ্যমে থাকে।",
+    "footer.title": "Mortigen™",
+    "footer.body": "বায়োফার্মা প্রাদুর্ভাব নিয়ে একটি সারভাইভাল শুটার, Android এবং iOS-এ উপলভ্য।",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. সর্বস্বত্ব সংরক্ষিত।",
+    "footer.appleTrademark": "Apple এবং Apple লোগো Apple Inc.-এর ট্রেডমার্ক। App Store Apple Inc.-এর একটি সার্ভিস মার্ক।",
+    "footer.googleTrademark": "Google Play Google LLC-এর ট্রেডমার্ক।",
+    "footer.terms": "শর্তাবলি",
+    "footer.privacy": "গোপনীয়তা নীতি"
+  },
+  "ko": {
+    "meta.title": "Mortigen | 발병에서 살아남아라",
+    "meta.description": "Mortigen은 감염자에게서 만든 무기로 생물제약 발병 사태를 버티는 탑다운 생존 슈팅 게임입니다.",
+    "brand.homeAria": "Mortigen 홈",
+    "brand.tagline": "생물제약 발병 생존 슈팅 게임",
+    "nav.primaryAria": "기본 내비게이션",
+    "nav.features": "빌드",
+    "nav.gallery": "갤러리",
+    "nav.privacy": "오프라인",
+    "lang.aria": "언어 선택기",
+    "links.terms": "terms.html",
+    "links.privacy": "privacy.html",
+    "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
+    "hero.appStoreBadgeAria": "App Store에서 Mortigen 다운로드",
+    "hero.googlePlayBadgeSrc": "assets/images/google-play-badge-en.svg",
+    "hero.googlePlayBadgeAria": "Google Play에서 Mortigen 받기",
+    "hero.status": "격리 보고서 // 별관 봉쇄됨",
+    "hero.heading": "발병에서 살아남아라. 죽은 자를 무기로 삼아라. 살아서 나가라.",
+    "hero.body": "루이센 박사가 되어 Mortigen Biopharma를 돌파하고, 감염 물질로 무기를 만들며, 발병이 커지는 동안 살아남으세요.",
+    "hero.statUpgrades": "4단계 희귀도에 걸친 생체 업그레이드",
+    "hero.statTrophies": "지속 진행도와 연결된 트로피",
+    "hero.statBosses": "매 런마다 추격하는 주요 보스전",
+    "hero.statControls": "전체 현지화와 터치, 키보드, 게임패드 지원",
+    "hero.sceneAria": "Mortigen 아트워크 몽타주",
+    "hero.portraitEyebrow": "마지막으로 확인된 생존자",
+    "hero.portraitBody": "수석 생화학자. 별관 안에서 아직 움직이는 마지막 인간. 매 런은 연구소의 실패한 연구를 새로운 무기로 바꿉니다.",
+    "hero.portraitAlt": "루이센 박사 일러스트",
+    "features.kicker": "죽은 자로 만든 힘",
+    "features.heading": "모든 런은 압박 속 연구소 실험이 됩니다.",
+    "features.body": "네 가지 대표 업그레이드는 각 런이 군중 제어에서 순수 생존 압박으로 어떻게 바뀌는지 보여줍니다.",
+    "features.card1Alt": "전기 권총 아이콘",
+    "features.card1Eyebrow": "폭풍 혈청",
+    "features.card1Title": "밀집한 표적 사이로 전기를 연쇄시키세요",
+    "features.card1Body": "전격이 주변 적에게 튀어 막힌 복도를 정리합니다.",
+    "features.card1Meta1": "속성 부가 효과",
+    "features.card1Meta2": "주변 표적 최대 4명",
+    "features.card1Meta3": "스택에 따라 성장",
+    "features.card2Alt": "얼어붙은 탄환 아이콘",
+    "features.card2Eyebrow": "서리 역병",
+    "features.card2Title": "돌진이 닿기 전에 늦추세요",
+    "features.card2Body": "동결 효과는 공간을 벌고 빠른 웨이브를 다룰 수 있게 합니다.",
+    "features.card2Meta1": "이동 억제",
+    "features.card2Meta2": "수류탄과 시너지",
+    "features.card2Meta3": "윈드 캐논과 시너지",
+    "features.card3Alt": "부패의 후광 파워업 아이콘",
+    "features.card3Eyebrow": "부패의 후광",
+    "features.card3Title": "너무 가까운 모든 것을 녹이는 피해 오라를 두르세요",
+    "features.card3Body": "지속 오라는 가까운 적을 응징하고 좁은 전투를 안정시킵니다.",
+    "features.card3Meta1": "지속 반경",
+    "features.card3Meta2": "근거리 피해",
+    "features.card3Meta3": "전설급 압력 밸브",
+    "features.card4Alt": "윈드 캐논 아이콘",
+    "features.card4Eyebrow": "윈드 캐논",
+    "features.card4Title": "총알 한 발 없이 복도를 열어젖히세요",
+    "features.card4Body": "시간차 원뿔 폭풍이 숨 쉴 공간을 만들고 다른 시너지를 준비합니다.",
+    "features.card4Meta1": "시간차 원뿔 폭풍",
+    "features.card4Meta2": "순수 군중 제어",
+    "features.card4Meta3": "속성 시너지 전달체",
+    "gallery.kicker": "별관 내부",
+    "gallery.heading": "어두운 바이오테크 픽션과 아케이드 생존의 속도감.",
+    "gallery.mainAlt": "도시 발병 장면 픽셀 아트",
+    "gallery.mainCaption": "봉쇄된 별관 밖에서 커지는 무리의 압박.",
+    "gallery.secondAlt": "Mortigen Biopharma 외관",
+    "gallery.secondCaption": "Mortigen Biopharma의 공개된 얼굴.",
+    "gallery.thirdAlt": "회수된 긴급 보고서 아트워크",
+    "gallery.thirdCaption": "회수 기록은 베타 출시로 다시 이어집니다.",
+    "gallery.wideAlt": "쓰러진 루이센 박사 스프라이트 아트워크",
+    "gallery.wideCaption": "단 한 번의 실수도 런을 끝낼 수 있습니다. 유일한 긴급 부활을 쓰지 않는다면요.",
+    "privacy.kicker": "오프라인 중심 설계",
+    "privacy.heading": "핵심 게임은 오프라인으로 실행됩니다. 진행도는 기기에 남습니다.",
+    "privacy.body": "Mortigen을 플레이하는 데 계정, 백엔드, 분석 SDK는 필요하지 않습니다. 네트워크 플랫폼 서비스는 선택형 보상 광고나 구매에서만 나타납니다.",
+    "privacy.card1Title": "완전한 오프라인 플레이",
+    "privacy.card1Body": "런, 업그레이드, 트로피, 설정, 꾸미기 요소는 서버 계정 없이 작동합니다.",
+    "privacy.card2Title": "계정도 추적 계층도 없음",
+    "privacy.card2Body": "로그인, 이메일 수집, 맞춤 백엔드, 분석 SDK가 없습니다.",
+    "privacy.card3Title": "선택형 플랫폼 서비스",
+    "privacy.card3Body": "보상형 광고와 구매는 플레이어가 선택할 때만 Google Play 또는 Apple 서비스 뒤에서 처리됩니다.",
+    "footer.title": "Mortigen™",
+    "footer.body": "생물제약 발병 사태를 다룬 생존 슈팅 게임, Android와 iOS에서 제공됩니다.",
+    "footer.copyright": "© 2026 Luis Enrique Ruiz. 모든 권리 보유.",
+    "footer.appleTrademark": "Apple 및 Apple 로고는 Apple Inc.의 상표입니다. App Store는 Apple Inc.의 서비스 마크입니다.",
+    "footer.googleTrademark": "Google Play는 Google LLC의 상표입니다.",
+    "footer.terms": "이용 약관",
+    "footer.privacy": "개인 정보 처리방침"
+  }
+});
+
+Object.assign(HOME_TRANSLATIONS, EXTRA_HOME_TRANSLATIONS);
+
 const STORAGE_KEY = "mortigenLandingLang";
-const SUPPORTED_LANGS = ["en", "es"];
+const SUPPORTED_LANGS = ["en", "es", "zh", "fr", "hi", "pt", "ru", "eu", "de", "it", "ja", "bn", "ko"];
+
+function pageSupportedLanguages() {
+  const pageLanguages = [...document.querySelectorAll("[data-lang-toggle]")]
+    .map((button) => button.dataset.langToggle)
+    .filter((lang) => SUPPORTED_LANGS.includes(lang));
+
+  return pageLanguages.length > 0 ? pageLanguages : SUPPORTED_LANGS;
+}
 
 function translatePage(lang) {
   const copy = {
@@ -826,18 +1427,22 @@ function translatePage(lang) {
     }
   });
 
-  document.querySelectorAll("[data-i18n-placeholder-label]").forEach((element) => {
-    const key = element.dataset.i18nPlaceholderLabel;
-    if (hasCopy(key)) {
-      element.setAttribute("data-placeholder-label", copy[key]);
-    }
-  });
-
   document.querySelectorAll("[data-lang-toggle]").forEach((button) => {
     button.setAttribute(
       "aria-pressed",
       String(button.dataset.langToggle === lang)
     );
+  });
+
+  document.querySelectorAll("[data-lang-trigger-label]").forEach((label) => {
+    const activeButton = document.querySelector(
+      `[data-lang-toggle="${lang}"]`
+    );
+    if (activeButton) {
+      label.textContent = activeButton.textContent.trim();
+    } else {
+      label.textContent = lang.toUpperCase();
+    }
   });
 }
 
@@ -864,17 +1469,19 @@ function updateUrlLanguage(lang) {
 }
 
 function resolveInitialLanguage() {
+  const pageLanguages = pageSupportedLanguages();
   const urlLanguage = new URL(window.location.href).searchParams.get("lang");
-  if (SUPPORTED_LANGS.includes(urlLanguage)) {
+  if (pageLanguages.includes(urlLanguage)) {
     return urlLanguage;
   }
 
   const storedLanguage = readStoredLanguage();
-  if (SUPPORTED_LANGS.includes(storedLanguage)) {
+  if (pageLanguages.includes(storedLanguage)) {
     return storedLanguage;
   }
 
-  return navigator.language.toLowerCase().startsWith("es") ? "es" : "en";
+  const browserLanguage = navigator.language.toLowerCase().split("-")[0];
+  return pageLanguages.includes(browserLanguage) ? browserLanguage : "en";
 }
 
 function initializeLanguageSwitch() {
@@ -886,7 +1493,7 @@ function initializeLanguageSwitch() {
   document.querySelectorAll("[data-lang-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
       const nextLanguage = button.dataset.langToggle;
-      if (!SUPPORTED_LANGS.includes(nextLanguage)) {
+      if (!pageSupportedLanguages().includes(nextLanguage)) {
         return;
       }
 
@@ -894,6 +1501,67 @@ function initializeLanguageSwitch() {
       persistLanguage(nextLanguage);
       updateUrlLanguage(nextLanguage);
     });
+  });
+
+  initializeLanguageDropdowns();
+}
+
+function initializeLanguageDropdowns() {
+  const dropdowns = document.querySelectorAll("[data-lang-switch]");
+  if (dropdowns.length === 0) {
+    return;
+  }
+
+  const closeAll = (except) => {
+    dropdowns.forEach((dropdown) => {
+      if (dropdown === except) {
+        return;
+      }
+      const trigger = dropdown.querySelector("[data-lang-trigger]");
+      const menu = dropdown.querySelector("[data-lang-menu]");
+      if (trigger) {
+        trigger.setAttribute("aria-expanded", "false");
+      }
+      if (menu) {
+        menu.hidden = true;
+      }
+    });
+  };
+
+  dropdowns.forEach((dropdown) => {
+    const trigger = dropdown.querySelector("[data-lang-trigger]");
+    const menu = dropdown.querySelector("[data-lang-menu]");
+    if (!trigger || !menu) {
+      return;
+    }
+
+    trigger.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const expanded = trigger.getAttribute("aria-expanded") === "true";
+      closeAll(expanded ? null : dropdown);
+      trigger.setAttribute("aria-expanded", String(!expanded));
+      menu.hidden = expanded;
+    });
+
+    menu.addEventListener("click", (event) => {
+      const target = event.target.closest("[data-lang-toggle]");
+      if (target) {
+        trigger.setAttribute("aria-expanded", "false");
+        menu.hidden = true;
+      }
+    });
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest("[data-lang-switch]")) {
+      closeAll(null);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeAll(null);
+    }
   });
 }
 
