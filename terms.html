@@ -42,79 +42,7 @@
     <link rel="stylesheet" href="assets/css/site.css">
     <script src="assets/js/home-i18n.js" defer></script>
   </head>
-  <body>
-    <header class="topbar">
-      <div class="container topbar-inner">
-        <a
-          class="brand"
-          href="index.html"
-          data-i18n-href="links.home"
-          data-i18n-aria-label="brand.homeAria"
-          aria-label="Mortigen home"
-        >
-          <span class="brand-mark">
-            <img
-              class="pixel-art"
-              src="assets/images/app_icon.png"
-              alt=""
-              aria-hidden="true"
-            >
-          </span>
-          <span class="brand-copy">
-            <strong>Mortigen</strong>
-            <small data-i18n="termsPage.brandTagline">Terms and Conditions</small>
-          </span>
-        </a>
-
-        <div class="topbar-tools">
-          <nav
-            class="nav"
-            data-i18n-aria-label="nav.primaryAria"
-            aria-label="Primary navigation"
-          >
-            <a
-              href="index.html"
-              data-i18n="nav.home"
-              data-i18n-href="links.home"
-            >
-              Home
-            </a>
-            <a
-              href="privacy.html"
-              data-i18n="nav.privacyPolicy"
-              data-i18n-href="links.privacy"
-            >
-              Privacy Policy
-            </a>
-          </nav>
-
-          <div
-            class="lang-switch"
-            role="group"
-            data-i18n-aria-label="lang.aria"
-            aria-label="Language selector"
-          >
-            <button
-              class="lang-switch__button"
-              type="button"
-              data-lang-toggle="en"
-              aria-pressed="true"
-            >
-              EN
-            </button>
-            <button
-              class="lang-switch__button"
-              type="button"
-              data-lang-toggle="es"
-              aria-pressed="false"
-            >
-              ES
-            </button>
-          </div>
-        </div>
-      </div>
-    </header>
-
+  <body class="legal-page">
     <main>
       <section class="section legal-hero">
         <div class="container">
@@ -327,8 +255,18 @@
 
     <footer class="footer">
       <div class="container footer-inner">
-        <div>
-          <strong data-i18n="legal.footer.title">Legal Information</strong>
+        <div class="footer-copy">
+          <div class="footer-brand">
+            <span class="footer-brand-mark">
+              <img
+                class="pixel-art"
+                src="assets/images/app_icon.png"
+                alt=""
+                aria-hidden="true"
+              >
+            </span>
+            <strong data-i18n="footer.title">Mortigen™</strong>
+          </div>
           <p data-i18n="legal.footer.body">
             Terms, privacy details, and contact information for Mortigen.
           </p>
@@ -394,6 +332,46 @@
               />
               <span>TikTok</span>
             </a>
+          </div>
+          <div
+            class="lang-switch lang-switch--dropdown footer-lang-switch"
+            data-lang-switch
+          >
+            <button
+              class="lang-switch__trigger"
+              type="button"
+              data-lang-trigger
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-i18n-aria-label="lang.aria"
+              aria-label="Language selector"
+            >
+              <span class="lang-switch__trigger-label" data-lang-trigger-label>EN</span>
+              <span class="lang-switch__chevron" aria-hidden="true">▾</span>
+            </button>
+            <div
+              class="lang-switch__menu"
+              role="group"
+              data-lang-menu
+              hidden
+            >
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="en"
+                aria-pressed="true"
+              >
+                EN
+              </button>
+              <button
+                class="lang-switch__button"
+                type="button"
+                data-lang-toggle="es"
+                aria-pressed="false"
+              >
+                ES
+              </button>
+            </div>
           </div>
         </div>
       </div>
