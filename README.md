@@ -1,8 +1,7 @@
 # Mortigen Landing Site
 
 This folder contains the static landing site for Mortigen. It presents the game,
-its lore hook, platform store links, privacy summary, and legal pages for
-players.
+platform store links, real gameplay screenshots, and legal pages for players.
 
 ## Files
 
@@ -11,7 +10,8 @@ players.
 - `terms.html`: terms and conditions
 - `assets/css/site.css`: shared responsive styling
 - `assets/js/home-i18n.js`: language selector and page translations
-- `assets/images/`: landing artwork, store badges, icons, and social assets
+- `assets/images/`: gameplay screenshots, landing artwork, store badges, icons,
+  and social assets
 - `assets/fonts/`: the RetroFont face used by the site
 
 ## Localization

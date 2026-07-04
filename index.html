@@ -3,37 +3,53 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title data-i18n="meta.title">Mortigen | Survive the outbreak</title>
+    <title data-i18n="meta.title">Mortigen | Pixel survival shooter for iOS and Android</title>
     <meta
       name="description"
       data-i18n-content="meta.description"
-      content="Download Mortigen, a pixel survival shooter where a sealed biopharma annex, infected weapons, trophies, and weekly and all-time records shape every escape attempt."
+      content="Play Mortigen, a pixel survival shooter for iOS and Android. Move, upgrade weapons, fight bosses, and survive horde runs with no microtransactions."
     >
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://koldo92.github.io/mortigen/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mortigen">
+    <meta property="og:locale" content="en_US">
     <meta
       property="og:title"
       data-i18n-content="meta.title"
-      content="Mortigen | Survive the outbreak"
+      content="Mortigen | Pixel survival shooter for iOS and Android"
     >
     <meta
       property="og:description"
       data-i18n-content="meta.description"
-      content="Download Mortigen, a pixel survival shooter where a sealed biopharma annex, infected weapons, trophies, and weekly and all-time records shape every escape attempt."
+      content="Play Mortigen, a pixel survival shooter for iOS and Android. Move, upgrade weapons, fight bosses, and survive horde runs with no microtransactions."
     >
     <meta property="og:url" content="https://koldo92.github.io/mortigen/">
-    <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/drluisen.png">
+    <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/screenshot-horde.png">
+    <meta property="og:image:width" content="1179">
+    <meta property="og:image:height" content="2556">
+    <meta
+      property="og:image:alt"
+      data-i18n-content="meta.imageAlt"
+      content="Mortigen gameplay screenshot showing Dr. Luisen fighting hordes inside the lab."
+    >
     <meta name="twitter:card" content="summary_large_image">
     <meta
       name="twitter:title"
       data-i18n-content="meta.title"
-      content="Mortigen | Survive the outbreak"
+      content="Mortigen | Pixel survival shooter for iOS and Android"
     >
     <meta
       name="twitter:description"
       data-i18n-content="meta.description"
-      content="Download Mortigen, a pixel survival shooter where a sealed biopharma annex, infected weapons, trophies, and weekly and all-time records shape every escape attempt."
+      content="Play Mortigen, a pixel survival shooter for iOS and Android. Move, upgrade weapons, fight bosses, and survive horde runs with no microtransactions."
     >
-    <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/drluisen.png">
+    <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/screenshot-horde.png">
+    <meta
+      name="twitter:image:alt"
+      data-i18n-content="meta.imageAlt"
+      content="Mortigen gameplay screenshot showing Dr. Luisen fighting hordes inside the lab."
+    >
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -41,14 +57,26 @@
         "@id": "https://koldo92.github.io/mortigen/#app",
         "name": "Mortigen",
         "url": "https://koldo92.github.io/mortigen/",
-        "image": "https://koldo92.github.io/mortigen/assets/images/drluisen.png",
-        "description": "Mortigen is a pixel survival shooter for iOS and Android where a sealed biopharma annex, infected weapons, trophies, and weekly and all-time records shape every escape attempt.",
-        "operatingSystem": "Android, iOS",
+        "image": "https://koldo92.github.io/mortigen/assets/images/screenshot-horde.png",
+        "description": "Mortigen is a pixel survival shooter for iOS and Android with movement-driven combat, weapon upgrades, boss fights, horde runs, and no microtransactions.",
+        "operatingSystem": ["Android", "iOS"],
         "applicationCategory": "GameApplication",
+        "applicationSubCategory": "Survival shooter",
+        "genre": ["Survival shooter", "Action", "Arcade"],
+        "gamePlatform": ["Android", "iOS"],
+        "playMode": "SinglePlayer",
+        "isAccessibleForFree": true,
         "offers": {
           "@type": "Offer",
-          "price": "0.00"
+          "price": "0.00",
+          "priceCurrency": "USD"
         },
+        "screenshot": [
+          "https://koldo92.github.io/mortigen/assets/images/screenshot-horde.png",
+          "https://koldo92.github.io/mortigen/assets/images/screenshot-shock.png",
+          "https://koldo92.github.io/mortigen/assets/images/screenshot-heart.png",
+          "https://koldo92.github.io/mortigen/assets/images/screenshot-car.png"
+        ],
         "sameAs": [
           "https://apps.apple.com/us/app/mortigen/id6761758806",
           "https://play.google.com/store/apps/details?id=com.ler.mortigen"
@@ -60,8 +88,8 @@
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <meta name="theme-color" content="#071009">
-    <link rel="stylesheet" href="assets/css/site.css?v=20260701a">
-    <script src="assets/js/home-i18n.js?v=20260701a" defer></script>
+    <link rel="stylesheet" href="assets/css/site.css?v=20260704b">
+    <script src="assets/js/home-i18n.js?v=20260704b" defer></script>
   </head>
   <body>
     <main id="main">
@@ -69,7 +97,7 @@
         <div class="container hero-grid">
           <div class="hero-copy">
             <span class="pill pulse" data-i18n="hero.status">
-              CAN YOU SURVIVE?
+              PIXEL SURVIVAL SHOOTER
             </span>
 
             <div class="logo-wrap">
@@ -89,8 +117,14 @@
             </div>
 
             <h1 data-i18n="hero.heading">
-              Fight. Upgrade your weapons. Survive.
+              Pixel survival shooter for fast mobile runs.
             </h1>
+
+            <p class="section-copy hero-lede" data-i18n="hero.body">
+              Play as Dr. Luisen inside Mortigen Biopharma. Move through
+              infected labs, collect upgrades, beat bosses, and chase weekly or
+              all-time records on iOS and Android.
+            </p>
 
             <div class="hero-actions">
               <a
@@ -127,488 +161,160 @@
               </a>
             </div>
 
-            <p class="section-copy" data-i18n="hero.body">
-              Enter Mortigen Biopharma as Dr. Luisen, turn infected matter into
-              weapons, rescue the dog if you can, and leave a weekly or all-time record
-              before the annex consumes you.
-            </p>
-
             <p class="download-note" data-i18n="hero.downloadNote">
               Available now on iOS and Android.
             </p>
-
-            <div class="stat-row">
-              <article class="stat-card panel">
-                <strong>15</strong>
-                <span data-i18n="hero.statUpgrades">mutations to discover</span>
-              </article>
-              <article class="stat-card panel">
-                <strong>23</strong>
-                <span data-i18n="hero.statTrophies">
-                  trophies and lore records
-                </span>
-              </article>
-              <article class="stat-card panel">
-                <strong>11</strong>
-                <span data-i18n="hero.statBosses">enemy types and boss threats</span>
-              </article>
-              <article class="stat-card panel">
-                <strong>13</strong>
-                <span data-i18n="hero.statControls">
-                  languages, touch, keyboard, gamepad
-                </span>
-              </article>
-            </div>
           </div>
 
           <div
             class="hero-scene"
             data-i18n-aria-label="hero.sceneAria"
-            aria-label="Mortigen artwork montage"
+            aria-label="Animated Dr. Luisen idle sprite"
           >
-            <article class="hero-card portrait-card panel">
-              <div class="portrait-copy">
-                <span class="eyebrow" data-i18n="hero.portraitEyebrow">
-                  Last confirmed survivor
-                </span>
-                <h2>Dr. Luisen</h2>
-                <p data-i18n="hero.portraitBody">
-                  Lead biochemist. Last confirmed survivor. Every failed
-                  experiment can become a weapon.
-                </p>
+            <div class="sprite-panel">
+              <div class="luisen-stage" aria-hidden="true">
+                <div class="luisen-sprite pixel-art"></div>
+                <span class="luisen-shadow"></span>
               </div>
-              <div class="portrait-frame">
-                <img
-                  src="assets/images/drluisen-480.webp"
-                  srcset="
-                    assets/images/drluisen-320.webp 320w,
-                    assets/images/drluisen-480.webp 480w,
-                    assets/images/drluisen-640.webp 640w,
-                    assets/images/drluisen-768.webp 768w
-                  "
-                  sizes="(max-width: 1100px) calc(100vw - 2rem), 280px"
-                  width="1024"
-                  height="1024"
-                  data-i18n-alt="hero.portraitAlt"
-                  alt="Illustration of Dr. Luisen"
-                >
+              <div class="hero-signal">
+                <strong>Dr. Luisen</strong>
+                <span data-i18n="hero.signal">Move. Upgrade. Survive.</span>
               </div>
-            </article>
-
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-tight" id="systems">
-        <div class="container">
-          <header class="section-header">
-            <span class="section-kicker" data-i18n="systems.kicker">Annex exploration</span>
-            <h2 data-i18n="systems.heading">
-              The lab rearranges itself around each escape.
-            </h2>
-            <p class="section-copy" data-i18n="systems.body">
-              Search changing rooms, follow red warnings toward dangerous
-              rewards, and keep moving before the infected close every route.
-            </p>
-          </header>
-
-          <div class="systems-grid">
-            <article class="system-card panel">
-              <img
-                class="system-card-media pixel-art"
-                src="assets/images/lab-corridor-480.webp"
-                srcset="
-                  assets/images/lab-corridor-360.webp 360w,
-                  assets/images/lab-corridor-480.webp 480w,
-                  assets/images/lab-corridor-640.webp 640w
-                "
-                sizes="(max-width: 700px) calc(100vw - 1.25rem), (max-width: 900px) calc((100vw - 3rem) / 2), (max-width: 1232px) calc((100vw - 5rem) / 4), 288px"
-                width="1254"
-                height="1254"
-                loading="lazy"
-                decoding="async"
-                data-i18n-alt="systems.card1Alt"
-                alt="Pixel art shifting laboratory corridor"
-              >
-              <div class="system-card-body">
-                <strong data-i18n="systems.card1Label">Shifting lab</strong>
-                <h3 data-i18n="systems.card1Title">New rooms, hazards, and breakable lab equipment</h3>
-                <p data-i18n="systems.card1Body">
-                  Each layout stays readable while enemies pressure every
-                  corridor, loop, and detour.
-                </p>
-              </div>
-            </article>
-
-            <article class="system-card panel">
-              <img
-                class="system-card-media pixel-art"
-                src="assets/images/crimson-heart-room-480.webp"
-                srcset="
-                  assets/images/crimson-heart-room-360.webp 360w,
-                  assets/images/crimson-heart-room-480.webp 480w,
-                  assets/images/crimson-heart-room-640.webp 640w
-                "
-                sizes="(max-width: 700px) calc(100vw - 1.25rem), (max-width: 900px) calc((100vw - 3rem) / 2), (max-width: 1232px) calc((100vw - 5rem) / 4), 288px"
-                width="1254"
-                height="1254"
-                loading="lazy"
-                decoding="async"
-                data-i18n-alt="systems.card2Alt"
-                alt="Pixel art Crimson Heart room guarded by Guardian"
-              >
-              <div class="system-card-body">
-                <strong data-i18n="systems.card2Label">Crimson Heart</strong>
-                <h3 data-i18n="systems.card2Title">Take the Crimson Heart, wake Guardian</h3>
-                <p data-i18n="systems.card2Body">
-                  The forbidden organ grants armor, speed, damage, and life,
-                  then releases its armored protector.
-                </p>
-              </div>
-            </article>
-
-            <article class="system-card panel">
-              <img
-                class="system-card-media pixel-art"
-                src="assets/images/dog-rescue-480.webp"
-                srcset="
-                  assets/images/dog-rescue-360.webp 360w,
-                  assets/images/dog-rescue-480.webp 480w,
-                  assets/images/dog-rescue-640.webp 640w
-                "
-                sizes="(max-width: 700px) calc(100vw - 1.25rem), (max-width: 900px) calc((100vw - 3rem) / 2), (max-width: 1232px) calc((100vw - 5rem) / 4), 288px"
-                width="1254"
-                height="1254"
-                loading="lazy"
-                decoding="async"
-                data-i18n-alt="systems.card3Alt"
-                alt="Pixel art Dr. Luisen rescuing the dog"
-              >
-              <div class="system-card-body">
-                <strong data-i18n="systems.card3Label">Companion choice</strong>
-                <h3 data-i18n="systems.card3Title">Rescue the dog before the Heart changes Luisen</h3>
-                <p data-i18n="systems.card3Body">
-                  The rescued companion bites nearby infected. Carry the Heart
-                  and the bond breaks.
-                </p>
-              </div>
-            </article>
-
-            <article class="system-card panel">
-              <img
-                class="system-card-media pixel-art"
-                src="assets/images/progression-console-480.webp"
-                srcset="
-                  assets/images/progression-console-360.webp 360w,
-                  assets/images/progression-console-480.webp 480w,
-                  assets/images/progression-console-640.webp 640w
-                "
-                sizes="(max-width: 700px) calc(100vw - 1.25rem), (max-width: 900px) calc((100vw - 3rem) / 2), (max-width: 1232px) calc((100vw - 5rem) / 4), 288px"
-                width="1254"
-                height="1254"
-                loading="lazy"
-                decoding="async"
-                data-i18n-alt="systems.card4Alt"
-                alt="Pixel art weekly and all-time ranking console"
-              >
-              <div class="system-card-body">
-                <strong data-i18n="systems.card4Label">Weekly and all-time rankings</strong>
-                <h3 data-i18n="systems.card4Title">Record an escape worth remembering</h3>
-                <p data-i18n="systems.card4Body">
-                  Finished attempts can enter weekly and all-time rankings without
-                  blocking offline play.
-                </p>
-              </div>
-            </article>
-          </div>
+      <section class="section proof-band" aria-label="Mortigen highlights">
+        <div class="container proof-grid">
+          <article class="proof-card panel">
+            <strong data-i18n="hero.proofMicroStrong">No</strong>
+            <span data-i18n="hero.valueMicro">microtransactions</span>
+          </article>
+          <article class="proof-card panel">
+            <strong data-i18n="hero.proofOfflineStrong">Offline</strong>
+            <span data-i18n="hero.valueOffline">runs supported</span>
+          </article>
+          <article class="proof-card panel">
+            <strong data-i18n="hero.proofHordeStrong">Hordes</strong>
+            <span data-i18n="hero.valueHorde">bosses, upgrades, pressure</span>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="features">
+      <section class="section gameplay-section" id="gameplay">
         <div class="container">
-          <header class="section-header">
-            <span class="section-kicker" data-i18n="features.kicker">Built from the dead</span>
-            <h2 data-i18n="features.heading">
-              Choose mutations that turn panic into control.
+          <header class="section-header compact-header">
+            <span class="section-kicker" data-i18n="gameplay.kicker">
+              Mobile survival shooter
+            </span>
+            <h2 data-i18n="gameplay.heading">
+              Hordes, bosses, upgrades, fast runs.
             </h2>
-            <p class="section-copy" data-i18n="features.body">
-              When Luisen adapts, choose one of three powers, carry up to six at
-              once, and reveal rarer mutations through trophies.
+            <p class="section-copy" data-i18n="gameplay.body">
+              Real screenshots from Mortigen: auto-attacks, lab hazards, boss
+              waves, and weapon upgrades built for short, intense mobile
+              sessions.
             </p>
           </header>
 
-          <div class="features-grid">
-            <article class="feature-card panel">
-              <div class="icon-wrap">
+          <div class="phone-gallery">
+            <figure class="phone-frame">
+              <div
+                class="phone-shell"
+                style="--phone-image: url('../images/screenshot-horde.png')"
+              >
+                <span class="phone-notch" aria-hidden="true"></span>
                 <img
                   class="pixel-art"
-                  src="assets/images/electricity-96.webp"
-                  srcset="
-                    assets/images/electricity-96.webp 96w,
-                    assets/images/electricity-144.webp 144w
-                  "
-                  sizes="72px"
-                  data-i18n-alt="features.card1Alt"
-                  alt="Electric pistol icon"
+                  src="assets/images/screenshot-horde.png"
+                  width="1179"
+                  height="2556"
+                  loading="eager"
+                  decoding="async"
+                  data-i18n-alt="gameplay.screenshot1Alt"
+                  alt="Mortigen gameplay with Dr. Luisen surrounded by hordes and bosses"
                 >
               </div>
-              <div>
-                <span class="eyebrow" data-i18n="features.card1Eyebrow">Storm Serum</span>
-                <h3 data-i18n="features.card1Title">Chain electricity through packed targets</h3>
-                <p data-i18n="features.card1Body">
-                  Shock arcs through nearby enemies and clears crowded corridors.
-                </p>
-                <div class="feature-meta">
-                  <span data-i18n="features.card1Meta1">Elemental shock</span>
-                  <span data-i18n="features.card1Meta2">Up to 4 nearby targets</span>
-                  <span data-i18n="features.card1Meta3">Grows with later choices</span>
-                </div>
-              </div>
-            </article>
+              <figcaption data-i18n="gameplay.screenshot1Label">
+                Swarm pressure
+              </figcaption>
+            </figure>
 
-            <article class="feature-card panel">
-              <div class="icon-wrap">
+            <figure class="phone-frame">
+              <div
+                class="phone-shell"
+                style="--phone-image: url('../images/screenshot-shock.png')"
+              >
+                <span class="phone-notch" aria-hidden="true"></span>
                 <img
                   class="pixel-art"
-                  src="assets/images/ice-96.webp"
-                  srcset="
-                    assets/images/ice-96.webp 71w,
-                    assets/images/ice-144.webp 106w
-                  "
-                  sizes="72px"
-                  data-i18n-alt="features.card2Alt"
-                  alt="Frozen rounds icon"
+                  src="assets/images/screenshot-shock.png"
+                  width="1179"
+                  height="2556"
+                  loading="eager"
+                  decoding="async"
+                  data-i18n-alt="gameplay.screenshot2Alt"
+                  alt="Mortigen gameplay with electrical attacks hitting infected enemies"
                 >
               </div>
-              <div>
-                <span class="eyebrow" data-i18n="features.card2Eyebrow">Frost Plague</span>
-                <h3 data-i18n="features.card2Title">Slow the rush before it reaches you</h3>
-                <p data-i18n="features.card2Body">
-                  Freezing effects buy space and make faster waves manageable.
-                </p>
-                <div class="feature-meta">
-                  <span data-i18n="features.card2Meta1">Movement suppression</span>
-                  <span data-i18n="features.card2Meta2">Pairs with grenades</span>
-                  <span data-i18n="features.card2Meta3">Pairs with wind cannon</span>
-                </div>
-              </div>
-            </article>
+              <figcaption data-i18n="gameplay.screenshot2Label">
+                Upgrade chaos
+              </figcaption>
+            </figure>
 
-            <article class="feature-card panel">
-              <div class="icon-wrap">
+            <figure class="phone-frame">
+              <div
+                class="phone-shell"
+                style="--phone-image: url('../images/screenshot-heart.png')"
+              >
+                <span class="phone-notch" aria-hidden="true"></span>
                 <img
                   class="pixel-art"
-                  src="assets/images/belt-96.webp"
-                  srcset="
-                    assets/images/belt-96.webp 96w,
-                    assets/images/belt-144.webp 144w
-                  "
-                  sizes="72px"
-                  data-i18n-alt="features.card3Alt"
-                  alt="Aura power-up icon"
+                  src="assets/images/screenshot-heart.png"
+                  width="1179"
+                  height="2556"
+                  loading="eager"
+                  decoding="async"
+                  data-i18n-alt="gameplay.screenshot3Alt"
+                  alt="Mortigen gameplay with the Crimson Heart and a large boss"
                 >
               </div>
-              <div>
-                <span class="eyebrow" data-i18n="features.card3Eyebrow">Rot Halo</span>
-                <h3 data-i18n="features.card3Title">
-                  Carry a damage aura that punishes anything too close
-                </h3>
-                <p data-i18n="features.card3Body">
-                  A persistent aura protects Luisen when the dead close in.
-                </p>
-                <div class="feature-meta">
-                  <span data-i18n="features.card3Meta1">Persistent radius</span>
-                  <span data-i18n="features.card3Meta2">Close-range damage</span>
-                  <span data-i18n="features.card3Meta3">Legendary safety tool</span>
-                </div>
-              </div>
-            </article>
+              <figcaption data-i18n="gameplay.screenshot3Label">
+                Boss rooms
+              </figcaption>
+            </figure>
 
-            <article class="feature-card panel">
-              <div class="icon-wrap">
+            <figure class="phone-frame">
+              <div
+                class="phone-shell"
+                style="--phone-image: url('../images/screenshot-car.png')"
+              >
+                <span class="phone-notch" aria-hidden="true"></span>
                 <img
                   class="pixel-art"
-                  src="assets/images/windcannon-96.webp"
-                  srcset="
-                    assets/images/windcannon-96.webp 96w,
-                    assets/images/windcannon-144.webp 144w
-                  "
-                  sizes="72px"
-                  data-i18n-alt="features.card4Alt"
-                  alt="Wind cannon icon"
+                  src="assets/images/screenshot-car.png"
+                  width="1179"
+                  height="2556"
+                  loading="eager"
+                  decoding="async"
+                  data-i18n-alt="gameplay.screenshot4Alt"
+                  alt="Mortigen gameplay with enemies around a car in the laboratory"
                 >
               </div>
-              <div>
-                <span class="eyebrow" data-i18n="features.card4Eyebrow">Wind Cannon</span>
-                <h3 data-i18n="features.card4Title">
-                  Blow a corridor open without firing a bullet
-                </h3>
-                <p data-i18n="features.card4Body">
-                  A timed cone blast creates breathing room and carries other
-                  elemental effects.
-                </p>
-                <div class="feature-meta">
-                  <span data-i18n="features.card4Meta1">Timed cone blast</span>
-                  <span data-i18n="features.card4Meta2">Space control</span>
-                  <span data-i18n="features.card4Meta3">Element carrier</span>
-                </div>
-              </div>
-            </article>
+              <figcaption data-i18n="gameplay.screenshot4Label">
+                Fast runs
+              </figcaption>
+            </figure>
           </div>
-        </div>
-      </section>
 
-      <section class="section" id="threats">
-        <div class="container">
-          <header class="section-header">
-            <span class="section-kicker" data-i18n="threat.kicker">Threat index</span>
-            <h2 data-i18n="threat.heading">
-              The deeper you survive, the more personal the hunt becomes.
-            </h2>
-            <p class="section-copy" data-i18n="threat.body">
-              Standard infected give way to charging bodies, ranged predators,
-              Guardian's pursuit, and the Stranger's late-night escalation.
-            </p>
-          </header>
-
-          <figure class="panel media-banner">
-            <img
-              class="pixel-art"
-              src="assets/images/threat-roster-banner-960.webp"
-              srcset="
-                assets/images/threat-roster-banner-640.webp 640w,
-                assets/images/threat-roster-banner-960.webp 960w,
-                assets/images/threat-roster-banner-1200.webp 1200w
-              "
-              sizes="(max-width: 1232px) calc(100vw - 2rem), 1200px"
-              width="1200"
-              height="525"
-              loading="lazy"
-              decoding="async"
-              data-i18n-alt="threat.mediaAlt"
-              alt="Pixel art enemy roster inside the Mortigen annex"
-            >
-            <figcaption data-i18n="threat.mediaCaption">
-              The annex begins as a swarm problem and ends with named threats
-              hunting Luisen through the lab.
-            </figcaption>
-          </figure>
-
-          <div class="threat-grid">
-            <article class="threat-card panel">
-              <span class="eyebrow" data-i18n="threat.card1Eyebrow">Infected pressure</span>
-              <h3 data-i18n="threat.card1Title">Basic, zigzag, fast, and charger infected</h3>
-              <p data-i18n="threat.card1Body">
-                Early enemies teach movement: direct chase, lateral pressure,
-                speed bursts, and punishing charges.
-              </p>
-            </article>
-
-            <article class="threat-card panel">
-              <span class="eyebrow" data-i18n="threat.card2Eyebrow">Boss sequence</span>
-              <h3 data-i18n="threat.card2Title">Brute, Hunter, Dark Professor, Lurker, and The Stranger</h3>
-              <p data-i18n="threat.card2Body">
-                Bosses demand different answers: heavy armor, sudden charges,
-                ranged pressure, gaze attacks, and a stalker that grows more
-                dangerous each horde.
-              </p>
-            </article>
-
-            <article class="threat-card panel">
-              <span class="eyebrow" data-i18n="threat.card3Eyebrow">Crimson Heart room</span>
-              <h3 data-i18n="threat.card3Title">Guardian turns the Heart room into a fight</h3>
-              <p data-i18n="threat.card3Body">
-                Claiming the Crimson Heart changes a room patrol into a hunter
-                that can leave its chamber.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="progression">
-        <div class="container">
-          <header class="section-header">
-            <span class="section-kicker" data-i18n="progression.kicker">Persistent records</span>
-            <h2 data-i18n="progression.heading">
-              Escapes end. Mortigen keeps the record.
-            </h2>
-            <p class="section-copy" data-i18n="progression.body">
-              Trophies, records, encyclopedia entries, and weekly and all-time
-              rankings give every escape attempt a lasting trace.
-            </p>
-          </header>
-
-          <figure class="panel progression-media">
-            <img
-              class="pixel-art"
-              src="assets/images/progression-console-banner-960.webp"
-              srcset="
-                assets/images/progression-console-banner-640.webp 640w,
-                assets/images/progression-console-banner-960.webp 960w,
-                assets/images/progression-console-banner-1200.webp 1200w
-              "
-              sizes="(max-width: 1232px) calc(100vw - 2rem), 1200px"
-              width="1200"
-              height="525"
-              loading="lazy"
-              decoding="async"
-              data-i18n-alt="progression.mediaAlt"
-              alt="Pixel art progression console with trophies and weekly and all-time rank"
-            >
-            <figcaption data-i18n="progression.mediaCaption">
-              The end screen is not a wall. It is the next reason to start.
-            </figcaption>
-          </figure>
-
-          <div class="privacy-grid">
-            <article class="privacy-card panel">
-              <h3 data-i18n="progression.card1Title">Unlock better mutations</h3>
-              <p data-i18n="progression.card1Body">
-                Trophies reveal rare, epic, and legendary powers when you prove
-                you can survive them.
-              </p>
-            </article>
-
-            <article class="privacy-card panel">
-              <h3 data-i18n="progression.card2Title">Fill the encyclopedia</h3>
-              <p data-i18n="progression.card2Body">
-                Dossiers reveal Luisen, the dog, Mortigen Biopharma, the
-                Crimson Heart, and every boss threat.
-              </p>
-            </article>
-
-            <article class="privacy-card panel">
-              <h3 data-i18n="progression.card3Title">Chase weekly and all-time records</h3>
-              <p data-i18n="progression.card3Body">
-                Record defeated enemies, depth reached, and survival time, then
-                submit an escape when it deserves a name.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section final-cta" id="privacy-summary">
-        <div class="container final-cta-grid">
-          <header class="section-header final-cta-copy">
-            <span class="section-kicker" data-i18n="privacy.kicker">Start fast</span>
-            <h2 data-i18n="privacy.heading">
-              Download, fight, and keep progress on your device.
-            </h2>
-            <p class="section-copy" data-i18n="privacy.body">
-              No required account and no analytics tracking. Core survival
-              works offline; weekly and all-time rankings and rewarded emergency revival are
-              optional.
-            </p>
-          </header>
-
-          <div
-            class="panel final-download-panel"
-            data-i18n-aria-label="privacy.downloadAria"
-            aria-label="Download Mortigen"
-          >
-            <span class="eyebrow" data-i18n="privacy.downloadEyebrow">Ready to enter?</span>
+          <div class="gameplay-cta">
+            <div>
+              <span class="section-kicker" data-i18n="gameplay.ctaKicker">
+                Download Mortigen
+              </span>
+              <h2 data-i18n="gameplay.ctaHeading">Start your next run.</h2>
+            </div>
             <div class="hero-actions hero-actions--compact">
               <a
                 class="store-badge-link"
@@ -643,40 +349,9 @@
                 >
               </a>
             </div>
-            <p class="download-note" data-i18n="hero.downloadNote">
-              Available now on iOS and Android.
-            </p>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="privacy-grid trust-grid">
-            <article class="privacy-card panel">
-              <h3 data-i18n="privacy.card1Title">Local progress</h3>
-              <p data-i18n="privacy.card1Body">
-                Unlocks, trophies, encyclopedia, and settings stay on
-                the device.
-              </p>
-            </article>
-
-            <article class="privacy-card panel">
-              <h3 data-i18n="privacy.card2Title">Weekly and all-time rankings</h3>
-              <p data-i18n="privacy.card2Body">
-                Submit only when you choose: alias and escape result.
-              </p>
-            </article>
-
-            <article class="privacy-card panel">
-              <h3 data-i18n="privacy.card3Title">Optional extras</h3>
-              <p data-i18n="privacy.card3Body">
-                Rewarded emergency revival is optional and handled through
-                platform ad services when chosen.
-              </p>
-            </article>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -696,7 +371,9 @@
             <strong data-i18n="footer.title">Mortigen™</strong>
           </div>
           <p data-i18n="footer.body">
-            Survival tension, infected weapons, boss lore, and weekly and all-time records on iOS and Android.
+            Pixel survival shooter for iOS and Android with no microtransactions,
+            offline-friendly runs, weapon upgrades, bosses, and weekly or
+            all-time leaderboards.
           </p>
           <p data-i18n="footer.copyright">
             © 2026 Luis Enrique Ruiz. All rights reserved.
@@ -766,7 +443,7 @@
                 alt=""
                 width="24"
                 height="24"
-              />
+              >
               <span>TikTok</span>
             </a>
           </div>
@@ -792,110 +469,19 @@
               data-lang-menu
               hidden
             >
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="en"
-                aria-pressed="true"
-              >
-                EN
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="es"
-                aria-pressed="false"
-              >
-                ES
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="zh"
-                aria-pressed="false"
-              >
-                中文
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="fr"
-                aria-pressed="false"
-              >
-                FR
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="hi"
-                aria-pressed="false"
-              >
-                HI
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="pt"
-                aria-pressed="false"
-              >
-                PT
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="ru"
-                aria-pressed="false"
-              >
-                RU
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="eu"
-                aria-pressed="false"
-              >
-                EU
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="de"
-                aria-pressed="false"
-              >
-                DE
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="it"
-                aria-pressed="false"
-              >
-                IT
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="ja"
-                aria-pressed="false"
-              >
-                日本語
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="bn"
-                aria-pressed="false"
-              >
-                বাংলা
-              </button>
-              <button
-                class="lang-switch__button"
-                type="button"
-                data-lang-toggle="ko"
-                aria-pressed="false"
-              >
-                한국어
-              </button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="en" aria-pressed="true">EN</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="es" aria-pressed="false">ES</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="zh" aria-pressed="false">中文</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="fr" aria-pressed="false">FR</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="hi" aria-pressed="false">HI</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="pt" aria-pressed="false">PT</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="ru" aria-pressed="false">RU</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="eu" aria-pressed="false">EU</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="de" aria-pressed="false">DE</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="it" aria-pressed="false">IT</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="ja" aria-pressed="false">日本語</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="bn" aria-pressed="false">বাংলা</button>
+              <button class="lang-switch__button" type="button" data-lang-toggle="ko" aria-pressed="false">한국어</button>
             </div>
           </div>
         </div>

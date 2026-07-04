@@ -883,3 +883,334 @@ html {
     transition: none !important;
   }
 }
+
+/* Simplified landing */
+.hero {
+  min-height: min(760px, 100svh);
+  padding-top: 2rem;
+  padding-bottom: 2.75rem;
+  overflow: hidden;
+}.hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.78fr);
+  gap: clamp(1.5rem, 4vw, 4.5rem);
+}.hero-copy h1 {
+  max-width: 11em;
+  font-size: clamp(2.7rem, 5.1vw, 4.55rem);
+  overflow-wrap: normal;
+}.hero-lede {
+  max-width: 35rem;
+  margin: 0.9rem 0 0;
+  color: rgba(241, 246, 232, 0.86);
+  font-size: 1.08rem;
+}.hero-scene {
+  display: grid;
+}.sprite-panel {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  align-self: center;
+  padding: clamp(1rem, 2.4vw, 1.5rem);
+  border: 2px solid rgba(143, 208, 82, 0.48);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(101, 230, 212, 0.08), transparent 34%),
+    linear-gradient(135deg, rgba(227, 110, 84, 0.08), transparent 42%),
+    rgba(6, 10, 6, 0.9);
+  box-shadow: var(--shadow);
+}.sprite-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(143, 208, 82, 0.11) 1px, transparent 1px),
+    linear-gradient(rgba(143, 208, 82, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  opacity: 0.34;
+  pointer-events: none;
+}.luisen-stage {
+  position: relative;
+  display: grid;
+  min-height: clamp(20rem, 42vw, 28rem);
+  place-items: end center;
+  overflow: hidden;
+  border: 2px solid rgba(143, 208, 82, 0.32);
+  border-radius: var(--radius-sm);
+  background:
+    radial-gradient(ellipse at 50% 72%, rgba(101, 230, 212, 0.16), transparent 46%),
+    linear-gradient(90deg, rgba(31, 52, 45, 0.88) 1px, transparent 1px),
+    linear-gradient(rgba(31, 52, 45, 0.88) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(7, 16, 12, 0.18), rgba(3, 6, 4, 0.92));
+  background-size: auto, 48px 48px, 48px 48px, auto;
+}.luisen-sprite {
+  position: relative;
+  z-index: 2;
+  width: 200px;
+  height: 276px;
+  margin-bottom: 1.15rem;
+  background-image: url("../images/player_idle.png");
+  background-repeat: no-repeat;
+  background-size: 800px 552px;
+  filter: drop-shadow(10px 16px 0 rgba(0, 0, 0, 0.42));
+  transform: scale(clamp(1.12, 0.98 + 1.2vw, 1.46));
+  transform-origin: center bottom;
+  animation: luisenIdle 960ms steps(1) infinite;
+}.luisen-shadow {
+  position: absolute;
+  bottom: 1.7rem;
+  left: 50%;
+  width: 12rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(0, 0, 0, 0.58), transparent 70%);
+  transform: translateX(-50%);
+}.hero-signal {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}.hero-signal strong {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+}.proof-band {
+  padding-top: 0;
+  padding-bottom: 4rem;
+}.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}.proof-card {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-height: 6rem;
+  padding: 1rem 1.15rem;
+}.proof-card strong {
+  color: var(--toxic);
+  font-family: var(--font-display);
+  font-size: clamp(1.55rem, 3vw, 2.6rem);
+  line-height: 1;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.72);
+}.proof-card span {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(0.9rem, 1.55vw, 1.12rem);
+  line-height: 1.2;
+  text-transform: uppercase;
+}.proof-card:nth-child(1) strong {
+  color: var(--danger);
+}.proof-card:nth-child(2) strong {
+  color: var(--teal);
+}.proof-card:nth-child(3) strong {
+  color: var(--amber);
+}.gameplay-section {
+  padding-top: 0;
+}.compact-header {
+  max-width: 48rem;
+}.phone-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(0.8rem, 2.4vw, 1.4rem);
+  align-items: start;
+  margin-top: 1.6rem;
+}.phone-frame {
+  position: relative;
+  margin: 0;
+}.phone-frame::before,
+.phone-frame::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #56615b, #050605 58%, #2c3832);
+  box-shadow:
+    inset 1px 0 0 rgba(255, 255, 255, 0.16),
+    0 0 0 1px rgba(143, 208, 82, 0.34),
+    0 8px 18px rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}.phone-frame::before {
+  top: 16%;
+  left: -0.22rem;
+  width: 0.28rem;
+  height: 4.1rem;
+}.phone-frame::after {
+  top: 27%;
+  right: -0.22rem;
+  width: 0.28rem;
+  height: 5.6rem;
+}.phone-shell {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  aspect-ratio: 1179 / 2556;
+  z-index: 1;
+  border: clamp(0.62rem, 1.25vw, 0.9rem) solid #050605;
+  border-radius: clamp(1.65rem, 3.15vw, 2.55rem);
+  background: #000 var(--phone-image) center / cover no-repeat;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    inset 0 0 0 3px rgba(0, 0, 0, 0.82),
+    0 0 0 2px #222a25,
+    0 0 0 4px rgba(143, 208, 82, 0.34),
+    0 1.35rem 3rem rgba(0, 0, 0, 0.54);
+}.phone-shell::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    inset 0 0 24px rgba(0, 0, 0, 0.34);
+  pointer-events: none;
+  z-index: 2;
+}.phone-notch {
+  position: absolute;
+  top: 1.05%;
+  left: 50%;
+  z-index: 3;
+  width: 31%;
+  height: 4.35%;
+  border-radius: 999px;
+  background: #000;
+  box-shadow:
+    inset 0 -1px 0 rgba(255, 255, 255, 0.08),
+    0 1px 6px rgba(0, 0, 0, 0.72);
+  transform: translateX(-50%);
+}.phone-shell img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
+  object-fit: cover;
+}.phone-frame figcaption {
+  margin-top: 0.85rem;
+  color: var(--toxic);
+  font-family: var(--font-display);
+  font-size: 0.86rem;
+  text-align: center;
+  text-transform: uppercase;
+}.gameplay-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin-top: clamp(2rem, 5vw, 4rem);
+  padding: 1.3rem 0 0;
+  border-top: 2px solid rgba(143, 208, 82, 0.28);
+}.gameplay-cta h2 {
+  max-width: 16ch;
+  margin-bottom: 0;
+  font-size: clamp(1.7rem, 3vw, 2.65rem);
+}.motion-ready .sprite-panel.is-visible {
+  animation: heroSettle 6.4s ease-in-out 700ms infinite;
+}.motion-ready .motion-reveal,
+.motion-ready .motion-reveal.motion-reveal--lift {
+  opacity: 1;
+  transform: none;
+  will-change: auto;
+}@keyframes luisenIdle {
+  0%,
+  12.49% {
+    background-position: 0 0;
+  }
+  12.5%,
+  24.99% {
+    background-position: -200px 0;
+  }
+  25%,
+  37.49% {
+    background-position: -400px 0;
+  }
+  37.5%,
+  49.99% {
+    background-position: -600px 0;
+  }
+  50%,
+  62.49% {
+    background-position: 0 -276px;
+  }
+  62.5%,
+  74.99% {
+    background-position: -200px -276px;
+  }
+  75%,
+  87.49% {
+    background-position: -400px -276px;
+  }
+  87.5%,
+  100% {
+    background-position: -600px -276px;
+  }
+}@media (max-width: 1100px) {
+.hero-grid {
+    grid-template-columns: 1fr;
+  }.hero-copy h1 {
+    font-size: clamp(2.55rem, 8vw, 4.4rem);
+  }.sprite-panel {
+    max-width: 31rem;
+    justify-self: center;
+    width: min(100%, 31rem);
+  }.phone-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-width: 44rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 700px) {
+.hero {
+    min-height: auto;
+    padding-top: 1.25rem;
+    padding-bottom: 2rem;
+  }.hero-scene {
+    display: grid;
+  }.proof-grid {
+    grid-template-columns: 1fr;
+  }.proof-card {
+    min-height: 4.6rem;
+  }.phone-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: min(100%, 21rem);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    overflow: visible;
+  }.phone-frame {
+    width: 100%;
+  }.gameplay-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }.gameplay-cta .hero-actions {
+    width: 100%;
+  }.luisen-stage {
+    min-height: 19rem;
+  }.luisen-sprite {
+    transform: scale(1.08);
+  }
+}
+@media (max-width: 560px) {
+.hero-copy h1 {
+    max-width: none;
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }.hero-lede {
+    font-size: 1rem;
+  }.proof-band {
+    padding-bottom: 3rem;
+  }.sprite-panel {
+    padding: 0.75rem;
+  }.luisen-stage {
+    min-height: 17rem;
+  }.hero-signal {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
