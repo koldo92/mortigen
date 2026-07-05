@@ -462,6 +462,7 @@ h3 {
   border-radius: var(--radius-sm);
   color: var(--muted);
   font-size: 0.8rem;
+  line-height: 1.25;
 }.threat-grid,
 .privacy-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1126,6 +1127,20 @@ html {
   font-size: 0.86rem;
   text-align: center;
   text-transform: uppercase;
+}.powerups-section {
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 2px solid rgba(143, 208, 82, 0.2);
+}.powerups-header {
+  margin-bottom: 1.2rem;
+}.feature-card {
+  min-height: 100%;
+}.feature-card h3 {
+  font-size: clamp(1.05rem, 1.7vw, 1.34rem);
+}.feature-card p {
+  margin-bottom: 0.95rem;
+}.feature-meta {
+  gap: 0.55rem;
 }.gameplay-cta {
   display: flex;
   align-items: center;
@@ -1220,6 +1235,14 @@ html {
     flex-direction: column;
   }.gameplay-cta .hero-actions {
     width: 100%;
+  }.powerups-section .feature-card {
+    grid-template-columns: 64px 1fr;
+  }.powerups-section .icon-wrap {
+    width: 64px;
+    min-height: 64px;
+  }.powerups-section .icon-wrap img {
+    width: 52px;
+    height: 52px;
   }.luisen-stage {
     min-height: 19rem;
   }.luisen-sprite {
