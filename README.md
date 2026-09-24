@@ -62,6 +62,8 @@ Before deployment, check that:
 
 ## Asset Rights
 
-All image assets in `assets/images/` are original artwork for Mortigen. All
-rights reserved. They may not be reproduced, distributed, or used outside this
-project without prior written permission.
+Original Mortigen artwork in `assets/images/` is © 2026 Luis Enrique Ruiz. Do
+not reproduce, distribute, or reuse that artwork outside this project without
+prior written permission. The folder also includes third-party store badges,
+social-media icons, and brand marks; those remain subject to their respective
+owners' rights and usage terms.
