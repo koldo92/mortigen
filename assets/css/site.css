@@ -1127,11 +1127,11 @@ html {
   font-size: 0.86rem;
   text-align: center;
   text-transform: uppercase;
-}.powerups-section {
+}.upgrades-section {
   margin-top: clamp(3rem, 6vw, 5rem);
   padding-top: clamp(2rem, 4vw, 3rem);
   border-top: 2px solid rgba(143, 208, 82, 0.2);
-}.powerups-header {
+}.upgrades-header {
   margin-bottom: 1.2rem;
 }.feature-card {
   min-height: 100%;
@@ -1235,12 +1235,12 @@ html {
     flex-direction: column;
   }.gameplay-cta .hero-actions {
     width: 100%;
-  }.powerups-section .feature-card {
+  }.upgrades-section .feature-card {
     grid-template-columns: 64px 1fr;
-  }.powerups-section .icon-wrap {
+  }.upgrades-section .icon-wrap {
     width: 64px;
     min-height: 64px;
-  }.powerups-section .icon-wrap img {
+  }.upgrades-section .icon-wrap img {
     width: 52px;
     height: 52px;
   }.luisen-stage {
