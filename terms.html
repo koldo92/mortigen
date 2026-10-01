@@ -9,6 +9,7 @@
       data-i18n-content="termsPage.meta.description"
       content="Terms and Conditions for Mortigen, including rewarded ads, player conduct, and governing law."
     >
+    <link rel="canonical" href="https://koldo92.github.io/mortigen/terms.html">
     <meta property="og:type" content="website">
     <meta
       property="og:title"
@@ -21,7 +22,9 @@
       content="Terms and Conditions for Mortigen, including rewarded ads, player conduct, and governing law."
     >
     <meta property="og:url" content="https://koldo92.github.io/mortigen/terms.html">
-    <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/night.png">
+    <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/og-banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta
       name="twitter:title"
@@ -33,16 +36,18 @@
       data-i18n-content="termsPage.meta.description"
       content="Terms and Conditions for Mortigen, including rewarded ads, player conduct, and governing law."
     >
-    <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/night.png">
+    <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/og-banner.png">
+    <link rel="preload" href="assets/fonts/retrofont.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <meta name="theme-color" content="#050811">
-    <link rel="stylesheet" href="assets/css/site.css?v=20260705d">
-    <script src="assets/js/home-i18n.js?v=20260705d" defer></script>
+    <meta name="theme-color" content="#071009">
+    <link rel="stylesheet" href="assets/css/site.css?v=20261001">
+    <script src="assets/js/home-i18n.js?v=20261001" defer></script>
   </head>
   <body class="legal-page">
+    <a class="skip-link" href="#full-terms">Skip to content</a>
     <main>
       <section class="section legal-hero">
         <div class="container">
@@ -243,7 +248,7 @@
             </p>
             <ul>
               <li data-i18n-html="termsPage.section13.item1">
-                Email: drluisen@icloud.com
+                Email: <a href="mailto:drluisen@icloud.com">drluisen@icloud.com</a>
               </li>
               <li data-i18n-html="termsPage.section13.item2">
                 Developer: Luis Enrique Ruiz
@@ -264,7 +269,9 @@
             <span class="footer-brand-mark">
               <img
                 class="pixel-art"
-                src="assets/images/app_icon.png"
+                src="assets/images/app_icon-64.png"
+                width="64"
+                height="64"
                 alt=""
                 aria-hidden="true"
               >
@@ -329,11 +336,11 @@
               title="TikTok"
             >
               <img
-                src="assets/images/tiktok-icon-black-square.png"
+                src="assets/images/tiktok-icon-black-square-48.png"
                 alt=""
                 width="24"
                 height="24"
-              />
+              >
               <span>TikTok</span>
             </a>
           </div>
@@ -347,6 +354,7 @@
               data-lang-trigger
               aria-haspopup="true"
               aria-expanded="false"
+              aria-controls="lang-menu-terms"
               data-i18n-aria-label="lang.aria"
               aria-label="Language selector"
             >
@@ -355,6 +363,7 @@
             </button>
             <div
               class="lang-switch__menu"
+              id="lang-menu-terms"
               role="group"
               data-lang-menu
               hidden

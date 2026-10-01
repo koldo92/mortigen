@@ -25,9 +25,9 @@
       content="A one-thumb zombie roguelite for iOS and Android. Guide Dr. Luisen through infected labs, dodge hordes while your weapons aim and fire automatically, and choose upgrades to face the bosses."
     >
     <meta property="og:url" content="https://koldo92.github.io/mortigen/">
-    <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/screenshot-horde.webp">
-    <meta property="og:image:width" content="1179">
-    <meta property="og:image:height" content="2556">
+    <meta property="og:image" content="https://koldo92.github.io/mortigen/assets/images/og-banner.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta
       property="og:image:alt"
       data-i18n-content="meta.imageAlt"
@@ -44,7 +44,7 @@
       data-i18n-content="meta.description"
       content="A one-thumb zombie roguelite for iOS and Android. Guide Dr. Luisen through infected labs, dodge hordes while your weapons aim and fire automatically, and choose upgrades to face the bosses."
     >
-    <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/screenshot-horde.webp">
+    <meta name="twitter:image" content="https://koldo92.github.io/mortigen/assets/images/og-banner.png">
     <meta
       name="twitter:image:alt"
       data-i18n-content="meta.imageAlt"
@@ -57,7 +57,7 @@
         "@id": "https://koldo92.github.io/mortigen/#app",
         "name": "Mortigen",
         "url": "https://koldo92.github.io/mortigen/",
-        "image": "https://koldo92.github.io/mortigen/assets/images/screenshot-horde.webp",
+        "image": "https://koldo92.github.io/mortigen/assets/images/og-banner.png",
         "description": "A one-thumb zombie roguelite for iOS and Android. Guide Dr. Luisen through infected labs, dodge hordes while your weapons aim and fire automatically, and choose upgrades to face the bosses.",
         "operatingSystem": ["Android", "iOS"],
         "applicationCategory": "GameApplication",
@@ -66,6 +66,10 @@
         "gamePlatform": ["Android", "iOS"],
         "playMode": "SinglePlayer",
         "isAccessibleForFree": true,
+        "author": {
+          "@type": "Person",
+          "name": "Luis Enrique Ruiz"
+        },
         "offers": {
           "@type": "Offer",
           "price": "0.00",
@@ -78,20 +82,23 @@
           "https://koldo92.github.io/mortigen/assets/images/screenshot-car.webp"
         ],
         "sameAs": [
-          "https://apps.apple.com/us/app/mortigen/id6761758806",
+          "https://apps.apple.com/app/mortigen/id6761758806",
           "https://play.google.com/store/apps/details?id=com.ler.mortigen"
         ]
       }
     </script>
+    <link rel="preload" href="assets/fonts/retrofont.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" as="image" href="assets/images/player_idle.webp" type="image/webp">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon-192x192.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <meta name="theme-color" content="#071009">
-    <link rel="stylesheet" href="assets/css/site.css?v=20260705d">
-    <script src="assets/js/home-i18n.js?v=20260705d" defer></script>
+    <link rel="stylesheet" href="assets/css/site.css?v=20261001">
+    <script src="assets/js/home-i18n.js?v=20261001" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <main id="main">
       <section class="section hero" id="download">
         <div class="container hero-grid">
@@ -110,8 +117,9 @@
                   assets/images/mortigen_title-768.webp 768w
                 "
                 sizes="(max-width: 700px) calc(100vw - 1.25rem), 560px"
-                width="1024"
-                height="348"
+                width="560"
+                height="190"
+                fetchpriority="high"
                 alt="Mortigen"
               >
             </div>
@@ -129,7 +137,7 @@
             <div class="hero-actions">
               <a
                 class="store-badge-link"
-                href="https://apps.apple.com/us/app/mortigen/id6761758806"
+                href="https://apps.apple.com/app/mortigen/id6761758806"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-i18n-aria-label="hero.appStoreBadgeAria"
@@ -138,6 +146,8 @@
                 <img
                   class="store-badge store-badge--app-store"
                   src="assets/images/app-store-badge.svg"
+                  width="180"
+                  height="53"
                   data-i18n-src="hero.appStoreBadgeSrc"
                   alt=""
                   aria-hidden="true"
@@ -154,6 +164,8 @@
                 <img
                   class="store-badge store-badge--google"
                   src="assets/images/google-play-badge-en.svg"
+                  width="180"
+                  height="53"
                   data-i18n-src="hero.googlePlayBadgeSrc"
                   alt=""
                   aria-hidden="true"
@@ -166,15 +178,16 @@
             </p>
           </div>
 
-          <div
-            class="hero-scene"
-            data-i18n-aria-label="hero.sceneAria"
-            aria-label="Animated Dr. Luisen idle sprite"
-          >
+          <div class="hero-scene">
             <div class="sprite-panel">
-              <div class="luisen-stage" aria-hidden="true">
-                <div class="luisen-sprite pixel-art"></div>
-                <span class="luisen-shadow"></span>
+              <div
+                class="luisen-stage"
+                role="img"
+                data-i18n-aria-label="hero.sceneAria"
+                aria-label="Animated Dr. Luisen idle sprite"
+              >
+                <div class="luisen-sprite pixel-art" aria-hidden="true"></div>
+                <span class="luisen-shadow" aria-hidden="true"></span>
               </div>
               <div class="hero-signal">
                 <strong>Dr. Luisen</strong>
@@ -474,7 +487,7 @@
             <div class="hero-actions hero-actions--compact">
               <a
                 class="store-badge-link"
-                href="https://apps.apple.com/us/app/mortigen/id6761758806"
+                href="https://apps.apple.com/app/mortigen/id6761758806"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-i18n-aria-label="hero.appStoreBadgeAria"
@@ -483,6 +496,8 @@
                 <img
                   class="store-badge store-badge--app-store"
                   src="assets/images/app-store-badge.svg"
+                  width="180"
+                  height="53"
                   data-i18n-src="hero.appStoreBadgeSrc"
                   alt=""
                   aria-hidden="true"
@@ -499,6 +514,8 @@
                 <img
                   class="store-badge store-badge--google"
                   src="assets/images/google-play-badge-en.svg"
+                  width="180"
+                  height="53"
                   data-i18n-src="hero.googlePlayBadgeSrc"
                   alt=""
                   aria-hidden="true"
@@ -613,6 +630,7 @@
               data-lang-trigger
               aria-haspopup="true"
               aria-expanded="false"
+              aria-controls="lang-menu-index"
               data-i18n-aria-label="lang.aria"
               aria-label="Language selector"
             >
@@ -621,6 +639,7 @@
             </button>
             <div
               class="lang-switch__menu"
+              id="lang-menu-index"
               role="group"
               data-lang-menu
               hidden

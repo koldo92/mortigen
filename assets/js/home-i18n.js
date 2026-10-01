@@ -83,9 +83,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play Google LLC का ट्रेडमार्क है।",
     "footer.terms": "नियम और शर्तें",
     "footer.privacy": "गोपनीयता नीति",
+    "nav.privacyPolicy": "गोपनीयता नीति",
+    "nav.home": "होम",
+    "nav.terms": "नियम और शर्तें",
     "lang.aria": "भाषा चयन",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=hi",
     "hero.appStoreBadgeAria": "App Store से Mortigen डाउनलोड करें",
     "hero.googlePlayBadgeAria": "Google Play पर Mortigen पाएं",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -98,9 +102,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play é uma marca da Google LLC.",
     "footer.terms": "Termos e Condições",
     "footer.privacy": "Política de Privacidade",
+    "nav.privacyPolicy": "Política de Privacidade",
+    "nav.home": "Início",
+    "nav.terms": "Termos e Condições",
     "lang.aria": "Seletor de idioma",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=pt",
     "hero.appStoreBadgeAria": "Baixar Mortigen na App Store",
     "hero.googlePlayBadgeAria": "Baixar Mortigen no Google Play",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -113,9 +121,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play является товарным знаком Google LLC.",
     "footer.terms": "Условия",
     "footer.privacy": "Политика конфиденциальности",
+    "nav.privacyPolicy": "Политика конфиденциальности",
+    "nav.home": "Главная",
+    "nav.terms": "Условия",
     "lang.aria": "Выбор языка",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=ru",
     "hero.appStoreBadgeAria": "Скачать Mortigen в App Store",
     "hero.googlePlayBadgeAria": "Получить Mortigen в Google Play",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -128,9 +140,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play Google LLC-ren marka da.",
     "footer.terms": "Baldintzak",
     "footer.privacy": "Pribatutasun-politika",
+    "nav.privacyPolicy": "Pribatutasun-politika",
+    "nav.home": "Hasiera",
+    "nav.terms": "Baldintzak",
     "lang.aria": "Hizkuntza hautatzailea",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=eu",
     "hero.appStoreBadgeAria": "Deskargatu Mortigen App Store-n",
     "hero.googlePlayBadgeAria": "Lortu Mortigen Google Play-n",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -143,9 +159,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play ist eine Marke von Google LLC.",
     "footer.terms": "Allgemeine Geschäftsbedingungen",
     "footer.privacy": "Datenschutzrichtlinie",
+    "nav.privacyPolicy": "Datenschutzrichtlinie",
+    "nav.home": "Startseite",
+    "nav.terms": "Allgemeine Geschäftsbedingungen",
     "lang.aria": "Sprachauswahl",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=de",
     "hero.appStoreBadgeAria": "Mortigen im App Store laden",
     "hero.googlePlayBadgeAria": "Mortigen bei Google Play holen",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -158,9 +178,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play è un marchio di Google LLC.",
     "footer.terms": "Termini e condizioni",
     "footer.privacy": "Informativa sulla privacy",
+    "nav.privacyPolicy": "Informativa sulla privacy",
+    "nav.home": "Home",
+    "nav.terms": "Termini e condizioni",
     "lang.aria": "Selettore lingua",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=it",
     "hero.appStoreBadgeAria": "Scarica Mortigen dall'App Store",
     "hero.googlePlayBadgeAria": "Ottieni Mortigen su Google Play",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -173,9 +197,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google PlayはGoogle LLCの商標です。",
     "footer.terms": "利用規約",
     "footer.privacy": "プライバシーポリシー",
+    "nav.privacyPolicy": "プライバシーポリシー",
+    "nav.home": "ホーム",
+    "nav.terms": "利用規約",
     "lang.aria": "言語セレクター",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=ja",
     "hero.appStoreBadgeAria": "App StoreでMortigenをダウンロード",
     "hero.googlePlayBadgeAria": "Google PlayでMortigenを入手",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -188,9 +216,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play Google LLC-এর ট্রেডমার্ক।",
     "footer.terms": "শর্তাবলি",
     "footer.privacy": "গোপনীয়তা নীতি",
+    "nav.privacyPolicy": "গোপনীয়তা নীতি",
+    "nav.home": "হোম",
+    "nav.terms": "শর্তাবলী",
     "lang.aria": "ভাষা নির্বাচন",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=bn",
     "hero.appStoreBadgeAria": "App Store থেকে Mortigen ডাউনলোড করুন",
     "hero.googlePlayBadgeAria": "Google Play-তে Mortigen নিন",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -203,9 +235,13 @@ const HOME_TRANSLATIONS = {
     "footer.googleTrademark": "Google Play는 Google LLC의 상표입니다.",
     "footer.terms": "이용 약관",
     "footer.privacy": "개인 정보 처리방침",
+    "nav.privacyPolicy": "개인정보처리방침",
+    "nav.home": "홈",
+    "nav.terms": "이용약관",
     "lang.aria": "언어 선택기",
     "links.terms": "terms.html",
     "links.privacy": "privacy.html",
+    "links.home": "index.html?lang=ko",
     "hero.appStoreBadgeAria": "App Store에서 Mortigen 다운로드",
     "hero.googlePlayBadgeAria": "Google Play에서 Mortigen 받기",
     "hero.appStoreBadgeSrc": "assets/images/app-store-badge.svg",
@@ -1150,7 +1186,7 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.section5.body1": "All content in Mortigen, including artwork, music, sound effects, code, game design, lore text, character designs, and the Mortigen name, is the property of Luis Enrique Ruiz and is protected by applicable intellectual property laws.",
     "termsPage.section8.body": "To the maximum extent permitted by applicable law, Luis Enrique Ruiz shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the app.",
     "termsPage.section11.body": "These Terms shall be governed by and construed in accordance with the laws of Spain. Any disputes arising from these Terms or the use of the app shall be subject to the jurisdiction of the courts of Bilbao, Spain, without prejudice to any mandatory consumer protection rules that may apply in your country of residence.",
-    "termsPage.section13.item1": "Email: drluisen@icloud.com",
+    "termsPage.section13.item1": "Email: <a href=\"mailto:drluisen@icloud.com\">drluisen@icloud.com</a>",
     "termsPage.section13.item2": "Developer: Luis Enrique Ruiz",
     "termsPage.section13.item3": "Address: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
     "privacyPage.hero.intro": "This policy explains how Mortigen handles data, which platform services may process it, and how to contact the developer.",
@@ -1164,7 +1200,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.gdpr.item2": "<strong>Right to erasure.</strong> You can delete local game data by clearing app data or uninstalling. To request deletion of your leaderboard entries from Firebase, contact us using the details below.",
     "privacyPage.gdpr.item3": "<strong>Right to restriction and objection.</strong> You can review or change your advertising choices through the in-app privacy options, and you may also use your device's ad personalization settings where available.",
     "privacyPage.gdpr.item4": "<strong>Right to lodge a complaint.</strong> You may file a complaint with the Spanish Data Protection Agency at <a href=\"https://www.aepd.es\" target=\"_blank\" rel=\"noopener noreferrer\">www.aepd.es</a> or with another EU supervisory authority.",
-    "privacyPage.contact.item1": "Email: drluisen@icloud.com",
+    "privacyPage.contact.item1": "Email: <a href=\"mailto:drluisen@icloud.com\">drluisen@icloud.com</a>",
     "privacyPage.contact.item2": "Developer: Luis Enrique Ruiz",
     "privacyPage.contact.item3": "Address: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
     "termsPage.meta.description": "Terms and Conditions for Mortigen, including rewarded ads, player conduct, and governing law.",
@@ -1271,7 +1307,7 @@ const LEGAL_TRANSLATIONS = {
     "termsPage.section5.body1": "Todo el contenido de Mortigen, incluidos el arte, la música, los efectos de sonido, el código, el diseño del juego, los textos de trasfondo, los diseños de personajes y el nombre Mortigen, es propiedad de Luis Enrique Ruiz y está protegido por la legislación aplicable en materia de propiedad intelectual.",
     "termsPage.section8.body": "En la máxima medida permitida por la legislación aplicable, Luis Enrique Ruiz no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos derivados del uso de la aplicación o de la imposibilidad de usarla.",
     "termsPage.section11.body": "Estos Términos se regirán e interpretarán conforme a las leyes de España. Cualquier disputa derivada de estos Términos o del uso de la aplicación quedará sometida a la jurisdicción de los tribunales de Bilbao, España, sin perjuicio de las normas imperativas de protección al consumidor que puedan aplicarse en tu país de residencia.",
-    "termsPage.section13.item1": "Email: drluisen@icloud.com",
+    "termsPage.section13.item1": "Email: <a href=\"mailto:drluisen@icloud.com\">drluisen@icloud.com</a>",
     "termsPage.section13.item2": "Desarrollador: Luis Enrique Ruiz",
     "termsPage.section13.item3": "Dirección: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
     "privacyPage.hero.intro": "Esta política explica cómo Mortigen trata los datos, qué servicios de plataforma pueden procesarlos y cómo contactar con el desarrollador.",
@@ -1285,7 +1321,7 @@ const LEGAL_TRANSLATIONS = {
     "privacyPage.gdpr.item2": "<strong>Derecho de supresión.</strong> Puedes borrar los datos locales del juego limpiando los datos de la aplicación o desinstalándola. Para solicitar la eliminación de tus entradas de clasificación en Firebase, contáctanos usando los datos que aparecen más abajo.",
     "privacyPage.gdpr.item3": "<strong>Derecho de limitación y oposición.</strong> Puedes revisar o cambiar tus elecciones publicitarias desde las opciones de privacidad dentro de la app, y también usar los ajustes de personalización de anuncios de tu dispositivo cuando estén disponibles.",
     "privacyPage.gdpr.item4": "<strong>Derecho a presentar una reclamación.</strong> Puedes presentar una reclamación ante la Agencia Española de Protección de Datos en <a href=\"https://www.aepd.es\" target=\"_blank\" rel=\"noopener noreferrer\">www.aepd.es</a> o ante otra autoridad de control de la UE.",
-    "privacyPage.contact.item1": "Email: drluisen@icloud.com",
+    "privacyPage.contact.item1": "Email: <a href=\"mailto:drluisen@icloud.com\">drluisen@icloud.com</a>",
     "privacyPage.contact.item2": "Desarrollador: Luis Enrique Ruiz",
     "privacyPage.contact.item3": "Dirección: Olagorta Kalea, 26, Deusto, 48014 Bilbao, Bizkaia",
     "termsPage.meta.description": "Términos y Condiciones de Mortigen, incluidos anuncios recompensados, conducta del jugador y legislación aplicable.",
@@ -1435,8 +1471,14 @@ function readStoredLanguage() {
 
 function updateUrlLanguage(lang) {
   const url = new URL(window.location.href);
-  url.searchParams.set("lang", lang);
-  window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  if (lang === "en") {
+    url.searchParams.delete("lang");
+  } else {
+    url.searchParams.set("lang", lang);
+  }
+  const cleanSearch = url.searchParams.toString();
+  const searchPart = cleanSearch ? `?${cleanSearch}` : "";
+  window.history.replaceState({}, "", `${url.pathname}${searchPart}${url.hash}`);
 }
 
 function resolveInitialLanguage() {
@@ -1458,8 +1500,11 @@ function resolveInitialLanguage() {
 function initializeLanguageSwitch() {
   const initialLanguage = resolveInitialLanguage();
   translatePage(initialLanguage);
-  persistLanguage(initialLanguage);
-  updateUrlLanguage(initialLanguage);
+
+  const currentUrlParam = new URL(window.location.href).searchParams.get("lang");
+  if (currentUrlParam && currentUrlParam !== initialLanguage) {
+    updateUrlLanguage(initialLanguage);
+  }
 
   document.querySelectorAll("[data-lang-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
@@ -1497,15 +1542,9 @@ function initializeSubtleMotion() {
     { selector: ".sprite-panel", step: 0, lift: true },
     { selector: ".proof-card", step: 45 },
     { selector: ".phone-frame", step: 60, lift: true },
-    { selector: ".gameplay-cta", step: 0 },
-    { selector: ".portrait-card", step: 0, lift: true },
-    { selector: ".stat-card", step: 45 },
-    { selector: ".section-header", step: 0 },
-    { selector: ".system-card", step: 60, lift: true },
     { selector: ".feature-card", step: 55, lift: true },
-    { selector: ".media-banner, .progression-media", step: 0, lift: true },
-    { selector: ".threat-card, .privacy-card", step: 55, lift: true },
-    { selector: ".final-download-panel, .footer-inner", step: 0 },
+    { selector: ".gameplay-cta", step: 0 },
+    { selector: ".footer-inner", step: 0 },
   ];
   const targets = [];
   const seen = new Set();
@@ -1545,7 +1584,6 @@ function initializeSubtleMotion() {
       }
 
       entry.target.classList.add("is-visible");
-      animateStatValue(entry.target);
       observer.unobserve(entry.target);
     });
   },
@@ -1556,42 +1594,6 @@ function initializeSubtleMotion() {
   );
 
   targets.forEach((element) => observer.observe(element));
-}
-
-function animateStatValue(element) {
-  if (!element.classList.contains("stat-card") || element.dataset.statAnimated) {
-    return;
-  }
-
-  const value = element.querySelector("strong");
-  if (!value) {
-    return;
-  }
-
-  const target = Number.parseInt(value.textContent, 10);
-  if (!Number.isFinite(target)) {
-    return;
-  }
-
-  element.dataset.statAnimated = "true";
-  const durationMs = 720;
-  let startedAt;
-
-  const tick = (timestamp) => {
-    startedAt ??= timestamp;
-    const progress = Math.min((timestamp - startedAt) / durationMs, 1);
-    const eased = 1 - Math.pow(1 - progress, 3);
-    value.textContent = String(Math.max(1, Math.round(target * eased)));
-
-    if (progress < 1) {
-      window.requestAnimationFrame(tick);
-    } else {
-      value.textContent = String(target);
-    }
-  };
-
-  value.textContent = "1";
-  window.requestAnimationFrame(tick);
 }
 
 function initializeLanguageDropdowns() {
@@ -1629,6 +1631,12 @@ function initializeLanguageDropdowns() {
       closeAll(expanded ? null : dropdown);
       trigger.setAttribute("aria-expanded", String(!expanded));
       menu.hidden = expanded;
+      if (!expanded) {
+        const activeBtn = menu.querySelector('[aria-pressed="true"]') || menu.querySelector("button");
+        if (activeBtn) {
+          activeBtn.focus();
+        }
+      }
     });
 
     menu.addEventListener("click", (event) => {
@@ -1636,6 +1644,27 @@ function initializeLanguageDropdowns() {
       if (target) {
         trigger.setAttribute("aria-expanded", "false");
         menu.hidden = true;
+        trigger.focus();
+      }
+    });
+
+    menu.addEventListener("keydown", (event) => {
+      const buttons = [...menu.querySelectorAll("[data-lang-toggle]")];
+      const currentIndex = buttons.indexOf(document.activeElement);
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        const nextIndex = (currentIndex + 1) % buttons.length;
+        buttons[nextIndex]?.focus();
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        const prevIndex = (currentIndex - 1 + buttons.length) % buttons.length;
+        buttons[prevIndex]?.focus();
+      } else if (event.key === "Home") {
+        event.preventDefault();
+        buttons[0]?.focus();
+      } else if (event.key === "End") {
+        event.preventDefault();
+        buttons[buttons.length - 1]?.focus();
       }
     });
   });
@@ -1648,7 +1677,15 @@ function initializeLanguageDropdowns() {
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "Escape") {
-      closeAll(null);
+      dropdowns.forEach((dropdown) => {
+        const trigger = dropdown.querySelector("[data-lang-trigger]");
+        const menu = dropdown.querySelector("[data-lang-menu]");
+        if (trigger && trigger.getAttribute("aria-expanded") === "true") {
+          trigger.setAttribute("aria-expanded", "false");
+          if (menu) menu.hidden = true;
+          trigger.focus();
+        }
+      });
     }
   });
 }
